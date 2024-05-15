@@ -2530,6 +2530,7 @@ body {
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
+  color: white;
 }
 
 @media (max-width: 1680px) {
