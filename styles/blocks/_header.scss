@@ -1,0 +1,145 @@
+.header {
+    padding: 26px 0;
+    background: red;
+    overflow-y: visible;
+    &_transparent {
+        background: rgba(255, 255, 255, 0.7);
+    }
+    &__wrapper {
+        display: flex;
+        gap: 20px;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__logo {
+        width: 65px;
+    }
+
+    &__menu {
+        display: flex;
+        align-items: flex-start;
+        gap: 35px;
+    }
+
+    &__menu-item {
+        position: relative;
+    }
+
+    &__menu-item-link {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 130%;
+    }
+
+    &__submenu {
+        position: absolute;
+        top: 10;
+        padding-top: 20px;
+        left: -30%;
+    }
+
+    &__submenu-wrapper {
+        padding: 12px 60px 20px 20px;
+        background-color: white;
+        flex-direction: column;
+        gap: 15px;
+        width: max-content;
+        display: none;
+        box-shadow: 3px -1px 13px 0 rgba(0, 0, 0, 0.3);
+    }
+
+    &__submenu-item {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 130%;
+
+        &:hover {
+            color: #efa35a;
+        }
+
+        &_bold {
+            font-weight: 500;
+        }
+    }
+
+    &__menu-item:hover &__submenu-wrapper {
+        display: flex;
+    }
+
+    &__contacts {
+        display: flex;
+        align-items: center;
+        gap: 90px;
+    }
+
+    &__contacts-phone-wrapper {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    &__contacts-phone-icon path {
+        fill: #EFA35A;
+    }
+
+    &__burger {
+        background: unset;
+        border: unset;
+        display: none;
+    }
+
+    &__burget path {
+        stroke: #263238;
+    }
+
+}
+
+@media (max-width: 1680px) {
+    .header {
+
+        &__logo {
+            width: 50px;
+        }
+        &__contacts {
+            gap: 19px;
+        }
+
+        &__menu {
+            gap: 30px;
+        }
+
+        &__menu-item-link {
+            font-weight: 400;
+            font-size: 16px;
+        }
+    }
+}
+
+@media (max-width: 1280px) {
+   .header {
+       &__menu,  &__contacts-phone,  &__button-call {
+            display: none;
+       }
+
+       &__burger {
+        display: block;
+       }
+
+       &__contacts-phone-icon path {
+            fill: #263238;
+       }
+   }
+}
+
+
+@media (max-width: 380px) {
+    .header {
+       &__logo {
+            width: 40px;
+       }
+    }
+ }

@@ -1,0 +1,136 @@
+.download-catalog {
+    background: url('./../../images/download-catalog-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 150px;
+    
+    &__wrapper {
+        padding-top: 80px;
+        padding-bottom: 126px;
+    }
+
+    &__title {
+        margin-bottom: 65px;
+        text-align: center;
+    }
+
+    &__form {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 34px;
+    }
+
+    &__input-wrapper {
+        width: 100%;
+        
+    }
+
+    &__input {
+        width: 100%;
+        height: 104px;
+        padding: 35px 25px;
+        background: rgba(10, 6, 5, 0.6);
+        border: 1px solid #efa359;
+        font-weight: 400;
+        font-size: 30px;
+        color: #aaa;
+    }
+
+    &__error-input {
+        padding-left: 20px;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 130%;
+        color: #ff3030;
+        padding-top: 20px;
+    }
+
+    &__btn {
+        background: #efa359;
+        font-weight: 400;
+        font-size: 30px;
+        color: #fff;
+        transition: 0.3s;
+        border: unset;
+        cursor: pointer;
+        height: 104px;
+    }
+
+    &__btn:hover {
+        background: #ec8520;
+    }
+}
+
+
+@media (max-width: 1680px) {
+    .download-catalog {
+        margin-bottom: 130px;
+        &__form {
+            gap: 20px;
+        }
+
+        &__input {
+            height: 80px;
+            font-size: 23px;
+        }
+        
+        &__btn {
+            height: 80px;
+            font-size: 23px;
+        }
+    }
+}
+
+@media (max-width: 1280px) {
+    .download-catalog {
+        margin-bottom: 80px;
+        &__title {
+            margin-bottom: 40px;
+        }
+        &__input {
+           height: 60px;
+           font-size: 20px;
+           padding: 20px;
+        }
+
+        &__form {
+            gap: 9px;
+        }
+    
+        &__btn {
+          height: 60px;
+          font-size: 20px;
+        }
+    }
+}
+
+
+@media (max-width: 834px) {
+    .download-catalog {
+
+        &__title {
+            margin-bottom: 50px;
+        }
+        &__input {
+          padding: 16px 20px;
+          height: 50px;
+        }
+
+        &__form {
+          gap: 10px;
+          grid-template-columns: 1fr;
+          max-width: 500px;
+          margin: 0 auto;
+        }
+    
+        &__btn {
+            height: 50px;
+            margin-top: 10px;
+        }
+
+
+        &__error-input {
+            padding-top: 10px;
+        }
+    }
+}

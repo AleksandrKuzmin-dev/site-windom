@@ -1,0 +1,142 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+body {
+    position: relative;
+}
+
+.none {
+    display: none !important;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1680px;
+    padding: 0 80px;
+    height: 100%;
+}
+
+.h1 {
+    font-family: 'Geometry', sans-serif;
+    font-size: 200px;
+    color: #efa359;
+    font-weight: 800;
+    line-height: 90%;
+    
+    &_white {
+        color: #fff;
+    }
+}
+
+.h2 {
+    font-weight: 700;
+    font-size: 46px;
+    text-transform: uppercase;
+    color: #efa359;
+
+    &_italic {
+        font-style: italic;
+        font-weight: 400;
+    }
+    &_black {
+        color: #000;
+    }
+    &_white {
+        color: white;
+    }
+
+    &_regular {
+        font-weight: 400;
+    }
+}
+
+.btn {
+    padding: 15px 30px;
+    background: #efa359;
+    border: 1px solid #efa35a;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    color: #fff;
+    transition: 0.3s;
+    display: inline-block;
+    cursor: pointer;
+
+    &:hover {
+        background: #EC8520;
+    }
+
+    &_transparent {
+        background: transparent;
+
+        &:hover {
+            background: #F5DCC2
+        }
+    }
+
+    &_text-black {
+        color: #000;
+    }
+
+    &_text-regular {
+        font-weight: 400;
+    }
+
+    &_not-active {
+        background-color: #C5B9AE;
+        color: #fff;
+    }
+
+}
+
+@media (max-width: 1680px) {
+    .h1 {
+        font-size: 150px;
+    }
+
+    .h2 {
+        font-size: 40px;
+    }
+
+    .container {
+        padding: 0 60px;
+        max-width: 100%;
+    }
+    
+}
+@media (max-width: 1280px) {
+
+    .h1 {
+        font-size: 120px;
+    }
+
+    .h2 {
+        font-size: 30px;
+    }
+
+}
+
+
+@media (max-width: 680px) {
+    .h1 {
+        font-size: 60px;
+    }
+
+    .container {
+        padding: 0 40px;
+    }
+}
+
+@media (max-width: 380px) {
+    .container {
+
+        &_mobile {
+            padding: 0 0px;
+        }
+    }
+    .h1 {
+        font-size: 60px;
+    }
+}

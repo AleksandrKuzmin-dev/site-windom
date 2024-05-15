@@ -1,0 +1,134 @@
+.main-team {
+    margin-bottom: 150px;
+    &__title-wrapper {
+        margin-bottom: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__description-wrapper {
+        display: flex;
+        align-items: flex-start;
+        gap: 30px;
+        margin-bottom: 40px;
+    }
+
+    &__description {
+        font-weight: 400;
+        font-size: 27px;
+        line-height: 111%;
+    }
+
+    &__cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 18px;
+    }
+
+    &__cards-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 18px;
+    }
+
+    &__card-img {
+        margin-bottom: 14px;
+        width: 100%;
+    }
+
+    &__card-name {
+        font-weight: 700;
+        font-size: 20px;
+        margin-bottom: 2px;
+        text-align: center;
+    }
+
+    &__card-position {
+        font-weight: 400;
+        font-size: 18px;
+        text-align: center;
+        max-width: 200px;
+        margin: 0 auto;
+    }
+
+    &__description-two-tablet {
+        display: none;
+    }
+
+    &__description-two-mobile {
+        display: none;
+    }
+
+    &__btn-mobile {
+        display: none;
+    }
+}
+
+@media (max-width: 1680px) {
+    .main-team {
+        margin-bottom: 130px;
+        &__description {
+            font-size: 23px;
+        }
+    }
+}
+
+@media (max-width: 1280px) {
+    .main-team {
+        margin-bottom: 80px;
+        &__description {
+            font-size: 18px;
+        }
+
+        &__cards {
+            grid-template-columns: 1fr;
+        }
+
+        &__description-two {
+            display: none;
+        }
+
+        &__description-two-tablet {
+            display: block;
+            margin: 40px 0;
+        }
+    }
+}
+
+@media (max-width: 834px) {
+    .main-team {
+        &__description {
+            font-size: 16px;
+        }
+
+        &__cards {
+            gap: 40px;
+        }
+
+        &__description-two-tablet {
+            display: none;
+        }
+
+        &__description-two-mobile {
+            display: block;
+        }
+
+        &__btn {
+            display: none;
+        }
+
+        &__btn-mobile {
+            display: block;
+            text-align: right;
+        }
+
+        &__card-name {
+            font-size: 16px;
+        }
+
+        &__card-position {
+            font-size: 14px;
+        }
+    }
+}

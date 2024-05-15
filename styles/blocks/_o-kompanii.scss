@@ -1,0 +1,243 @@
+.o-kompanii {
+    margin-bottom: 150px;
+    &__numbers {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 28px;
+        margin-bottom: 150px;
+    }
+
+    &__numbers-item {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    &__numbers-number {
+        font-weight: 500;
+        font-size: 120px;
+        text-align: center;
+        color: #efa359;
+        
+    }
+
+    &__numbers-line {
+        border: 2px solid #efa359;
+        width: 100%;
+    }
+
+    &__numbers-text {
+        font-weight: 400;
+        font-size: 30px;
+        color: #000;
+    }
+
+    &__content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 130px;
+        align-items: flex-start;
+    }
+
+    &__text-wrapper {
+        margin-top: 40px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__text {
+        font-weight: 400;
+        font-size: 30px;
+        margin-bottom: 20px;
+        &_orange {
+            color: #EFA359;
+            font-weight: 500;
+        }
+    }
+
+    &__social {
+        display: flex;
+        align-items: center;
+        gap: 25px;
+        align-self: flex-end;
+        margin-top: 60px;
+    }
+
+    &__social-item {
+       
+    }
+
+    &__social-item-icon {
+        width: 45px;
+    }
+
+ 
+
+    &__img-wrapper {
+        padding: 29px 0;
+        height: 100%;
+        
+    }
+
+    &__img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    &__img-block {
+        position: relative;
+        height: 100%;
+    }
+
+    &__img-line {
+        height: 100%;
+        width: 90%;
+        border: 1px solid #EFA359;
+        position: absolute;
+        top: 0;
+        left: 5%;
+        z-index: -1;
+    }
+}
+
+
+@media (max-width: 1680px) {
+    .o-kompanii {
+        margin-bottom: 130px;
+
+        &__numbers {
+            margin-bottom: 130px;
+        }
+        &__numbers-number {
+            font-weight: 500;
+            font-size: 100px;
+        }
+    
+        &__numbers-line {
+    
+        }
+    
+        &__numbers-text {
+            font-weight: 400;
+            font-size: 24px;
+    
+        }
+
+        &__text {
+            font-weight: 400;
+            font-size: 22px;
+            line-height: 145%;
+        }
+
+        &__content {
+            
+        }
+    }
+}
+
+
+@media (max-width: 1280px) {
+    .o-kompanii {
+        margin-bottom: 80px;
+        &__numbers {
+            margin-bottom: 80px;
+        }
+
+        &__numbers-number {
+            font-weight: 500;
+            font-size: 60px;
+        }
+    
+        &__numbers-text {
+            font-weight: 400;
+            font-size: 15px;
+        }
+
+        &__text {
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 130%;
+        }
+
+        &__content {
+            gap: 20px;
+        }
+
+        &__social {
+            margin-top: 40px;
+            gap: 10px;
+        }
+
+        &__social-item {
+            width: 30px;
+        }
+
+        &__img-line {
+          
+        }
+    }
+}
+
+
+@media (max-width: 834px) {
+   .o-kompanii {
+
+        &__numbers {
+            grid-template-columns: 1fr;
+            justify-items: center;
+            gap: 40px;
+        }
+
+        &__numbers-item {
+            max-width: 235px;
+        }
+        &__numbers-number {
+            font-weight: 500;
+            font-size: 80px;
+        }
+
+        &__numbers-text {
+            font-weight: 400;
+            font-size: 20px;
+            text-align: center;
+        }
+
+        &__text {
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 130%;
+        }
+
+        &__text-wrapper {
+            margin-top: 0;
+        }
+
+        &__content {
+            display: flex;
+            flex-direction: column-reverse;
+            gap: 40px;
+        }
+
+        &__title {
+            margin-bottom: 40px;
+        }
+   }
+}
+
+@media (max-width: 380px) {
+    .o-kompanii {
+        &__title, &__text-wrapper {
+            padding: 0 40px;
+        }
+        &__img-line {
+            height: 90%;
+            top: 5%;
+        }
+
+        &__title {
+            margin-bottom: 20px;
+        }
+    }
+
+}

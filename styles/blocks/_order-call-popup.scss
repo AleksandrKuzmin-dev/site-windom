@@ -1,0 +1,125 @@
+.order-call-popup {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+    overflow-y: auto;
+    &__wrapper {
+        background-color: white;
+        max-width: 380px;
+        position: relative;
+        display: grid;
+        padding: 70px 30px 50px 30px;
+        position: relative;
+    }
+
+    &__close {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        background: unset;
+        border: unset;
+        cursor: pointer;
+    }
+
+
+
+    &__title {
+        font-weight: 700;
+        font-size: 20px;
+        text-align: center;
+        line-height: normal;
+        margin-bottom: 20px;
+    }
+
+
+    &__label {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        margin-bottom: 5px;
+        font-weight: 400;
+        font-size: 16px;
+        color: #000;
+    }
+
+    &__input {
+        border: 1px solid #B0B0B0;
+        height: 40px;
+        &_error {
+            border: 1px solid #FC3131;
+        }
+    }
+
+    &__input:focus {
+        outline: none;
+        border: 1px solid #EFA359
+    }
+
+    &__error-message {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 130%;
+        color: #ff3030;
+    }
+
+    &__input-wrapper {
+        margin-bottom: 20px;
+    }
+
+
+    &__btn {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 130%;
+        padding: 15px 30px;
+        width: 100%;
+        background: unset;
+        border: 1px solid #EFA35A;
+        transition: 0.3s;
+        margin-bottom: 20px;
+
+        &:hover {
+            background: #F5DCC2;
+        }
+    }
+
+    &__label-checkbox {
+        position: relative;
+        display: inline-block;
+        padding-left: 35px;
+        cursor: pointer;
+        font-weight: 400;
+        font-size: 14px;
+        color: #000;
+    }
+
+    &__label-checkbox input[type='checkbox'] {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        height: 0;
+        width: 0;
+    }
+
+    &__checkbox-mark {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 19px;
+        width: 19px;
+        background-color: white;
+        border: 2px solid black;
+    }
+
+    &__label-checkbox input:checked ~ &__checkbox-mark {
+        background-image: url('data:image/svg+xml;utf8,<svg width="9" height="8" viewBox="0 0 9 8" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.82035 0.742649C8.93007 0.852512 8.9917 1.00144 8.9917 1.15671C8.9917 1.31199 8.93007 1.46091 8.82035 1.57077L3.3516 7.03952C3.24173 7.14925 3.09281 7.21088 2.93753 7.21088C2.78226 7.21088 2.63333 7.14925 2.52347 7.03952L0.179721 4.69577C0.0762206 4.5847 0.0198739 4.43779 0.0225522 4.28599C0.0252305 4.13419 0.0867247 3.98936 0.194079 3.88201C0.301433 3.77465 0.446265 3.71316 0.598063 3.71048C0.74986 3.7078 0.896771 3.76415 1.00785 3.86765L2.93753 5.79636L7.99222 0.742649C8.10208 0.632922 8.25101 0.571289 8.40628 0.571289C8.56156 0.571289 8.71048 0.632922 8.82035 0.742649Z" fill="black"/></svg>');
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+}

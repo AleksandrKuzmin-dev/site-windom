@@ -1,0 +1,162 @@
+.sales-office {
+    margin-bottom: 150px;
+
+    &__wrapper {
+        position: relative;
+    }
+
+    &__title {
+        margin-bottom: 42px;
+    }
+
+    &__map {
+        height: 800px;
+        position: relative;
+    }
+
+    &__panel {
+        padding: 65px;
+        background: white;
+        max-width: 522px;
+        position: absolute;
+        bottom: 50px;
+        left: 50px;
+    }
+
+    &__panel-title {
+        font-weight: 500;
+        font-size: 40px;
+        margin-bottom: 7px;
+    }
+
+    &__panel-text {
+        font-weight: 400;
+        font-size: 24px;
+        text-align: center;
+        margin-bottom: 47px;
+    }
+
+    &__contacts {
+        margin-bottom: 60px;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    &__contact {
+        font-weight: 400;
+        font-size: 30px;
+        display: flex;
+        align-items: center;
+        gap: 14px;
+    }
+
+    &__btn {
+        font-weight: 700;
+        font-size: 18px;
+        color: white;
+        padding: 15px 30px;
+        transition: 0.3s;
+        background: #EFA359;
+        display: block;
+        width: max-content;
+        margin: 0 auto;
+
+        &:hover {
+            background: #EC8520;
+        }
+    }
+
+    &__line-top {
+        height: 1px;
+        background-color: #efa35a;;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 70%;
+    }
+
+    &__line-right {
+        width: 1px;
+        background-color: #efa35a;;
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 40px;
+    }
+}
+
+@media (max-width:1680px) {
+    .sales-office {
+        margin-bottom: 130px;
+    }
+}
+
+@media (max-width: 1280px) {
+    .sales-office {
+        margin-bottom: 80px;
+
+        &__map {
+            height: 600px;
+        }
+    
+        &__panel {
+           padding: 30px;
+           width: 363px;
+        }
+    
+        &__panel-title {
+            font-size: 28px;
+            margin-bottom: 24px;
+            text-align: center;
+        }
+    
+        &__panel-text {
+            font-weight: 400;
+            font-size: 18px;
+            margin-bottom: 40px;
+        }
+    
+        &__contacts {
+           gap: 20px;
+        }
+    
+        &__contact {
+            font-size: 20px;
+        }
+        
+        &__line-top {
+            width: 60%;
+        }
+
+      
+    
+    }
+}
+
+@media (max-width: 834px) {
+    .sales-office {
+    
+        &__map {
+            height: 400px;
+        }
+    
+        &__panel {
+           display: none;
+        }
+
+        &__line-top {
+            display: none;
+        }
+
+        &__line-right {
+            display: none;
+        }
+
+        &__title {
+            display: none;
+        }
+    }
+}
+
+

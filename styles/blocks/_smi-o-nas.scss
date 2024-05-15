@@ -1,0 +1,128 @@
+.smi-o-nas {
+    background-image: linear-gradient(
+            71deg,
+            #323232 0.01%,
+            #323232 40%,
+            rgba(53, 53, 53, 0.74) 62.5%,
+            rgba(50, 50, 50, 0) 100%
+        ),
+        url('./../../images/smi-o-nas.png');
+    background-size: contain;
+    background-position: right;
+    background-repeat: no-repeat;
+    margin-bottom: 150px;
+    &__wrapper {
+        padding: 100px 0;
+    }
+
+    &__title {
+        margin-bottom: 50px;
+    }
+
+    &__content {
+        margin-left: 130px;
+        max-width: 553px;
+    }
+
+    &__content-title {
+        font-weight: 500;
+        font-size: 35px;
+        color: #fff;
+        margin-bottom: 70px;
+    }
+
+    &__content-text {
+        font-weight: 400;
+        font-size: 27px;
+        line-height: 111%;
+        letter-spacing: 0.01em;
+        color: #fff;
+        margin-bottom: 70px;
+    }
+}
+
+@media (max-width: 1680px) {
+    .smi-o-nas {
+        margin-bottom: 130px;
+
+        &__content-title {
+            font-weight: 500;
+            font-size: 30px;
+            margin-bottom: 40px;
+        }
+
+        &__content-text {
+            font-weight: 400;
+            font-size: 22px;
+            margin-bottom: 40px;
+        }
+    }
+}
+
+@media (max-width: 1280px) {
+    .smi-o-nas {
+        margin-bottom: 80px;
+
+        &__title {
+            margin-bottom: 40px;
+        }
+
+        &__content {
+            margin-left: 40px;
+            max-width: 357px;
+        }
+        &__content-title {
+            font-weight: 400;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        &__content-text {
+            font-size: 18px;
+            margin-bottom: 40px;
+        }
+    }
+}
+
+@media (max-width: 834px) {
+    .smi-o-nas {
+        background-image: linear-gradient(
+                180deg,
+                #323232 0.01%,
+                #323232 40%,
+                rgba(53, 53, 53, 0.74) 80.5%,
+                rgba(50, 50, 50, 0) 100%
+            ),
+            url('./../../images/smi-o-nas-mobile-bg.png');
+        background-size: cover;
+        background-position: center center;
+
+        &__wrapper {
+            padding: 70px 0 340px 0;
+        }
+
+        &__title {
+            margin-bottom: 40px;
+        }
+
+        &__content {
+            max-width: unset;
+            margin-left: 0;
+        }
+        &__content-title {
+            font-weight: 700;
+            font-size: 23px;
+        }
+
+        &__content-text {
+            margin-bottom: 40px;
+            font-size: 16px;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .smi-o-nas {
+        background-position: center top;
+    }
+}
