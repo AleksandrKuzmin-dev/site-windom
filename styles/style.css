@@ -634,7 +634,7 @@ body {
 .main-first-window {
   height: 100vh;
   width: 100%;
-  background-image: url("./../../images/main-fw-bg.jpg");
+  background-image: url("./../images/main-fw-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center 25%;
@@ -1085,7 +1085,7 @@ body {
   cursor: pointer;
 }
 .slider-ba__change:after {
-  content: url("../../images/slider-ba-change.svg");
+  content: url("./../images/slider-ba-change.svg");
   position: absolute;
   width: 34px;
   top: 50%;
@@ -1469,7 +1469,7 @@ body {
   }
 }
 .download-catalog {
-  background: url("./../../images/download-catalog-bg.jpg");
+  background: url("./../images/download-catalog-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   margin-bottom: 150px;
@@ -1933,7 +1933,7 @@ body {
   }
 }
 .smi-o-nas {
-  background-image: linear-gradient(71deg, #323232 0.01%, #323232 40%, rgba(53, 53, 53, 0.74) 62.5%, rgba(50, 50, 50, 0) 100%), url("./../../images/smi-o-nas.png");
+  background-image: linear-gradient(71deg, #323232 0.01%, #323232 40%, rgba(53, 53, 53, 0.74) 62.5%, rgba(50, 50, 50, 0) 100%), url("./../images/smi-o-nas.png");
   background-size: contain;
   background-position: right;
   background-repeat: no-repeat;
@@ -2002,8 +2002,8 @@ body {
 }
 @media (max-width: 834px) {
   .smi-o-nas {
-    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.01%, #323232), color-stop(40%, #323232), color-stop(80.5%, rgba(53, 53, 53, 0.74)), to(rgba(50, 50, 50, 0))), url("./../../images/smi-o-nas-mobile-bg.png");
-    background-image: linear-gradient(180deg, #323232 0.01%, #323232 40%, rgba(53, 53, 53, 0.74) 80.5%, rgba(50, 50, 50, 0) 100%), url("./../../images/smi-o-nas-mobile-bg.png");
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.01%, #323232), color-stop(40%, #323232), color-stop(80.5%, rgba(53, 53, 53, 0.74)), to(rgba(50, 50, 50, 0))), url("./../images/smi-o-nas-mobile-bg.png");
+    background-image: linear-gradient(180deg, #323232 0.01%, #323232 40%, rgba(53, 53, 53, 0.74) 80.5%, rgba(50, 50, 50, 0) 100%), url("./../images/smi-o-nas-mobile-bg.png");
     background-size: cover;
     background-position: center center;
   }
