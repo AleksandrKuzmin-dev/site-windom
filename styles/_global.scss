@@ -18,7 +18,7 @@ body {
     height: 100%;
 }
 
-.h1 {
+.h1-main {
     font-family: 'Geometry', sans-serif;
     font-size: 200px;
     color: #efa359;
@@ -27,6 +27,18 @@ body {
     
     &_white {
         color: #fff;
+    }
+}
+
+.h1 {
+    font-weight: 500;
+    font-size: 60px;
+    text-transform: uppercase;
+    color: #000;
+    line-height: normal;
+
+    &_orange {
+        color: #efa35a;
     }
 }
 
@@ -92,8 +104,13 @@ body {
 }
 
 @media (max-width: 1680px) {
-    .h1 {
+    .h1-main {
         font-size: 150px;
+    }
+
+    .h1 {
+        font-weight: 700;
+        font-size: 46px;
     }
 
     .h2 {
@@ -108,8 +125,13 @@ body {
 }
 @media (max-width: 1280px) {
 
-    .h1 {
+    .h1-main {
         font-size: 120px;
+    }
+
+    .h1 {
+        font-weight: 700;
+        font-size: 30px;
     }
 
     .h2 {
@@ -120,8 +142,13 @@ body {
 
 
 @media (max-width: 680px) {
-    .h1 {
+    .h1-main {
         font-size: 60px;
+    }
+
+    .h1 {
+        font-weight: 500;
+        font-size: 30px;
     }
 
     .container {
@@ -136,7 +163,7 @@ body {
             padding: 0 0px;
         }
     }
-    .h1 {
+    .h1-main {
         font-size: 60px;
     }
 }

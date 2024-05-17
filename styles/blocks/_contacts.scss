@@ -1,0 +1,343 @@
+.contacts {
+    background: #f7f8f8;
+    &__wrapper {
+        padding: 110px 0;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+
+    &__title {
+        max-width: 650px;
+        margin-bottom: 40px;
+    }
+
+    &__address {
+        font-weight: 400;
+        font-size: 32px;
+        color: #000;
+        margin-bottom: 37px;
+    }
+
+    &__phones {
+        display: flex;
+        align-items: center;
+        gap: 70px;
+        margin-bottom: 40px;
+    }
+
+    &__phone {
+        font-weight: 400;
+        font-size: 24px;
+        color: #000;
+
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    &__bottom-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    &__social {
+        display: flex;
+        align-items: center;
+        gap: 25px;
+    }
+
+    &__social-item {
+        width: 45px;
+    }
+
+    &__mail {
+        display: flex;
+        align-items: center;
+        gap: 18px;
+        padding: 14px 22px;
+        border: 1px solid #efa359;
+        width: max-content;
+    }
+
+    &__form {
+        max-width: 492px;
+        padding: 40px 22px;
+        background: white;
+    }
+
+    &__form-title {
+        font-weight: 500;
+        font-size: 40px;
+        color: #000;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    &__form-description {
+        font-weight: 400;
+        font-size: 24px;
+        text-align: center;
+        color: #000;
+        margin-bottom: 28px;
+    }
+
+    &__input-wrapper {
+        margin-bottom: 17px;
+    }
+
+    &__input {
+        background: #f7f8f8;
+        border: unset;
+        padding: 18px;
+        width: 100%;
+
+        &:focus {
+            outline: unset;
+            border: 1px solid #efa359;
+        }
+    }
+
+    &__input-error-message {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 130%;
+        color: #ff3030;
+        padding-top: 12px;
+    }
+
+    &__form-btn {
+        font-weight: 700;
+        font-size: 18px;
+        color: #fff;
+        background: #efa35a;
+        padding: 15px 30px;
+        border: unset;
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 30px;
+        transition: 0.3s;
+        cursor: pointer;
+        margin-top: 30px;
+
+        &:hover {
+            background: #ec8520;
+        }
+    }
+
+    &__privacy {
+        font-weight: 400;
+        font-size: 14px;
+        color: #000;
+
+        &_orange {
+            color: #efa359;
+        }
+    }
+}
+
+@media (max-width: 1680px) {
+    .contacts {
+        &__wrapper {
+            padding: 100px 0;
+            gap: 60px;
+        }
+
+        &__title {
+            margin-bottom: 57px;
+        }
+
+        &__address {
+            font-weight: 400;
+            font-size: 27px;
+            margin-bottom: 45px;
+        }
+
+        &__phones {
+            gap: 50px;
+        }
+
+        &__phone {
+            font-size: 20px;
+        }
+
+        &__social {
+            gap: 20px;
+        }
+
+        &__social-item {
+            width: 40px;
+        }
+
+        &__mail {
+            font-size: 20px;
+        }
+
+        &__form {
+            max-width: 406px;
+        }
+
+        &__form-title {
+            font-weight: 400;
+            font-size: 32px;
+            margin-bottom: 19px;
+        }
+
+        &__form-description {
+            font-weight: 400;
+            font-size: 20px;
+            margin-bottom: 38px;
+        }
+
+        &__input-wrapper {
+            margin-bottom: 17px;
+        }
+
+        &__input {
+            font-weight: 400;
+            font-size: 16px;
+        }
+
+        &__form-btn {
+            margin-top: 30px;
+            font-size: 18px;
+        }
+
+        &__privacy {
+            font-weight: 400;
+            font-size: 14px;
+        }
+    }
+}
+
+@media (max-width: 1280px) {
+    .contacts {
+        &__wrapper {
+            flex-direction: column;
+            gap: 80px;
+            align-items: center;
+        }
+
+        &__title {
+            max-width: unset;
+            margin-bottom: 50px;
+        }
+
+        &__address {
+            font-weight: 400;
+            font-size: 24px;
+            margin-bottom: 40px;
+        }
+
+        &__bottom-wrapper {
+            align-items: center;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        &__form {
+            max-width: 600px;
+        }
+
+        &__form-title {
+            font-size: 30px;
+        }
+
+        &__form-description {
+            font-size: 20px;
+        }
+
+        &__input-wrapper {
+            margin-bottom: 17px;
+        }
+
+        &__input {
+            font-size: 18px;
+        }
+
+        &__form-btn {
+            margin-top: 20px;
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        &__privacy {
+            font-size: 15px;
+        }
+    }
+}
+
+@media (max-width: 834px) {
+    .contacts {
+
+        &__title {
+            margin-bottom: 40px;
+        }
+
+        &__address {
+            font-size: 20px;
+            margin-bottom: 40px;
+        }
+
+        &__phones {
+            flex-direction: column;
+            gap: 20px;
+            align-items: flex-start;
+            margin-bottom: 40px;
+        }
+
+        &__phone {
+            font-size: 16px;
+            font-weight: 500;
+        }
+
+        &__bottom-wrapper {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 20px;
+        }
+
+        &__social-item {
+            width: 35px;
+        }
+
+        &__mail {
+            font-size: 15px;
+        }
+
+        &__form-title {
+            font-weight: 500;
+            font-size: 25px;
+            padding: 40px 10px;
+        }
+
+        &__form-description {
+            font-weight: 400;
+            font-size: 15px;
+            margin-bottom: 40px;
+        }
+
+        &__input-wrapper {
+            margin-bottom: 20px;
+        }
+
+        &__input {
+            font-size: 14px;
+        }
+
+        &__form-btn {
+            margin-top: 40px;
+            font-weight: 400;
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+
+        &__privacy {
+            padding: 10px;
+            font-weight: 400;
+            font-size: 12px;
+        }
+    }
+}
+
