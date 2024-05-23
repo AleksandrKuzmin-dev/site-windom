@@ -1,4 +1,4 @@
-.article {
+.smi-article {
 
     &__wrapper {
         margin: 80px 0 120px 0;
@@ -6,6 +6,9 @@
 
     &__title {
         margin-bottom: 20px;
+        font-weight: 500;
+        font-size: 60px;
+        text-transform: uppercase;
     }
 
     &__back-to-news {
@@ -34,13 +37,19 @@
         border: 1px solid #EFA359;
     }
 
-    &__mobile-visible {
+
+
+    &__date-wrapper-date {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        
     }
 
     &__date-wrapper {
         display: flex;
-        gap: 20px;
         align-items: center;
+        justify-content: space-between;
         margin-bottom: 19px;
     }
 
@@ -54,7 +63,7 @@
         font-weight: 500;
         font-size: 35px;
         color: #000;
-        margin-bottom: 31px;
+        margin-bottom: 40px;
     }
 
     &__text {
@@ -78,8 +87,6 @@
         margin-bottom: 9px;
     }
 
-    &__mobile-hide {
-    }
 
     &__ul {
     }
@@ -168,6 +175,7 @@
         padding: 60px 20px 60px 30px;;
     }
 
+
     &__card-title {
         font-weight: 400;
         font-size: 27px;
@@ -175,6 +183,14 @@
         letter-spacing: 0.01em;
         color: #000;
         margin-bottom: 34px;
+    }
+
+    &__card-description {
+        margin-bottom: 15px;
+        font-weight: 400;
+        font-size: 14px;
+        color: #000;
+        display: none;
     }
 
     &__card-date-wrapper {
@@ -198,14 +214,16 @@
 
 @media (max-width: 1680px) {
 
-    .article {
+    .smi-article {
 
 		&__title {
-            font-size: 46px;
             margin-bottom: 20px;
+            font-weight: 700;
+            font-size: 46px;
 		}
 
 		&__content-title {
+            font-weight: 500;
             font-size: 35px;
             margin-bottom: 30px;
 		}
@@ -246,7 +264,7 @@
 
 @media (max-width: 1280px) {
 
-    .article {
+    .smi-article {
 
 		&__wrapper {
             margin: 60px 0 40px 0;
@@ -254,6 +272,8 @@
 
 		&__title {
             margin-bottom: 20px;
+            font-weight: 700;
+            font-size: 30px;
 		}
 
 		&__grid {
@@ -266,13 +286,13 @@
             font-size: 20px;
 		}
 
-		&__mobile-visible {
+		&__date-wrapper-date {
+            gap: 10px;
 		}
 
-		&__date-wrapper {
-            gap: 10px;
+        &__date-wrapper {
             margin-bottom: 26px;
-		}
+        }
 
 		&__date {
             font-size: 20px;
@@ -282,6 +302,7 @@
             font-weight: 500;
             font-size: 25px;
             color: #000;
+
             margin-bottom: 40px;
 		}
 
@@ -364,14 +385,15 @@
 
 @media (max-width: 834px) {
 
-    .article {
+    .smi-article {
 
 		&__wrapper {
             margin: 60px 0;
 		}
 
 		&__title {
-            display: none;
+            font-weight: 700;
+            font-size: 30px;
 		}
 
 		&__grid {
@@ -394,9 +416,18 @@
             flex-direction: column-reverse;
         }
 
-		&__date-wrapper {
-            margin-bottom: 20px;
-		}
+        &__date-wrapper {
+            margin-bottom: 20px;   
+        }
+
+        &__date-wrapper-date {
+            display: none;
+        }
+
+        &__date-wrapper {
+            justify-content: flex-end;
+        }
+
 
 		&__date {
             font-size: 14px;
@@ -404,8 +435,8 @@
 
 		&__content-title {
             margin-bottom: 20px;
-            font-weight: 700;
-            font-size: 20px;
+            font-weight: 500;
+            font-size: 30px;
 		}
 
 		&__text {
@@ -415,10 +446,6 @@
 		&__text-title {
             font-weight: 700;
             font-size: 18px;
-		}
-
-		&__mobile-hide {
-            display: none;
 		}
 
         &__read-more {
@@ -465,7 +492,7 @@
             gap: 20px;
 		}
 
-		&__card {
+		&__card-content {
             padding: 20px 13px;
 		}
 
@@ -479,6 +506,10 @@
             font-size: 20px;
             margin-bottom: 15px;
 		}
+
+        &__card-description {
+            display: block;
+        }
 
 		&__card-date-wrapper {
 		}
