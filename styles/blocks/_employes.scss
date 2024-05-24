@@ -1,0 +1,229 @@
+.employes {
+    position: relative;
+
+    &__bg {
+        position: absolute;
+        width: 100%;
+        height: 90%;
+        background: #EFA359;
+        z-index: -1;
+        transform: translate(0, -50%);
+        top: 50%;
+    }
+    &__wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 40px;
+        background-color: white;
+        padding: 0 40px;
+    }
+
+    &__mobile-wrapper {
+        display: none;
+    }
+
+    &__card-img {
+        object-fit: cover;
+        width: 100%;
+    }
+
+    &__card-bottom-wrapper {
+        top: -40px;
+        position: relative;
+    }
+
+    &__card-content {
+        padding: 33px 15px;
+        text-align: center;
+        display: inline-block;
+        position: relative;
+        right: -50%;
+        transform: translate(-50%);
+        min-width: 297px;
+        min-height: 114px;
+        background-color: white;
+        margin-bottom: 20px;
+    }
+
+    &__card-name {
+        font-weight: 700;
+        font-size: 20px;
+        color: #000;
+        margin-bottom: 2px;
+    }
+
+    &__card-post {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 130%;
+        text-align: center;
+        color: #000;
+        max-width: 192px;
+        margin: 0 auto;
+    }
+
+    &__buttons {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 25px;
+    }
+
+    &__btn {
+        padding: 15px 30px;
+        font-weight: 700;
+        font-size: 18px;
+        text-align: center;
+        background: #efa359;
+        color: #fff;
+        border: unset;
+        cursor: pointer;
+        transition: 0.3s;
+
+        &:hover {
+            background-color: #EC8520;
+        }
+        &_transparent {
+            background: transparent;
+            color: #000;
+            border: 1px solid #efa359;
+            &:hover {
+                background-color: #F5DCC2;
+            }
+        }
+    }
+}
+
+
+@media (max-width: 1680px) {
+    .employes {
+
+		&__wrapper {
+            padding: 0 30px;
+		}
+
+		&__card-name {
+            font-size: 18px;
+		}
+
+		&__card-post {
+            font-size: 18px;
+		}
+
+		&__btn {
+            font-weight: 400;
+            font-size: 16px;
+            padding: 10px 20px;
+		}
+    }
+
+}
+
+@media (max-width: 1280px) {
+    .employes {
+        &__wrapper {
+            display: none;
+        }
+
+        &__bg {
+            display: none;
+        }
+
+        &__mobile-wrapper {
+            display: block;
+            margin-bottom: 60px;
+        }
+
+        &__mobile-card-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        &__splide {
+            margin-bottom: 40px;
+        }
+
+        &__slide {
+            opacity: 50%;
+            transition: opacity 0.6s ease-in;
+            padding-bottom: 25px;
+            border: 1px solid #EFA35A;
+        }
+
+        &__slide.is-active {
+            opacity: 1;
+        }
+
+        &__pagination {
+            position: relative;
+            left: unset;
+            right: unset;
+            bottom: unset;
+            margin-top: 8px;
+            gap: 5px;
+        }
+
+        &__pagination-btn {
+
+            width: 8px;
+            height: 8px;
+            background-color: #d9d9d9;
+            opacity: 1;
+            transition: 0.3s;
+        }
+
+        &__pagination-btn.is-active {
+            transform: unset;
+            opacity: 1;
+            background: #EFA359;
+        }
+
+
+        &__mobile-card-name {
+            font-weight: 700;
+            font-size: 20px;
+            color: #000;
+            margin-bottom: 2px;
+            text-align: center;
+            margin-top: 32px;
+        }
+
+        &__mobile-card-post {
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 130%;
+            text-align: center;
+            color: #000;
+            max-width: 192px;
+            margin: 0 auto;
+        }
+
+        &__buttons {
+            gap: 25px;
+            justify-content: center;
+        }
+    }
+}
+
+
+@media (max-width: 834px) {
+    .employes {
+        &__mobile-card-name {
+            font-weight: 700;
+            font-size: 18px;
+        }
+
+        &__mobile-card-post {
+            font-weight: 400;
+            font-size: 14px;
+            text-align: center;
+            color: #000;
+        }
+
+        &__btn {
+            font-weight: 700;
+            font-size: 14px;
+        }
+    }
+}

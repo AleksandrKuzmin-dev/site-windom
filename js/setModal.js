@@ -1,7 +1,6 @@
 function setModal(triggerSelector, modalSelector, closeSelector, timerValue) {
-    const trigger = document.querySelector(triggerSelector),
+    const triggers = document.querySelectorAll(triggerSelector),
           modal = document.querySelector(modalSelector),
-          close = document.querySelector(closeSelector),
           body = document.querySelector('body'),
           video = modal.querySelector('video');
     
@@ -35,15 +34,22 @@ function setModal(triggerSelector, modalSelector, closeSelector, timerValue) {
         }
     })
 
-    if (trigger) {
-        trigger.addEventListener('click', () => {
-            showModal();
-        });
+    if (triggers) {
+        triggers.forEach(trigger => {
+            trigger.addEventListener('click', () => {
+                showModal();
+
+                const close = modal.querySelector(closeSelector);
+                
+                close.addEventListener('click', () => {
+                    closeModal();
+                });
+
+            });
+        })
     };
 
-    close.addEventListener('click', () => {
-        closeModal();
-    });
+    
 
     if (timerValue) {
         timeOut = setTimeout(() => {
