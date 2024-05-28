@@ -1,0 +1,204 @@
+.ipoteka-faq {
+    margin-bottom: 150px;
+
+    &__title-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 45px;
+        
+    }
+
+    &__title {
+        font-family: 'Geometry', sans-serif;
+        font-weight: 500;
+        font-size: 60px;
+        text-transform: uppercase;
+        color: #000;
+
+        &_orange {
+            color: #efa35a;
+        }
+    }
+
+    &__btn {
+        font-weight: 400;
+        font-size: 18px;
+        padding: 20px 45px;
+        background: #efa359;
+        transition: 0.3s;
+        border: unset;
+        cursor: pointer;
+
+        &:hover {
+            background: #ec8520;
+        }
+        &_mobile {
+            display: none;
+        }
+    }
+
+    &__card {
+        background: #f2f2f2;
+        padding: 40px 20px 55px 60px;
+        margin-bottom: 40px;
+    }
+
+    &__card-title-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        cursor: pointer;
+    }
+
+    &__card-title {
+        font-weight: 500;
+        font-size: 40px;
+        font-family: 'Geometry', sans-serif;
+        line-height: normal;
+        max-width: 950px;
+    }
+
+    &__arrow {
+        width: 84px;
+        height: 84px;
+    }
+
+    &__answer {
+        font-weight: 400;
+        font-size: 27px;
+        padding-top: 30px;
+    }
+}
+
+
+
+@media (max-width: 1680px) {
+    .ipoteka-faq {
+        margin-bottom: 130px;
+    
+        &__title {
+            font-weight: 700;
+            font-size: 46px;
+        }
+    
+        &__btn {
+            font-weight: 400;
+            font-size: 18px;
+        }
+    
+        &__card {
+            padding: 40px 15px 40px 60px;
+            height: max-content;
+            transition: 0.3s;
+        }
+    
+        &__card-title {
+            font-weight: 700;
+            font-size: 30px;
+            
+        }
+    
+        &__arrow {
+            width: 60px;
+            height: 60px;
+        }
+    
+        &__answer {
+            font-weight: 400;
+            font-size: 20px;
+            padding-top: 20px;
+        }
+    }
+}
+
+@media (max-width: 1280px) {
+    .ipoteka-faq {
+        margin-bottom: 80px;
+    
+        &__title {
+            font-weight: 600;
+            font-size: 30px;
+        }
+    
+        &__btn {
+            font-weight: 400;
+            font-size: 18px;
+            padding: 10px 20px;
+        }
+    
+        &__card {
+            padding: 30px 8px 30px 30px;
+        }
+    
+        &__card-title-wrapper {
+            gap: 60px;
+        }
+    
+        &__card-title {
+            font-weight: 600;
+            font-size: 25px;
+            max-width: 539px;
+        }
+    
+        &__arrow {
+            width: 40px;
+            height: 40px;
+            min-width: 40px;
+            min-height: 40px;
+        }
+    
+        &__answer {
+            padding-top: 30px;
+            font-weight: 400;
+            font-size: 16px;
+        }
+    }
+}
+
+@media (max-width: 834px) {
+    .ipoteka-faq {
+        &__title-wrapper {
+            margin-bottom: 20px;
+            align-items: flex-start;
+        }
+    
+        &__title {
+            font-weight: 700;
+            font-size: 30px;
+            &_orange {
+                font-style: italic;
+                font-weight: 400;
+                font-size: 30px;
+                display: block;
+                padding-left: 80px;
+            }
+        }
+    
+        &__btn {
+            display: none;
+            &_mobile {
+                display: block;
+                margin: 0 auto;
+                font-weight: 700;
+                font-size: 14px;
+                padding: 20px 50px;
+            }
+        }
+    
+        &__card-title-wrapper {
+            gap: 0px;
+        }
+    
+        &__card-title {
+            font-weight: 700;
+            font-size: 18px;
+        }
+    
+        &__answer {
+            font-weight: 400;
+            font-size: 14px;
+            padding-top: 15px;
+        }
+    }
+}

@@ -1,0 +1,236 @@
+.ipoteka-type {
+    margin-bottom: 150px;
+    &__wrapper {
+    }
+
+    &__cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+
+    &__mob-cards {
+        display: none;
+    }
+
+    &__card {
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-columns: 61% 39%;
+        overflow: hidden;
+        background: #f2f2f2;
+
+        &_big {
+            grid-column: 1 / -1;
+        }
+    }
+
+    &__card-content {
+        padding: 80px 30px 80px 40px;
+    }
+
+    &__card-title {
+        font-family: 'Geometry', sans-serif;
+        margin-bottom: 40px;
+        font-weight: 500;
+        font-size: 46px;
+        text-transform: uppercase;
+        line-height: normal;
+
+        &_big {
+            font-weight: 500;
+            font-size: 60px;
+        }
+    }
+
+    &__card-description {
+        font-weight: 400;
+        font-size: 30px;
+        margin-bottom: 40px;
+    }
+
+    &__card-btn {
+        font-weight: 700;
+        font-size: 18px;
+        text-align: center;
+        display: block;
+        width: max-content;
+
+        padding: 20px 40px;
+        border: 1px solid #efa359;
+        transition: 0.3s;
+
+        &:hover {
+            background: #f5dcc2;
+        }
+    }
+
+    &__card-img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+
+
+    &__splide {
+    }
+
+    &__splide-track {
+    }
+
+    &__splide-list {
+    }
+
+    &__splide-slide {
+    }
+
+    &__mob-card {
+    }
+
+    &__mob-card-title {
+        font-weight: 500;
+        font-size: 30px;
+        text-transform: uppercase;
+        font-family: 'Geometry', sans-serif;
+        margin-bottom: 20px;
+    }
+
+    &__mob-card-description {
+        font-weight: 400;
+        font-size: 14px;
+        color: #000;
+        margin-bottom: 20px;
+    }
+
+    &__mob-card-btn {
+        font-weight: 700;
+        font-size: 14px;
+        text-align: center;
+        display: block;
+        width: max-content;
+        margin: 0 auto;
+        margin-bottom: 30px;
+
+        padding: 10px 20px;
+        border: 1px solid #efa359;
+        transition: 0.3s;
+
+        &:hover {
+            background: #f5dcc2;
+        }
+    }
+
+    &__mob-card-img {
+        width: 100%;
+        object-fit: cover;
+    }
+
+    &__pagination {
+        position: relative;
+        left: unset;
+        right: unset;
+        bottom: unset;
+        margin-top: 10px;
+        gap: 10px;
+    }
+
+    &__pagination-btn {
+        width: 30px;
+        height: 5px;
+        background: #ececec;
+        border-radius: 0;
+        opacity: 1;
+        transition: 0.3s;
+    }
+
+    &__pagination-btn.is-active {
+        transform: unset;
+        opacity: 1;
+        background: #bbb;
+    }
+
+
+}
+
+
+@media (max-width: 1680px) {
+    .ipoteka-type {
+        margin-bottom: 130px;
+    
+        &__card-content {
+            
+        }
+    
+        &__card-title {
+            font-weight: 500;
+            font-size: 40px;
+            position: relative;
+            z-index: 1;
+    
+            &_big {
+                font-weight: 700;
+                font-size: 46px;
+            }
+        }
+    
+        &__card-description {
+            font-weight: 400;
+            font-size: 20px;
+        }
+    
+        &__card-btn {
+            font-weight: 700;
+            font-size: 18px;
+        }
+    }
+}
+
+@media (max-width: 1280px) {
+    .ipoteka-type {
+        margin-bottom: 80px;
+        &__wrapper {
+        }
+    
+        &__cards {
+            gap: 30px;
+        }
+    
+        &__card {
+            grid-column: 1 / -1;
+        }
+    
+        &__card-content {
+            
+        }
+    
+        &__card-title {
+            font-weight: 500;
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+    
+        &__card-description {
+            font-weight: 400;
+            font-size: 18px;
+            margin-bottom: 40px;
+        }
+    }
+}
+
+@media (max-width: 834px) {
+    .ipoteka-type {
+      
+        &__wrapper {
+        }
+    
+        &__cards {
+            display: none;
+        }
+
+        &__mob-cards {
+            display: block;
+        }
+
+    }
+}

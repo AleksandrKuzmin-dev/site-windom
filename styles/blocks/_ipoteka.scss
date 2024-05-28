@@ -1,0 +1,163 @@
+.ipoteka {
+    background: url('../images/ipoteka-page-bg.jpg');
+    background-size: cover;
+    background-position: center top;
+    height: calc(100vh - 111px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 150px;
+
+    &__title {
+        font-weight: 700;
+        font-size: 150px;
+        color: #fff;
+        display: inline;
+        margin-right: 20px;
+        font-family: 'Geometry', sans-serif;
+
+        &_white-bg {
+            background-color: #fff;
+            display: inline;
+            padding: 0 20px;
+            color: #efa359;
+        }
+    }
+
+    &__description {
+        font-weight: 400;
+        font-size: 30px;
+        text-align: center;
+        color: #fff;
+        margin-bottom: 51px;
+
+        &_bold {
+            font-weight: 700;
+            font-family: 'Geometry', sans-serif;
+        }
+    }
+
+    &__btn {
+        padding: 24px 68px;
+        background: #efa359;
+        border: unset;
+        font-weight: 700;
+        font-size: 20px;
+        color: #fff;
+        transition: 0.3s;
+        cursor: pointer;
+        margin: 0 auto;
+        display: block;
+
+        &:hover {
+            background: #ec8520;
+        }
+    }
+}
+
+
+
+@media (max-width: 1680px) {
+    .ipoteka {
+        margin-bottom: 130px;
+
+        &__title {
+            font-weight: 800;
+            font-size: 120px;
+    
+            &_white-bg {
+               padding: 0 18px;
+            }
+        }
+    
+        &__description {
+            font-weight: 400;
+            font-size: 27px;
+            margin-bottom: 60px;
+    
+            &_bold {
+                font-weight: 700;
+            }
+        }
+    
+        &__btn {
+            font-weight: 700;
+            font-size: 18px;
+            padding: 15px 30px;
+        }
+    }
+    
+}
+
+@media (max-width: 1280px) {
+    .ipoteka {
+        margin-bottom: 80px;
+    
+        &__title {
+            font-weight: 800;
+            font-size: 80px;
+            
+            &_white-bg {
+               padding: 0 19px;
+            }
+        }
+    
+        &__description {
+            font-weight: 400;
+            font-size: 24px;
+            &_bold {
+                font-weight: 700;
+            }
+        }
+    
+        &__btn {
+            font-weight: 400;
+            font-size: 16px;
+        }
+    }
+    
+}
+
+@media (max-width: 834px) {
+    .ipoteka {
+        &__title-wrapper {
+            margin-bottom: 60px;
+        }
+    
+        &__title {
+            font-weight: 700;
+            font-size: 46px;
+            text-align: center;
+            display: block;
+
+            &_white-bg {
+                font-weight: 800;
+                font-size: 60px;
+                background: unset;
+                border: 1px solid white;
+                display: block;
+                width: max-content;
+                margin: 0 auto;
+            }
+        }
+    
+        &__description {
+           
+            font-weight: 700;
+            font-size: 18px;
+            &_bold {
+                font-weight: 700;
+                font-size: 18px;
+            }
+
+            &_mobile-hide {
+                display: none;
+            }
+        }
+    
+        &__btn {
+            font-weight: 700;
+            font-size: 14px;
+        }
+    }
+}
