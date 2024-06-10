@@ -1,0 +1,345 @@
+.transport-accessibility {
+    margin-bottom: 140px;
+
+    &__title {
+        margin-bottom: 40px;
+    }
+
+    &__text-wrapper {
+        display: grid;
+        grid-template-columns: 50% 40%;
+        gap: 150px;
+        margin-bottom: 40px;
+    }
+
+    &__text {
+        font-weight: 400;
+        font-size: 24px;
+        color: #000;
+
+        &_orange {
+            color: #efa35a;
+        }
+    }
+
+    &__numbers {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 100px;
+        margin-bottom: 60px;
+    }
+
+    &__number-item {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__number-num {
+        font-weight: 500;
+        font-size: 120px;
+        text-align: center;
+        color: #efa359;
+    }
+
+    &__number-devider {
+        width: 100%;
+        height: 2px;
+        background: #efa359;
+        margin-bottom: 20px;
+    }
+
+    &__number-text {
+        font-weight: 400;
+        font-size: 30px;
+        color: #000;
+    }
+
+    &__cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 27px;
+        margin-bottom: 40px;
+        padding: 0 160px;
+    }
+
+    &__card {
+        width: 100%;
+        padding: 15px;
+        border: 1px solid #efa35a;
+    }
+
+    &__card-top-wrapper {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 18px;
+    }
+
+    &__card-num {
+        font-weight: 400;
+        font-size: 18px;
+        color: #fff;
+        background: linear-gradient(180deg, #ff7e00 0%, #efa35a 100%);
+        padding: 3px 11px;
+        border-radius: 100%;
+    }
+
+    &__card-name {
+        font-weight: 400;
+        font-size: 20px;
+        color: #000;
+    }
+
+    &__card-time-wrapper {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+
+    &__card-time-icon {
+        height: 25px;
+        width: 25px;
+    }
+
+    &__card-time-text {
+        font-weight: 700;
+        font-size: 18px;
+        color: #000;
+    }
+
+    &__map-wrapper {
+        position: relative;
+    }
+
+    &__map {
+      height: 620px;
+    }
+
+    &__map-btn {
+        display: block;
+        font-weight: 700;
+        font-size: 18px;
+        text-align: center;
+        color: #000;
+        padding: 20px 90px;
+        border: 1px solid #efa35a;
+        transition: 0.3s;
+        width: max-content;
+        background: white;
+
+        position: absolute;
+        bottom: 43px;
+        left: 50%;
+        transform: translate(-50%);
+
+        &:hover {
+            background: #f5dcc2;
+        }
+    }
+}
+
+@media (max-width: 1680px) {
+    .transport-accessibility {
+        margin-bottom: 130px;
+        &__text-wrapper {
+            gap: 70px;
+            margin-bottom: 40px;
+        }
+
+        &__text {
+            font-weight: 400;
+            font-size: 20px;
+        }
+
+        &__numbers {
+            gap: 76px;
+        }
+
+        &__number-num {
+            font-weight: 500;
+            font-size: 90px;
+            text-align: center;
+        }
+
+        &__number-devider {
+            margin-bottom: 16px;
+        }
+
+        &__number-text {
+            font-weight: 400;
+            font-size: 24px;
+        }
+
+        &__cards {
+            padding: 0 135px;
+            gap: 20px;
+        }
+
+        &__card {
+            padding: 12px;
+        }
+
+        &__map {
+            height: 520px;
+        }
+
+        &__map-btn {
+            padding: 14px 45px;
+            font-weight: 700;
+            font-size: 18px;
+        }
+    }
+}
+
+@media (max-width: 1280px) {
+    .transport-accessibility {
+        margin-bottom: 80px;
+
+        &__text-wrapper {
+            grid-template-columns: 1fr;
+            margin-bottom: 30px;
+        }
+
+        &__text {
+            font-weight: 400;
+            font-size: 20px;
+
+            &_mobile-hide {
+                display: none;
+            }
+        }
+
+        &__numbers {
+            gap: 25px;
+            margin-bottom: 30px;
+        }
+
+        &__number-num {
+            font-weight: 500;
+            font-size: 60px;
+            text-align: center;
+            margin-bottom: 5px;
+        }
+
+        &__number-devider {
+            margin-bottom: 10px;
+        }
+
+        &__number-text {
+            font-weight: 400;
+            font-size: 20px;
+            color: #000;
+        }
+
+        &__cards {
+            padding: 0 45px;
+        }
+
+        &__card-top-wrapper {
+            gap: 10px;
+            margin-bottom: 9px;
+        }
+
+        &__card-num {
+            font-size: 16px;
+        }
+
+        &__card-name {
+            font-weight: 400;
+            font-size: 16px;
+        }
+
+        &__card-time-wrapper {
+            gap: 13px;
+        }
+
+        &__card-time-icon {
+            height: 30px;
+            width: 30px;
+        }
+
+        &__card-time-text {
+            font-weight: 700;
+            font-size: 14px;
+            color: #000;
+        }
+
+        &__map-wrapper {
+            position: relative;
+        }
+
+        &__map-btn {
+            font-weight: 700;
+            font-size: 14px;
+            padding: 12px 33px;
+        }
+    }
+}
+
+@media (max-width: 834px) {
+    .transport-accessibility {
+        &__title {
+            &_orange {
+                display: block;
+                margin-left: 90px;
+            }
+        }
+
+        &__text-wrapper {
+            margin-bottom: 40px;
+        }
+
+        &__text {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 156%;
+            color: #000;
+
+            &_orange {
+                color: #000;
+            }
+        }
+
+        &__numbers {
+            grid-template-columns: 1fr;
+            gap: 40px;
+        }
+
+        &__number-num {
+            font-weight: 500;
+            font-size: 80px;
+            text-align: center;
+            color: #efa359;
+            margin-bottom: 20px;
+        }
+
+        &__number-devider {
+            max-width: 390px;
+            margin: 0 auto;
+            margin-bottom: 20px;
+        }
+
+        &__number-text {
+            font-weight: 400;
+            font-size: 20px;
+            color: #000;
+            text-align: center;
+        }
+
+        &__cards {
+            display: none;
+        }
+
+        &__map {
+            height: 550px;
+        }
+
+        &__map-btn {
+            font-weight: 400;
+            font-size: 16px;
+            text-align: center;
+            color: #000;
+            padding: 21px 50px;
+        }
+    }
+}

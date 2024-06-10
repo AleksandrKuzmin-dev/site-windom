@@ -1,0 +1,266 @@
+.houses-to-buy {
+    margin-bottom: 140px;
+
+    &__title-wrapper {
+        margin-bottom: 67px;
+    }
+
+    &__cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 63px;
+    }
+
+    &__card-img {
+        margin-bottom: 47px;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    &__card-wrapper {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        justify-content: space-between;
+    }
+
+    &__card-title {
+        font-weight: 700;
+        font-size: 23px;
+        text-transform: uppercase;
+        color: #000;
+        margin-bottom: 10px;
+    }
+
+    &__card-price-text {
+        font-weight: 400;
+        font-size: 24px;
+        color: #000;
+    }
+
+    &__card-price-value {
+        font-weight: 700;
+        font-size: 24px;
+        color: #000;
+    }
+
+    &__sales-close {
+        width: 265px;
+        padding: 20px 34px;
+        font-weight: 700;
+        font-size: 18px;
+        text-align: center;
+        color: #fff;
+
+        background: #7d5e40;
+    }
+
+    &__details {
+        width: 265px;
+        padding: 20px 34px;
+        font-weight: 700;
+        font-size: 18px;
+        text-align: center;
+        color: #fff;
+        cursor: pointer;
+
+        background: #efa35a;
+        border: 1px solid #efa35a;
+
+        transition: 0.3s;
+
+        &:hover {
+            background: #ec8520;
+        }
+    }
+}
+
+
+@media (max-width: 1680px) {
+    .houses-to-buy {
+        margin-bottom: 130px;
+    
+        &__title-wrapper {
+          margin-bottom: 40px;
+        }
+    
+        &__cards {
+            gap: 20px;
+        }
+    
+        &__card-img {
+            margin-bottom: 30px;
+        }
+    
+        &__card-title {
+            font-size: 20px;
+            color: #000;
+            text-transform: none;
+        }
+    
+        &__card-price-text {
+            font-weight: 400;
+            font-size: 20px;
+            color: #000;
+        }
+    
+        &__card-price-value {
+            font-weight: 700;
+            font-size: 20px;
+            color: #000;
+        }
+    
+        &__sales-close {
+           width: 265px;
+           font-size: 18px;
+           padding: 20px 23px;
+        }
+    
+        &__details {
+            width: 265px;
+            font-size: 18px;
+            padding: 20px 23px;
+        }
+    }
+}
+
+@media (max-width: 1280px) {
+    .houses-to-buy {
+        margin-bottom: 80px;
+    
+        &__title-wrapper {
+          margin-bottom: 40px;
+        }
+
+        &__title {
+            &_1 {
+                display: block;
+            }
+
+            &_2 {
+                display: inline-block;
+                padding-left: 220px;
+            }
+        }
+    
+        &__cards {
+            grid-template-columns: 1fr;
+            gap: 40px;
+        }
+    
+        &__card-img {
+            margin-bottom: 20px;
+           
+        }
+
+    
+        &__card-title {
+            font-weight: 700;
+            font-size: 20px;
+            color: #000;
+            margin-bottom: 14px;
+           
+        }
+    
+        &__card-price-text {
+            font-weight: 400;
+            font-size: 20px;
+            color: #000;
+        }
+    
+        &__card-price-value {
+            font-weight: 700;
+            font-size: 20px;
+            color: #000;
+        }
+    
+        &__sales-close {
+            font-size: 18px;
+            width: 265px;
+        }
+    
+        &__details {
+            font-size: 18px;
+            width: 265px;
+        }
+    }
+}
+
+@media (max-width: 834px) {
+    .houses-to-buy {
+    
+        &__title-wrapper {
+            margin-bottom: 40px;
+        }
+
+        &__title {
+            font-weight: 500;
+            font-size: 28px;
+            text-transform: uppercase;
+            
+            &_1 {
+                width: max-content;
+            }
+
+            &_2 {
+                padding-left: 60px;
+            }
+
+            &_3 {
+                display: block;
+                padding-left: 120px;
+            }
+        }
+    
+        &__cards {
+            gap: 40px;
+        }
+    
+        &__card-img {
+            margin-bottom: 20px;
+           
+        }
+    
+        &__card-wrapper {
+           flex-direction: column;
+           align-items: flex-start;
+           gap: 20px;
+        }
+    
+        &__card-title {
+            font-weight: 700;
+            font-size: 18px;
+            margin-bottom: 5px;
+        }
+    
+        &__card-price-text {
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 130%;
+        }
+    
+        &__card-price-value {
+            font-weight: 700;
+            font-size: 18px;
+            color: #000;
+        }
+    
+        &__sales-close {
+            padding: 12px 40px;
+            width: 235px;
+            font-weight: 700;
+            font-size: 14px;
+            text-align: center;
+            color: #fff;
+        }
+    
+        &__details {
+            padding: 12px 40px;
+            width: 235px;
+            font-weight: 700;
+            font-size: 14px;
+            text-align: center;
+            color: #fff;
+        }
+    }
+}

@@ -1,0 +1,66 @@
+.plan-village {
+    margin-bottom: 140px;
+    &__wrapper {
+        position: relative;
+    }
+
+    &__top-line {
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 1px;
+        width: 50%;
+        background: #EFA35A;
+    }
+
+    &__right-line {
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 60px;
+        width: 1px;
+        background: #EFA35A;
+    }
+
+    &__title {
+        margin-bottom: 35px;
+    }
+
+}
+
+
+@media (max-width: 1280px) {
+    .plan-village {
+        margin-bottom: 80px;
+        &__title {
+            margin-bottom: 55px;
+        }
+
+        &__right-line {
+            height: 29px;
+        }
+
+        &__top-line {
+            width: 60%;
+        }
+    }
+    
+}
+
+
+@media (max-width: 834px) {
+    .plan-village {
+        &__title {
+            margin-bottom: 40px;
+        }
+    
+        &__right-line {
+            display: none;
+        }
+    
+        &__top-line {
+            display: none;
+        }
+    }
+    
+}

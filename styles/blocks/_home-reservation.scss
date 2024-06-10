@@ -1,0 +1,212 @@
+.home-reservation {
+    background: url('../images/village-reservation-bg.jpg');
+    background-position: center top;
+    background-repeat: no-repeat;
+    margin-bottom: 140px;
+    &__wrapper {
+        padding: 115px 0 80px 0;
+    }
+
+    &__title-wrapper {
+        max-width: 1200px;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 46px;
+        text-transform: uppercase;
+        text-align: center;
+        color: #fff;
+        &_orange {
+            color: #efa35a;
+        }
+    }
+
+    &__devider {
+        width: 60%;
+        height: 1px;
+        background: #fff;
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+
+    &__vacant-plots {
+        font-weight: 400;
+        font-size: 24px;
+        text-align: center;
+        color: #fff;
+        margin-bottom: 50px;
+    }
+
+    &__vacant-plots-value {
+        font-weight: 400;
+        font-size: 24px;
+        text-align: center;
+        color: #efa35a;
+        
+    }
+
+    &__buttons {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        justify-content: center;
+    }
+
+    &__btn {
+        padding: 29px 30px;
+        width: 405px;
+        font-weight: 700;
+        font-size: 23px;
+        text-align: center;
+        color: #fff;
+        border: 1px solid #efa359;
+        background: #efa359;
+        flex-shrink: 0;
+        transition: 0.3s;
+        cursor: pointer;
+
+        &:hover {
+            background: #ec8520;
+            color: white;
+        }
+    }
+
+    &__btn-request {
+        background: #bcbcbc;
+        color: #000;
+    }
+}
+
+
+
+@media (max-width: 1680px) {
+    .home-reservation {
+        margin-bottom: 130px;
+        &__wrapper {
+            padding: 80px 0 50px 0;
+        }
+    
+        &__title-wrapper {
+            margin-bottom: 15px;
+        }
+    
+        &__title {
+            font-weight: 700;
+            font-size: 40px;
+        }
+    
+        &__devider {
+            margin-bottom: 20px;
+        }
+    
+        &__vacant-plots {
+            font-weight: 400;
+            font-size: 30px;
+        }
+    
+        &__vacant-plots-value {
+            font-weight: 700;
+            font-size: 30px;
+        }
+    
+        &__buttons {
+            gap: 58px;
+        }
+    
+        &__btn {
+            padding: 27px;
+            font-weight: 700;
+            font-size: 23px;
+            width: 375px;
+        }
+
+    }
+}
+
+@media (max-width: 1280px) {
+    .home-reservation {
+        margin-bottom: 130px;
+        &__wrapper {
+            padding: 80px 0 60px 0;
+            
+        }
+    
+        &__title-wrapper {
+            margin-bottom: 20px;
+        }
+    
+        &__title {
+            font-weight: 500;
+            font-size: 30px;
+        }
+    
+        &__devider {
+            width: 80%;
+        }
+    
+        &__vacant-plots {
+            font-weight: 400;
+            font-size: 24px;
+        }
+    
+        &__vacant-plots-value {
+            font-weight: 400;
+            font-size: 24px;
+        }
+    
+        &__buttons {
+            gap: 15px;
+        }
+    
+        &__btn {
+            font-weight: 700;
+            font-size: 18px;
+            padding: 20px 30px;
+            width: 300px;
+        }
+    }
+}
+
+@media (max-width: 834px) {
+    .home-reservation {
+        margin-bottom: 80px;
+        &__wrapper {
+            padding: 60px 0 80px 0;
+        }
+    
+        &__title-wrapper {
+            margin-bottom: 20px;
+        }
+    
+        &__title {
+            font-weight: 700;
+            font-size: 23px;
+        }
+    
+        &__vacant-plots {
+            font-weight: 400;
+            font-size: 15px;
+            margin-bottom: 40px;
+        }
+    
+        &__vacant-plots-value {
+            font-weight: 700;
+            font-size: 14px;
+        }
+    
+        &__buttons {
+            flex-direction: column;
+            gap: 10px;
+        }
+    
+        &__btn {
+            width: 310px;
+            padding: 17px 34px;
+            font-weight: 700;
+            font-size: 14px;
+        }
+    }
+}

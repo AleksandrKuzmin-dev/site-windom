@@ -1,0 +1,269 @@
+.project-info {
+    margin-bottom: 140px;
+    &__title {
+        margin-bottom: 60px;
+    }
+
+    &__wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 90px;
+    }
+
+    &__left-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        position: relative;
+    }
+
+    &__img {
+
+        &_1 {
+            padding-top: 97px;
+        }
+
+        &_2 {
+            padding-top: 36px;
+        }
+    }
+
+    &__img-bg-line {
+        position: absolute;
+        width: 80%;
+        height: 95%;
+        border: 1px solid #EFA35A;
+        z-index: -1;
+        left: 10%;
+    }
+
+    &__right-wrapper {
+    }
+
+    &__text {
+        font-weight: 400;
+        font-size: 32px;
+        color: #000;
+        margin-bottom: 80px;
+        
+
+        &_orange {
+            color: #efa35a;
+        }
+    }
+
+    &__text-mobile {
+        display: none;
+    }
+
+    &__items {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    &__item {
+        display: flex;
+        gap: 60px;
+        align-items: center;
+
+        font-weight: 400;
+        font-size: 27px;
+        line-height: 111%;
+        letter-spacing: 0.01em;
+        color: #000;
+    }
+
+    &__item-icon {
+        height: 60px;
+        width: 60px;
+    }
+}
+
+
+
+
+@media (max-width: 1680px) {
+    .project-info {
+        margin-bottom: 130px;
+        &__title {
+           margin-bottom: 60px;
+        }
+    
+        &__wrapper {
+          gap: 40px; 
+        }
+    
+        &__left-wrapper {
+           gap: 16px;
+        }
+    
+        &__img {
+            object-fit: cover;
+            &_1 {
+               padding-top: 74px;
+            }
+    
+            &_2 {
+                padding-top: 28px;
+            }
+        }
+    
+        &__img-bg-line {
+        
+        }
+    
+        &__right-wrapper {
+        }
+    
+        &__text {
+            font-weight: 400;
+            font-size: 27px;
+            line-height: 111%;
+            letter-spacing: 0.01em;
+        }
+    
+        &__items {
+            
+        }
+    
+        &__item {
+           gap: 11px;
+           font-weight: 400;
+            font-size: 24px;
+        }
+    
+        &__item-icon {
+           height: 45px;
+           width: 45px;
+        }
+    }
+    
+}
+
+@media (max-width: 1280px) {
+    .project-info {
+        margin-bottom: 80px;
+        &__title {
+           margin-bottom: 40px;
+        }
+    
+        &__wrapper {
+            grid-template-columns: 1fr;
+            margin-top: 40px;
+        }
+    
+        &__left-wrapper {
+           
+        }
+    
+        &__img {
+            width: 100%;
+            &_1 {
+               padding-top: 92px;
+            }
+    
+            &_2 {
+               padding-top: 35px;
+            }
+        }
+    
+        &__img-bg-line {
+        
+        }
+    
+        &__right-wrapper {
+        }
+    
+        &__text {
+            display: none;
+        }
+
+        &__text-mobile {
+            display: inline-block;
+            font-weight: 400;
+            font-size: 23px;
+            color: #000;
+
+            &_orange {
+                color: #efa35a;
+            }
+        }
+    
+        &__items {
+            padding-left: 77px;
+        }
+    
+        &__item {
+            font-weight: 400;
+            font-size: 24px;
+            gap: 11px;
+        }
+    
+        &__item-icon {
+           
+        }
+    }
+}
+
+
+@media (max-width: 834px) {
+    .project-info {
+        
+        &__title {
+           
+        }
+    
+        &__wrapper {
+          
+           
+        }
+    
+        &__left-wrapper {
+           
+        }
+    
+        &__img {
+    
+            &_1 {
+               padding-top: 58px;
+            }
+    
+            &_2 {
+               padding-top: 18px;
+            }
+        }
+    
+        &__img-bg-line {
+        
+        }
+    
+        &__right-wrapper {
+        }
+    
+        &__text-mobile {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 156%;
+            color: #000;
+            &_orange {
+                color: #000;
+            }
+        }
+    
+        &__items {
+            padding-left: 0;
+            gap: 20px;
+        }
+    
+        &__item {
+            font-weight: 400;
+            font-size: 16px;
+            gap: 38px;
+        }
+    
+        &__item-icon {
+           
+        }
+    }
+}
