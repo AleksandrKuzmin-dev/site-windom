@@ -5,11 +5,9 @@ function setToggleContent(tabsSelector, activeTabSelector, contentSelector, acti
     let lastContent = contentElements[0];
     let lastTab = tabsElements[0];
 
-    console.log(tabsElements);
     tabsElements.forEach((item, index) => {
         contentElements[index].classList.add('fadeOutFromNone');
         item.addEventListener('click', () => {
-            console.log(item);
             lastContent.classList.remove(activeContentSelector);
             lastTab.classList.remove(activeTabSelector);
 

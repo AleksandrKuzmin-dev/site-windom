@@ -6123,6 +6123,9 @@ body {
   position: absolute;
   bottom: 130px;
 }
+.single-project__content_iq-club {
+  bottom: 60px;
+}
 .single-project__description {
   font-weight: 400;
   font-size: 32px;
@@ -6140,10 +6143,16 @@ body {
   color: #fff;
   text-shadow: none;
 }
+.single-project__title_iq-club {
+  font-size: 150px;
+}
 
 @media (max-width: 1680px) {
   .single-project__content {
     bottom: 100px;
+  }
+  .single-project__content_iq-club {
+    bottom: 60px;
   }
   .single-project__description {
     font-weight: 400;
@@ -6153,6 +6162,9 @@ body {
   .single-project__title {
     font-weight: 800;
     font-size: 90px;
+  }
+  .single-project__title_iq-club {
+    font-size: 120px;
   }
 }
 @media (max-width: 1280px) {
@@ -6170,15 +6182,24 @@ body {
     font-weight: 800;
     font-size: 80px;
   }
+  .single-project__title_iq-club {
+    font-size: 120px;
+  }
 }
 @media (max-width: 834px) {
   .single-project__description {
     font-weight: 400;
     font-size: 16px;
   }
+  .single-project__description_iq-club {
+    margin-bottom: 0px;
+  }
   .single-project__title {
     font-weight: 700;
     font-size: 40px;
+  }
+  .single-project__title_iq-club {
+    font-size: 60px;
   }
 }
 .project-info {
@@ -6253,6 +6274,19 @@ body {
   width: 60px;
 }
 
+.project-info-iq-club .project-info__img_1 {
+  padding-top: 146px;
+}
+.project-info-iq-club .project-info__img_2 {
+  padding-top: 36px;
+}
+.project-info-iq-club .project-info__img-bg-line {
+  height: 86%;
+}
+.project-info-iq-club .project-info__text {
+  margin-bottom: 40px;
+}
+
 @media (max-width: 1680px) {
   .project-info {
     margin-bottom: 130px;
@@ -6290,6 +6324,15 @@ body {
   .project-info__item-icon {
     height: 45px;
     width: 45px;
+  }
+  .project-info-iq-club .project-info__img_1 {
+    padding-top: 114px;
+  }
+  .project-info-iq-club .project-info__img_2 {
+    padding-top: 28px;
+  }
+  .project-info-iq-club .project-info__img-bg-line {
+    height: 95%;
   }
 }
 @media (max-width: 1280px) {
@@ -6332,6 +6375,15 @@ body {
     font-size: 24px;
     gap: 11px;
   }
+  .project-info-iq-club .project-info__img_1 {
+    padding-top: 92px;
+  }
+  .project-info-iq-club .project-info__img_2 {
+    padding-top: 35px;
+  }
+  .project-info-iq-club .project-info__img-bg-line {
+    height: 97%;
+  }
 }
 @media (max-width: 834px) {
   .project-info__img_1 {
@@ -6357,6 +6409,15 @@ body {
     font-weight: 400;
     font-size: 16px;
     gap: 38px;
+  }
+  .project-info-iq-club .project-info__img_1 {
+    padding-top: 58px;
+  }
+  .project-info-iq-club .project-info__img_2 {
+    padding-top: 18px;
+  }
+  .project-info-iq-club .project-info__img-bg-line {
+    height: 97%;
   }
 }
 .plan-village {
@@ -7505,7 +7566,14 @@ body {
   background: url("../images/village-reservation-bg.jpg");
   background-position: center top;
   background-repeat: no-repeat;
+  background-size: cover;
   margin-bottom: 140px;
+}
+.home-reservation_iq-club {
+  background: url("../images/iq-club-reservation-bg.jpg");
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .home-reservation__wrapper {
   padding: 115px 0 80px 0;

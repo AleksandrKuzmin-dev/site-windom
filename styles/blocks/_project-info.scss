@@ -80,7 +80,25 @@
     }
 }
 
+.project-info-iq-club .project-info  {
+    &__img {
+        &_1 {
+            padding-top: 146px;
+        }
 
+        &_2 {
+            padding-top: 36px;
+        }
+    }
+
+    &__img-bg-line {
+        height: 86%;
+    }
+
+    &__text {
+        margin-bottom: 40px;
+    }
+}
 
 
 @media (max-width: 1680px) {
@@ -137,6 +155,23 @@
            height: 45px;
            width: 45px;
         }
+    }
+
+    .project-info-iq-club .project-info  {
+        &__img {
+            &_1 {
+              padding-top: 114px;
+            }
+    
+            &_2 {
+                padding-top: 28px;  
+            }
+        }
+    
+        &__img-bg-line {
+            height: 95%;
+        }
+
     }
     
 }
@@ -204,6 +239,23 @@
            
         }
     }
+
+    .project-info-iq-club .project-info  {
+        &__img {
+            &_1 {
+              padding-top: 92px;
+            }
+    
+            &_2 {
+                padding-top: 35px;
+            }
+        }
+    
+        &__img-bg-line {
+           height: 97%;
+        }
+
+    }
 }
 
 
@@ -266,4 +318,21 @@
            
         }
     }
+    
+    .project-info-iq-club .project-info {
+        &__img {
+            &_1 {
+              padding-top: 58px;
+            }
+    
+            &_2 {
+                padding-top: 18px;
+            }
+        }
+    
+        &__img-bg-line {
+           height: 97%;
+        }
+    }
+    
 }

@@ -10,6 +10,10 @@
     &__content {
         position: absolute;
         bottom: 130px;
+
+        &_iq-club {
+            bottom: 60px;
+        }
     }
 
     &__description {
@@ -30,15 +34,22 @@
             color: #fff;
             text-shadow: none;
         }
+
+        &_iq-club {
+            font-size: 150px;
+        }
     }
 }
-
 
 @media (max-width: 1680px) {
 
     .single-project {
         &__content {
             bottom: 100px;
+
+            &_iq-club {
+                bottom: 60px;
+            }
         }
 
         &__description {
@@ -50,6 +61,10 @@
         &__title {
             font-weight: 800;
             font-size: 90px;
+
+            &_iq-club {
+                font-size: 120px;
+            }
         }
     }
 }
@@ -70,6 +85,10 @@
         &__title {
             font-weight: 800;
             font-size: 80px;
+
+            &_iq-club {
+                font-size: 120px;
+            }
         }
     }
 }
@@ -83,11 +102,18 @@
         &__description {
             font-weight: 400;
             font-size: 16px;
+            &_iq-club {
+                margin-bottom: 0px;
+            }
         }
 
         &__title {
             font-weight: 700;
             font-size: 40px;
+
+            &_iq-club {
+                font-size: 60px;
+            }
         }
     }
 }
