@@ -121,6 +121,19 @@
     }
 }
 
+.project-info-zim-gor .project-info {
+    &__img {
+        &_1 {
+            padding-top: 47px;
+        }
+
+        &_2 {
+            padding-top: 0;
+            margin-top: -34px;
+        }
+    }
+}
+
 
 @media (max-width: 1680px) {
     .project-info {
@@ -213,6 +226,19 @@
     
         &__text {
     
+        }
+    }
+
+    .project-info-zim-gor .project-info {
+        &__img {
+            &_1 {
+                padding-top: 114px;
+            }
+    
+            &_2 {
+                margin-top: 0;
+                padding-top: 28px;
+            }
         }
     }
     
@@ -317,6 +343,18 @@
     
         
     }
+
+    .project-info-zim-gor .project-info {
+        &__img {
+            &_1 {
+                padding-top: 92px;
+            }
+    
+            &_2 {
+                padding-top: 35px;
+            }
+        }
+    }
 }
 
 
@@ -417,6 +455,22 @@
     
         &__text {
     
+        }
+    }
+
+    .project-info-zim-gor .project-info {
+        &__img {
+            &_1 {
+                padding-top: 58px;
+            }
+    
+            &_2 {
+                padding-top: 18px;
+            }
+        }
+
+        &__left-wrapper {
+            gap: 6px;
         }
     }
     

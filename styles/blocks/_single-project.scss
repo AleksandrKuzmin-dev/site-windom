@@ -16,7 +16,14 @@
 
     &_usadi {
         background: url('../images/usadi-bg.jpg');
-        background-position: 80% center;
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    &_zim-gor {
+        background: url('../images/zimnyaya-gorka-bg.jpg');
+        background-position: center center;
         background-size: cover;
         background-repeat: no-repeat;
     }
@@ -32,6 +39,10 @@
         &_usadi {
             bottom: 60px;
         }
+
+        &_zim-gor {
+            bottom: 60px;
+        }
     }
 
     &__description {
@@ -44,6 +55,10 @@
             font-weight: 400;
             font-size: 30px;
             margin-bottom: 3px;
+        }
+
+        &_zim-gor {
+            font-size: 30px;
         }
     }
 
@@ -67,6 +82,10 @@
             font-weight: 800;
             font-size: 150px;
         }
+
+        &_zim-gor {
+            font-size: 150px;
+        }
     }
 }
 
@@ -83,16 +102,16 @@
             &_usadi {
                 bottom: 60px;
             }
+
+            &_zim-gor {
+                bottom: 60px;
+            }
         }
 
         &__description {
             font-weight: 400;
             font-size: 24px;
             margin-bottom: 10px;
-
-            &_usadi {
-                font-size: 24px;
-            }
         }
 
         &__title {
@@ -104,6 +123,10 @@
             }
 
             &_usadi {
+                font-size: 120px;
+            }
+
+            &_zim-gor {
                 font-size: 120px;
             }
         }
@@ -121,10 +144,6 @@
         &__description {
             font-weight: 400;
             font-size: 24px;
-
-            &_usadi {
-                font-size: 24px;
-            }
         }
 
         &__title {

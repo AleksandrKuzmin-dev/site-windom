@@ -6127,7 +6127,13 @@ body {
 }
 .single-project_usadi {
   background: url("../images/usadi-bg.jpg");
-  background-position: 80% center;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.single-project_zim-gor {
+  background: url("../images/zimnyaya-gorka-bg.jpg");
+  background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -6141,6 +6147,9 @@ body {
 .single-project__content_usadi {
   bottom: 60px;
 }
+.single-project__content_zim-gor {
+  bottom: 60px;
+}
 .single-project__description {
   font-weight: 400;
   font-size: 32px;
@@ -6151,6 +6160,9 @@ body {
   font-weight: 400;
   font-size: 30px;
   margin-bottom: 3px;
+}
+.single-project__description_zim-gor {
+  font-size: 30px;
 }
 .single-project__title {
   font-weight: 800;
@@ -6170,6 +6182,9 @@ body {
   font-weight: 800;
   font-size: 150px;
 }
+.single-project__title_zim-gor {
+  font-size: 150px;
+}
 
 @media (max-width: 1680px) {
   .single-project__content {
@@ -6181,13 +6196,13 @@ body {
   .single-project__content_usadi {
     bottom: 60px;
   }
+  .single-project__content_zim-gor {
+    bottom: 60px;
+  }
   .single-project__description {
     font-weight: 400;
     font-size: 24px;
     margin-bottom: 10px;
-  }
-  .single-project__description_usadi {
-    font-size: 24px;
   }
   .single-project__title {
     font-weight: 800;
@@ -6197,6 +6212,9 @@ body {
     font-size: 120px;
   }
   .single-project__title_usadi {
+    font-size: 120px;
+  }
+  .single-project__title_zim-gor {
     font-size: 120px;
   }
 }
@@ -6209,9 +6227,6 @@ body {
   }
   .single-project__description {
     font-weight: 400;
-    font-size: 24px;
-  }
-  .single-project__description_usadi {
     font-size: 24px;
   }
   .single-project__title {
@@ -6340,6 +6355,14 @@ body {
   padding-top: 0;
   margin-top: -34px;
 }
+.project-info-zim-gor .project-info__img_1 {
+  padding-top: 47px;
+}
+.project-info-zim-gor .project-info__img_2 {
+  padding-top: 0;
+  margin-top: -34px;
+}
+
 @media (max-width: 1680px) {
   .project-info {
     margin-bottom: 130px;
@@ -6391,6 +6414,13 @@ body {
     padding-top: 114px;
   }
   .project-info-usadi .project-info__img_2 {
+    margin-top: 0;
+    padding-top: 28px;
+  }
+  .project-info-zim-gor .project-info__img_1 {
+    padding-top: 114px;
+  }
+  .project-info-zim-gor .project-info__img_2 {
     margin-top: 0;
     padding-top: 28px;
   }
@@ -6450,6 +6480,12 @@ body {
   .project-info-usadi .project-info__img_2 {
     padding-top: 35px;
   }
+  .project-info-zim-gor .project-info__img_1 {
+    padding-top: 92px;
+  }
+  .project-info-zim-gor .project-info__img_2 {
+    padding-top: 35px;
+  }
 }
 @media (max-width: 834px) {
   .project-info__img_1 {
@@ -6492,6 +6528,15 @@ body {
     padding-top: 18px;
   }
   .project-info-usadi .project-info__left-wrapper {
+    gap: 6px;
+  }
+  .project-info-zim-gor .project-info__img_1 {
+    padding-top: 58px;
+  }
+  .project-info-zim-gor .project-info__img_2 {
+    padding-top: 18px;
+  }
+  .project-info-zim-gor .project-info__left-wrapper {
     gap: 6px;
   }
 }
