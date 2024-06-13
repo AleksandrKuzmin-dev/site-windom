@@ -27,6 +27,13 @@
         background-size: cover;
         background-repeat: no-repeat;
     }
+
+    &_konstantinovka {
+        background: url('../images/konstantinovka-bg.jpg');
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
    
     &__content {
         position: absolute;
@@ -190,6 +197,10 @@
 
             &_usadi {
                 font-size: 60px;
+            }
+
+            &_konstantinovka {
+                font-size: 36px;
             }
         }
     }

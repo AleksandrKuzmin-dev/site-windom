@@ -372,7 +372,7 @@ body {
     font-size: 30px;
   }
   .container {
-    padding: 0 40px;
+    padding: 0 20px;
   }
 }
 @media (max-width: 380px) {
@@ -6137,6 +6137,12 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
 }
+.single-project_konstantinovka {
+  background: url("../images/konstantinovka-bg.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 .single-project__content {
   position: absolute;
   bottom: 130px;
@@ -6262,6 +6268,9 @@ body {
   .single-project__title_usadi {
     font-size: 60px;
   }
+  .single-project__title_konstantinovka {
+    font-size: 36px;
+  }
 }
 .project-info {
   margin-bottom: 140px;
@@ -6363,6 +6372,14 @@ body {
   margin-top: -34px;
 }
 
+.project-info-konstantinovka .project-info__img_1 {
+  padding-top: 47px;
+}
+.project-info-konstantinovka .project-info__img_2 {
+  padding-top: 0;
+  margin-top: -34px;
+}
+
 @media (max-width: 1680px) {
   .project-info {
     margin-bottom: 130px;
@@ -6421,6 +6438,13 @@ body {
     padding-top: 114px;
   }
   .project-info-zim-gor .project-info__img_2 {
+    margin-top: 0;
+    padding-top: 28px;
+  }
+  .project-info-konstantinovka .project-info__img_1 {
+    padding-top: 114px;
+  }
+  .project-info-konstantinovka .project-info__img_2 {
     margin-top: 0;
     padding-top: 28px;
   }
@@ -6486,6 +6510,12 @@ body {
   .project-info-zim-gor .project-info__img_2 {
     padding-top: 35px;
   }
+  .project-info-konstantinovka .project-info__img_1 {
+    padding-top: 92px;
+  }
+  .project-info-konstantinovka .project-info__img_2 {
+    padding-top: 35px;
+  }
 }
 @media (max-width: 834px) {
   .project-info__img_1 {
@@ -6537,6 +6567,15 @@ body {
     padding-top: 18px;
   }
   .project-info-zim-gor .project-info__left-wrapper {
+    gap: 6px;
+  }
+  .project-info-konstantinovka .project-info__img_1 {
+    padding-top: 58px;
+  }
+  .project-info-konstantinovka .project-info__img_2 {
+    padding-top: 18px;
+  }
+  .project-info-konstantinovka .project-info__left-wrapper {
     gap: 6px;
   }
 }
@@ -8007,5 +8046,70 @@ body {
     font-weight: 400;
     font-size: 20px;
     color: #efa35a;
+  }
+}
+.project-video {
+  margin-bottom: 140px;
+}
+.project-video__wrapper {
+  position: relative;
+}
+.project-video__bg-line-top {
+  position: absolute;
+  top: 7px;
+  right: 0px;
+  width: 60%;
+  height: 1px;
+  background-color: #EFA35A;
+}
+.project-video__bg-line-right {
+  position: absolute;
+  top: 7px;
+  right: 0px;
+  width: 1px;
+  height: 50px;
+  background-color: #EFA35A;
+}
+.project-video__title {
+  margin-bottom: 42px;
+}
+.project-video__video-block {
+  position: relative;
+}
+.project-video__video-preview {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.project-video__video-icon {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+@media (max-width: 1280px) {
+  .project-video {
+    margin-bottom: 80px;
+  }
+  .project-video__bg-line-right {
+    height: 30px;
+  }
+  .project-video__video-icon {
+    height: 70px;
+    width: 70px;
+  }
+}
+@media (max-width: 834px) {
+  .project-video__bg-line-top {
+    display: none;
+  }
+  .project-video__bg-line-right {
+    display: none;
+  }
+  .project-video__video-icon {
+    height: 48px;
+    width: 48px;
   }
 }/*# sourceMappingURL=style.css.map */
