@@ -100,6 +100,27 @@
     }
 }
 
+.project-info-usadi .project-info {
+    &__img {
+        &_1 {
+            padding-top: 47px;
+        }
+
+        &_2 {
+            padding-top: 0;
+            margin-top: -34px;
+        }
+    }
+
+    &__img-bg-line {
+
+    }
+
+    &__text {
+
+    }
+}
+
 
 @media (max-width: 1680px) {
     .project-info {
@@ -172,6 +193,27 @@
             height: 95%;
         }
 
+    }
+
+    .project-info-usadi .project-info {
+        &__img {
+            &_1 {
+                padding-top: 114px;
+            }
+    
+            &_2 {
+               margin-top: 0;
+               padding-top: 28px;
+            }
+        }
+    
+        &__img-bg-line {
+    
+        }
+    
+        &__text {
+    
+        }
     }
     
 }
@@ -256,6 +298,25 @@
         }
 
     }
+
+    .project-info-usadi .project-info {
+        &__img {
+            &_1 {
+               padding-top: 92px;
+            }
+    
+            &_2 {
+                padding-top: 35px;
+               
+            }
+        }
+    
+        &__img-bg-line {
+    
+        }
+    
+        
+    }
 }
 
 
@@ -332,6 +393,30 @@
     
         &__img-bg-line {
            height: 97%;
+        }
+    }
+
+    .project-info-usadi .project-info {
+        &__img {
+            &_1 {
+               padding-top: 58px;
+            }
+    
+            &_2 {
+                padding-top: 18px;
+            }
+        }
+
+        &__left-wrapper {
+            gap: 6px;
+        }
+    
+        &__img-bg-line {
+    
+        }
+    
+        &__text {
+    
         }
     }
     
