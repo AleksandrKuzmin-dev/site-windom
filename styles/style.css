@@ -1348,6 +1348,10 @@ body {
 .main-projects__button:hover .main-projects__button-map-icon path {
   stroke: white;
 }
+.main-projects__button-map-icon path {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
 .main-projects__title-h3 {
   font-weight: 500;
   font-size: 30px;
@@ -8615,5 +8619,688 @@ body {
     color: #efa35a;
     display: inline-block;
     padding-left: 15px;
+  }
+}
+.projects-houses-first {
+  margin-bottom: 40px;
+}
+.projects-houses-first__img {
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 600px;
+  width: 100%;
+}
+
+@media (max-width: 1680px) {
+  .projects-houses-first__img {
+    height: 550px;
+  }
+}
+@media (max-width: 1280px) {
+  .projects-houses-first__img {
+    height: 464px;
+  }
+}
+@media (max-width: 834px) {
+  .projects-houses-first__img {
+    height: 450px;
+  }
+}
+.projects-houses {
+  margin-bottom: 100px;
+}
+.projects-houses__title {
+  font-weight: 400;
+  font-size: 46px;
+  text-transform: uppercase;
+  color: #000;
+  margin-bottom: 60px;
+  font-family: "Geometry", sans-serif;
+}
+.projects-houses__title_orange-italic {
+  color: #efa35a;
+  font-style: italic;
+}
+.projects-houses__title-mobile {
+  display: none;
+}
+.projects-houses__filters {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 50px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 60px;
+}
+.projects-houses__filter-btn {
+  padding: 15px 30px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 130%;
+  color: #000;
+  background: #fdfdfd;
+  border: 1px solid #e4e4e4;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.projects-houses__filter-btn:hover {
+  background: #ec8520;
+  color: white;
+  border-color: unset;
+}
+.projects-houses__filter-btn_border {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 8px;
+  background: rgba(239, 163, 90, 0);
+  border: 1px solid #000;
+}
+.projects-houses__filter-btn_fill-orange {
+  font-weight: 700;
+  font-size: 18px;
+  color: #fff;
+  border: unset;
+  background: #efa35a;
+}
+.projects-houses__filter-btn:hover .projects-houses__filter-icon-map path {
+  stroke: white;
+}
+.projects-houses__filter-icon-map path {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.projects-houses__filters-next {
+  display: none;
+}
+.projects-houses__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 11px;
+  margin-bottom: 30px;
+}
+.projects-houses__menu-item {
+  font-weight: 400;
+  font-size: 30px;
+  color: #353535;
+}
+.projects-houses__menu-circle {
+  width: 10px;
+  height: 10px;
+}
+.projects-houses__devider {
+  width: 100%;
+  height: 1px;
+  background: #efa35a;
+  margin-bottom: 60px;
+}
+.projects-houses__cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+.projects-houses__card-content-wrapper {
+  padding: 40px 85px 50px 30px;
+  border: 1px solid #efa359;
+}
+.projects-houses__title-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+.projects-houses__card-title {
+  font-weight: 500;
+  font-size: 30px;
+  color: #000;
+}
+.projects-houses__card-price {
+  font-weight: 700;
+  font-size: 23px;
+  text-transform: uppercase;
+  color: #efa35a;
+}
+.projects-houses__details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 16px;
+  margin-bottom: 46px;
+}
+.projects-houses__details-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+}
+.projects-houses__details-item-icon {
+  height: 40px;
+  width: 40px;
+}
+.projects-houses__details-text {
+  font-weight: 400;
+  font-size: 20px;
+  color: #000;
+}
+.projects-houses__card-button {
+  display: block;
+  padding: 15px 68px;
+  font-weight: 700;
+  font-size: 18px;
+  text-align: center;
+  color: #000;
+  border: 1px solid #efa35a;
+}
+.projects-houses__popular-cards-wrapper {
+  margin: 90px 0;
+  position: relative;
+}
+.projects-houses__popular-cards-line {
+  position: absolute;
+  top: 25px;
+  right: 0px;
+  height: 1px;
+  width: 50%;
+  background: #efa35a;
+}
+.projects-houses__popular-cards-title {
+  font-family: "Geometry", sans-serif;
+  font-weight: 500;
+  font-size: 46px;
+  text-transform: uppercase;
+  color: #000;
+  margin-bottom: 40px;
+}
+.projects-houses__popular-cards-title_orange {
+  font-style: italic;
+  font-weight: 400;
+  color: #efa35a;
+}
+.projects-houses__popular-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 17px;
+}
+.projects-houses__popular-card-img {
+  width: 100%;
+}
+.projects-houses__popular-card-content-wrapper {
+  padding: 40px;
+  border: 1px solid #efa35a;
+}
+.projects-houses__popular-card-title-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 20px;
+}
+.projects-houses__popular-card-title {
+  font-weight: 500;
+  font-size: 30px;
+  color: #000;
+}
+.projects-houses__populcar-card-price {
+  font-weight: 500;
+  font-size: 28px;
+  text-transform: uppercase;
+  color: #efa35a;
+}
+.projects-houses__populcar-card-button {
+  display: inline-block;
+  padding: 15px 68px;
+  border: 1px solid #efa35a;
+  font-weight: 700;
+  font-size: 18px;
+  text-align: center;
+  color: #000;
+}
+.projects-houses__pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 30px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 40px;
+}
+.projects-houses__pagination-nav-btn {
+  padding: 20px 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+  border: 1px solid #e4e4e4;
+  background: #fdfdfd;
+  cursor: pointer;
+  font-weight: 400;
+  font-size: 24px;
+  color: #6e6e6f;
+}
+.projects-houses__pagination-nav-btn_active {
+  color: #000;
+}
+.projects-houses__pagination-page-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 30px;
+}
+.projects-houses__pagination-page-btn {
+  font-weight: 400;
+  font-size: 24px;
+  color: #000;
+  cursor: pointer;
+  background: #fdfdfd;
+  border: 1px solid #e4e4e4;
+  padding: 20px 40px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.projects-houses__pagination-page-btn_active {
+  border: 1px solid #efa359;
+}
+
+@media (max-width: 1680px) {
+  .projects-houses__title {
+    font-weight: 500;
+    font-size: 46px;
+    margin-bottom: 30px;
+  }
+  .projects-houses__title_orange-italic {
+    font-style: italic;
+    font-weight: 400;
+    font-size: 46px;
+  }
+  .projects-houses__filters {
+    gap: 30px;
+    margin-bottom: 60px;
+    padding: 0 128px;
+  }
+  .projects-houses__menu {
+    gap: 11px;
+    margin-bottom: 20px;
+  }
+  .projects-houses__menu-item {
+    font-weight: 400;
+    font-size: 30px;
+  }
+  .projects-houses__devider {
+    margin-bottom: 60px;
+  }
+  .projects-houses__cards {
+    gap: 20px;
+  }
+  .projects-houses__card-content-wrapper {
+    padding: 20px 8px 30px 30px;
+  }
+  .projects-houses__popular-cards-line {
+    width: 40%;
+  }
+  .projects-houses__popular-cards-title {
+    font-weight: 500;
+    font-size: 46px;
+  }
+  .projects-houses__popular-cards-title_orange {
+    font-style: italic;
+    font-weight: 400;
+    font-size: 46px;
+  }
+  .projects-houses__popular-cards {
+    gap: 20px;
+  }
+  .projects-houses__popular-card-content-wrapper {
+    padding: 30px;
+  }
+}
+@media (max-width: 1280px) {
+  .projects-houses__title {
+    font-weight: 500;
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+  .projects-houses__title_orange-italic {
+    font-style: italic;
+    font-weight: 400;
+    font-size: 30px;
+  }
+  .projects-houses__filters {
+    gap: 15px;
+    margin-bottom: 30px;
+    padding: 0 27px;
+  }
+  .projects-houses__filter-btn {
+    font-weight: 400;
+    font-size: 14px;
+    padding: 15px 20px;
+  }
+  .projects-houses__filter-btn_border {
+    padding: 13px 20px;
+    font-weight: 400;
+    font-size: 14px;
+  }
+  .projects-houses__filter-btn_fill-orange {
+    font-weight: 400;
+    font-size: 14px;
+    color: #fff;
+  }
+  .projects-houses__filter-icon-map {
+    height: 20px;
+    width: 20px;
+  }
+  .projects-houses__menu {
+    gap: 8px;
+    margin-bottom: 20px;
+  }
+  .projects-houses__menu-item {
+    font-weight: 400;
+    font-size: 24px;
+  }
+  .projects-houses__devider {
+    margin-bottom: 30px;
+  }
+  .projects-houses__cards {
+    row-gap: 30px;
+    -webkit-column-gap: 10px;
+       -moz-column-gap: 10px;
+            column-gap: 10px;
+    grid-template-columns: 1fr 1fr;
+  }
+  .projects-houses__card-content-wrapper {
+    padding: 20px 27px 20px 20px;
+  }
+  .projects-houses__details-item {
+    gap: 20px;
+  }
+  .projects-houses__details-item-icon {
+    height: 30px;
+    width: 30px;
+  }
+  .projects-houses__details-text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 130%;
+  }
+  .projects-houses__card-button {
+    font-weight: 700;
+    font-size: 18px;
+  }
+  .projects-houses__popular-cards-wrapper {
+    margin: 80px 0;
+  }
+  .projects-houses__popular-cards-title {
+    font-weight: 500;
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
+  .projects-houses__popular-cards-title_orange {
+    font-style: italic;
+    font-weight: 400;
+    font-size: 30px;
+  }
+  .projects-houses__popular-cards {
+    gap: 30px;
+    grid-template-columns: 1fr;
+  }
+  .projects-houses__popular-card-content-wrapper {
+    padding: 30px;
+  }
+  .projects-houses__popular-card-title {
+    font-weight: 500;
+    font-size: 30px;
+  }
+  .projects-houses__populcar-card-price {
+    font-weight: 500;
+    font-size: 28px;
+  }
+  .projects-houses__populcar-card-button {
+    font-weight: 700;
+    font-size: 18px;
+  }
+  .projects-houses__pagination {
+    gap: 5px;
+  }
+  .projects-houses__pagination-nav-btn {
+    font-weight: 400;
+    font-size: 18px;
+  }
+  .projects-houses__pagination-page-buttons {
+    gap: 5px;
+  }
+  .projects-houses__pagination-page-btn {
+    font-weight: 400;
+    font-size: 18px;
+  }
+}
+@media (max-width: 834px) {
+  .projects-houses__title {
+    display: none;
+  }
+  .projects-houses__title-mobile {
+    display: inline-block;
+    font-weight: 400;
+    font-size: 27px;
+    line-height: 111%;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+  }
+  .projects-houses__title-mobile_orange-italic {
+    font-weight: 400;
+    font-size: 27px;
+    line-height: 111%;
+    letter-spacing: 0.01em;
+    color: #efa35a;
+  }
+  .projects-houses__filters {
+    padding: 0;
+    overflow-x: scroll;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    margin-bottom: 0;
+  }
+  .projects-houses__filters::-webkit-scrollbar {
+    width: 0;
+  }
+  .projects-houses__filter-btn {
+    font-weight: 400;
+    font-size: 14px;
+    width: 131px;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+    padding: 10px 20px;
+    text-align: center;
+  }
+  .projects-houses__filters-next {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 40px;
+    width: 36px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    border: unset;
+    background-color: #D9D9D9;
+    min-width: -webkit-max-content;
+    min-width: -moz-max-content;
+    min-width: max-content;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+  }
+  .projects-houses__filters-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    gap: 8px;
+    margin-bottom: 20px;
+  }
+  .projects-houses__menu {
+    gap: 7px;
+    margin-bottom: 10px;
+  }
+  .projects-houses__menu-item {
+    font-weight: 400;
+    font-size: 16px;
+  }
+  .projects-houses__menu-circle {
+    width: 7px;
+    height: 7px;
+  }
+  .projects-houses__devider {
+    margin-bottom: 20px;
+  }
+  .projects-houses__cards {
+    gap: 20px;
+    grid-template-columns: 1fr;
+  }
+  .projects-houses__card-img {
+    width: 100%;
+  }
+  .projects-houses__card-content-wrapper {
+    padding: 8px 30px 25px 20px;
+  }
+  .projects-houses__title-wrapper {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 15px;
+  }
+  .projects-houses__card-title {
+    font-weight: 700;
+    font-size: 24px;
+  }
+  .projects-houses__card-price {
+    font-weight: 700;
+    font-size: 23px;
+  }
+  .projects-houses__details {
+    gap: 14px;
+  }
+  .projects-houses__details-item {
+    gap: 15px;
+  }
+  .projects-houses__details-item-icon {
+    width: 30px;
+    height: 30px;
+  }
+  .projects-houses__details-text {
+    font-weight: 400;
+    font-size: 16px;
+  }
+  .projects-houses__card-button {
+    font-weight: 700;
+    font-size: 14px;
+    padding: 12px 24px;
+    width: 100%;
+  }
+  .projects-houses__popular-cards-wrapper {
+    margin: 60px 0;
+  }
+  .projects-houses__popular-cards-line {
+    display: none;
+  }
+  .projects-houses__popular-cards-title {
+    font-weight: 500;
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+  .projects-houses__popular-cards-title_orange {
+    font-style: italic;
+    font-weight: 500;
+    font-size: 30px;
+    display: block;
+    padding-left: 140px;
+  }
+  .projects-houses__popular-cards {
+    gap: 20px;
+  }
+  .projects-houses__popular-card-content-wrapper {
+    padding: 20px 29px 20px 20px;
+  }
+  .projects-houses__popular-card-title-wrapper {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 15px;
+  }
+  .projects-houses__popular-card-title {
+    font-weight: 500;
+    font-size: 30px;
+  }
+  .projects-houses__populcar-card-price {
+    font-weight: 500;
+    font-size: 28px;
+  }
+  .projects-houses__populcar-card-button {
+    font-weight: 700;
+    font-size: 14px;
+    padding: 12px 24px;
+    width: 100%;
+  }
+  .projects-houses__pagination-nav-btn {
+    padding: 10px 15px;
+    font-weight: 400;
+    font-size: 14px;
+    gap: 10px;
+  }
+  .projects-houses__pagination-page-btn {
+    display: none;
+    font-weight: 400;
+    font-size: 14px;
+    padding: 10px 15px;
+  }
+  .projects-houses__pagination-page-btn_visible {
+    display: block;
   }
 }/*# sourceMappingURL=style.css.map */

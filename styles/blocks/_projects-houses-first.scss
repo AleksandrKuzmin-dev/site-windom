@@ -1,0 +1,34 @@
+.projects-houses-first {
+    margin-bottom: 40px;
+    &__img {
+        height: max-content;
+        object-fit: cover;
+        height: 600px;
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 1680px) {
+    .projects-houses-first {
+       &__img {
+        height: 550px;
+       }
+    }
+}
+
+@media (max-width: 1280px) {
+    .projects-houses-first {
+        &__img {
+            height: 464px;
+        }
+    }
+}
+
+@media (max-width: 834px) {
+    .projects-houses-first {
+        &__img {
+            height: 450px;
+        }
+    }
+}
