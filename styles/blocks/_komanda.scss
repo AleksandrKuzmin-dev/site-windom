@@ -1,14 +1,12 @@
 .komanda {
     margin: 100px 0 130px 0;
-    &__wrapper {
-    }
 
     &__title {
         margin-bottom: 35px;
     }
 
     &__slogan-wrapper {
-        background-color: #EFA359;
+        background-color: #efa359;
         margin-bottom: 60px;
         padding: 29px 0;
     }
@@ -19,9 +17,8 @@
         color: #fff;
         &_bold {
             font-size: 40px;
-        text-transform: uppercase;
+            text-transform: uppercase;
         }
-        
     }
 
     &__content-wrapper {
@@ -44,7 +41,6 @@
         margin-bottom: 100px;
     }
 
-
     &__managment-text-mobile {
         display: none;
     }
@@ -60,7 +56,6 @@
         display: flex;
         align-items: center;
         width: 100%;
-
     }
 
     &__managment-item-img {
@@ -89,11 +84,8 @@
         color: #fff;
 
         padding: 13px 20px;
-        background-color: #EFA359;
+        background-color: #efa359;
         width: 100%;
-    }
-
-    &__right-wrapper {
     }
 
     &__img {
@@ -102,11 +94,9 @@
         object-fit: cover;
     }
 
-    
     &__line {
-
         position: absolute;
-        background: #EFA359;
+        background: #efa359;
         &_top-1 {
             top: 0;
             left: 0;
@@ -144,9 +134,8 @@
     }
 
     &__line-reverse {
-
         position: absolute;
-        background: #EFA359;
+        background: #efa359;
         &_top-1 {
             top: 0;
             left: 0;
@@ -196,23 +185,21 @@
         color: #efa359;
         margin-top: 40px;
     }
-
 }
-
 
 @media (max-width: 1680px) {
     .komanda {
         margin: 80px 0 90px 0;
-		&__title {
+        &__title {
             margin-bottom: 30px;
-		}
+        }
 
-		&__slogan-wrapper {
+        &__slogan-wrapper {
             padding: 26px 0;
             margin-bottom: 60px;
-		}
+        }
 
-		&__slogan {
+        &__slogan {
             font-weight: 400;
             font-size: 27px;
 
@@ -220,13 +207,9 @@
                 font-weight: 700;
                 font-size: 30px;
             }
-		}
+        }
 
-		&__wrapper {
-
-		}
-
-		&__content-wrapper {
+        &__content-wrapper {
             padding-top: 70px;
             gap: 50px;
             grid-template-columns: 1fr 282px;
@@ -234,107 +217,74 @@
             &_reverse {
                 grid-template-columns: 282px 1fr;
             }
-		}
+        }
 
-		&__line {
-
-			&_top-1 {
+        &__line {
+            &_top-1 {
                 height: 40px;
-			}
+            }
 
-			&_top-2 {
-			}
-
-			&_top-3 {
+            &_top-3 {
                 height: 40px;
-			}
+            }
 
-			&_bottom-1 {
+            &_bottom-1 {
                 right: 330px;
-			}
+            }
 
-			&_bottom-2 {
+            &_bottom-2 {
                 height: 40px;
-			}
-		}
+            }
+        }
 
         &__line-reverse {
-
-			&_top-1 {
+            &_top-1 {
                 height: 40px;
-			}
+            }
 
-			&_top-2 {
-			}
+            &_bottom-1 {
+                height: 40px;
+            }
 
-			&_top-3 {
-               
-			}
+            &_bottom-2 {
+                left: 330px;
+            }
+        }
 
-			&_bottom-1 {
-               height: 40px;
-			}
-
-			&_bottom-2 {
-               left: 330px;
-			}
-		}
-
-		&__left-wrapper {
-		}
-
-		&__managment-text {
+        &__managment-text {
             font-weight: 400;
             font-size: 24px;
             margin-bottom: 70px;
-		}
+        }
 
-		&__managment {
-		}
-
-		&__managment-item {
-		}
-
-		&__managment-item-img {
-		}
-
-		&__managment-item-content {
-		}
-
-		&__managment-item-name {
+        &__managment-item-name {
             font-weight: 500;
             font-size: 30px;
             text-transform: uppercase;
             color: #000;
-		}
+        }
 
-		&__managment-item-post {
+        &__managment-item-post {
             font-weight: 400;
             font-size: 20px;
             color: #fff;
-		}
-
-		&__right-wrapper {
-		}
-
-		&__img {
-		}
+        }
     }
 }
 
 @media (max-width: 1280px) {
     .komanda {
         margin: 60px 0;
-		&__title {
+        &__title {
             margin-bottom: 24px;
-		}
+        }
 
-		&__slogan-wrapper {
+        &__slogan-wrapper {
             padding: 25px 0;
             margin-bottom: 60px;
-		}
+        }
 
-		&__slogan {
+        &__slogan {
             font-weight: 400;
             font-size: 20px;
 
@@ -343,12 +293,9 @@
                 font-size: 23px;
                 text-transform: uppercase;
             }
-		}
+        }
 
-		&__wrapper {
-		}
-
-		&__content-wrapper {
+        &__content-wrapper {
             grid-template-rows: auto 1fr;
             grid-template-columns: 1.2fr 0.8fr;
 
@@ -356,63 +303,39 @@
                 grid-template-rows: auto 1fr;
                 grid-template-columns: 0.8fr 1.2fr;
             }
+        }
 
-		}
-
-		&__line {
-
-			&_top-1 {
-			}
-
-			&_top-2 {
-			}
-
-			&_top-3 {
+        &__line {
+            &_top-3 {
                 height: 100%;
-			}
+            }
 
-			&_bottom-1 {
+            &_bottom-1 {
                 width: 50%;
                 right: unset;
                 left: 0;
-			}
-
-			&_bottom-2 {
-
-			}
-		}
+            }
+        }
 
         &__line-reverse {
+            &_top-3 {
+                height: 140px;
+            }
 
-			&_top-1 {
-                
-			}
+            &_bottom-1 {
+                height: 32px;
+            }
 
-			&_top-2 {
-			}
+            &_bottom-2 {
+                width: 50%;
+                left: unset;
+                right: 0;
+            }
+        }
 
-			&_top-3 {
-               height: 140px;
-			}
-
-			&_bottom-1 {
-               height: 32px;
-			}
-
-			&_bottom-2 {
-               width: 50%;
-               left: unset;
-               right: 0;
-			}
-		}
-
-		&__left-wrapper {
-          
-		}
-
-		&__managment-text {
+        &__managment-text {
             display: none;
-		}
+        }
 
         &__managment-text-mobile {
             grid-row: 1 / 2;
@@ -423,65 +346,46 @@
             display: block;
         }
 
-		&__managment {
+        &__managment {
             grid-template-columns: 1fr;
             margin-bottom: 50px;
-		}
+        }
 
-		&__managment-item {
-        
-		}
-
-		&__managment-item-img {
-            
-            
-		}
-
-		&__managment-item-content {
-		}
-
-		&__managment-item-name {
+        &__managment-item-name {
             font-weight: 500;
             font-size: 30px;
             margin-bottom: 15px;
-		}
+        }
 
-		&__managment-item-post {
+        &__managment-item-post {
             font-weight: 400;
             font-size: 20px;
-		}
-
-		&__right-wrapper {
-		}
-
-		&__img {
-		}
+        }
     }
 }
 
 @media (max-width: 834px) {
     .komanda {
         margin: 50px 0;
-		&__title {
+        &__title {
             margin-bottom: 40px;
             &_italic {
                 font-style: italic;
                 font-weight: 400;
             }
-		}
+        }
 
-		&__slogan-wrapper {
+        &__slogan-wrapper {
             background: unset;
             padding: 0;
-		}
+        }
 
         &__slogan-mobile-wrapper {
             padding: 20px 0 20px 15px;
-            border-left: 1px solid #EFA35A;
-
+            border-left: 1px solid #efa35a;
         }
 
-		&__slogan {
+        &__slogan {
             font-weight: 400;
             font-size: 20px;
             color: #000;
@@ -493,65 +397,49 @@
                 font-size: 23px;
                 color: #efa35a;
             }
-		}
+        }
 
-		&__wrapper {
-		}
-
-		&__content-wrapper {
+        &__content-wrapper {
             padding-top: 0;
             grid-template-rows: unset;
             grid-template-columns: 1fr;
             gap: 40px;
-		}
+        }
 
-		&__line {
+        &__line {
             display: none;
-		}
+        }
 
         &__line-reverse {
             display: none;
         }
 
-		&__left-wrapper {
-		}
-
-		&__managment-text-mobile {
+        &__managment-text-mobile {
             display: none;
-		}
+        }
 
-		&__managment {
+        &__managment {
             margin-bottom: 0;
-		}
+        }
 
-		&__managment-item {
+        &__managment-item {
             display: grid;
             grid-template-columns: 1fr 1fr;
-		}
+        }
 
-		&__managment-item-img {
-		}
-
-		&__managment-item-content {
-		}
-
-		&__managment-item-name {
+        &__managment-item-name {
             font-weight: 500;
             font-size: 16px;
-		}
+        }
 
-		&__managment-item-post {
+        &__managment-item-post {
             font-weight: 400;
             font-size: 16px;
-		}
+        }
 
-		&__right-wrapper {
+        &__right-wrapper {
             display: none;
-		}
-
-		&__img {
-            
-		}
+        }
 
         &__mobile-list {
             display: block;
@@ -563,7 +451,7 @@
             line-height: 130%;
             color: #000;
             padding-left: 15px;
-            border-left: 1px solid #EFA35A;
+            border-left: 1px solid #efa35a;
         }
 
         &__mobile-list-item {
@@ -577,7 +465,7 @@
             font-weight: 400;
             font-size: 18px;
             line-height: 130%;
-            color: #000; 
+            color: #000;
         }
 
         &__back-to-home {

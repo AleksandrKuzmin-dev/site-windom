@@ -75,47 +75,46 @@
     }
 }
 
-
 @media (max-width: 1680px) {
     .houses-to-buy {
         margin-bottom: 130px;
-    
+
         &__title-wrapper {
-          margin-bottom: 40px;
+            margin-bottom: 40px;
         }
-    
+
         &__cards {
             gap: 20px;
         }
-    
+
         &__card-img {
             margin-bottom: 30px;
         }
-    
+
         &__card-title {
             font-size: 20px;
             color: #000;
             text-transform: none;
         }
-    
+
         &__card-price-text {
             font-weight: 400;
             font-size: 20px;
             color: #000;
         }
-    
+
         &__card-price-value {
             font-weight: 700;
             font-size: 20px;
             color: #000;
         }
-    
+
         &__sales-close {
-           width: 265px;
-           font-size: 18px;
-           padding: 20px 23px;
+            width: 265px;
+            font-size: 18px;
+            padding: 20px 23px;
         }
-    
+
         &__details {
             width: 265px;
             font-size: 18px;
@@ -127,9 +126,9 @@
 @media (max-width: 1280px) {
     .houses-to-buy {
         margin-bottom: 80px;
-    
+
         &__title-wrapper {
-          margin-bottom: 40px;
+            margin-bottom: 40px;
         }
 
         &__title {
@@ -142,43 +141,40 @@
                 padding-left: 220px;
             }
         }
-    
+
         &__cards {
             grid-template-columns: 1fr;
             gap: 40px;
         }
-    
+
         &__card-img {
             margin-bottom: 20px;
-           
         }
 
-    
         &__card-title {
             font-weight: 700;
             font-size: 20px;
             color: #000;
             margin-bottom: 14px;
-           
         }
-    
+
         &__card-price-text {
             font-weight: 400;
             font-size: 20px;
             color: #000;
         }
-    
+
         &__card-price-value {
             font-weight: 700;
             font-size: 20px;
             color: #000;
         }
-    
+
         &__sales-close {
             font-size: 18px;
             width: 265px;
         }
-    
+
         &__details {
             font-size: 18px;
             width: 265px;
@@ -188,7 +184,6 @@
 
 @media (max-width: 834px) {
     .houses-to-buy {
-    
         &__title-wrapper {
             margin-bottom: 40px;
         }
@@ -197,7 +192,7 @@
             font-weight: 500;
             font-size: 28px;
             text-transform: uppercase;
-            
+
             &_1 {
                 width: max-content;
             }
@@ -211,40 +206,39 @@
                 padding-left: 120px;
             }
         }
-    
+
         &__cards {
             gap: 40px;
         }
-    
+
         &__card-img {
             margin-bottom: 20px;
-           
         }
-    
+
         &__card-wrapper {
-           flex-direction: column;
-           align-items: flex-start;
-           gap: 20px;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 20px;
         }
-    
+
         &__card-title {
             font-weight: 700;
             font-size: 18px;
             margin-bottom: 5px;
         }
-    
+
         &__card-price-text {
             font-weight: 400;
             font-size: 18px;
             line-height: 130%;
         }
-    
+
         &__card-price-value {
             font-weight: 700;
             font-size: 18px;
             color: #000;
         }
-    
+
         &__sales-close {
             padding: 12px 40px;
             width: 235px;
@@ -253,7 +247,7 @@
             text-align: center;
             color: #fff;
         }
-    
+
         &__details {
             padding: 12px 40px;
             width: 235px;

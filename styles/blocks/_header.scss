@@ -85,9 +85,8 @@
         cursor: pointer;
     }
 
-
     &__contacts-phone-icon path {
-        fill: #EFA35A;
+        fill: #efa35a;
     }
 
     &__burger {
@@ -99,12 +98,10 @@
     &__burget path {
         stroke: #263238;
     }
-
 }
 
 @media (max-width: 1680px) {
     .header {
-
         &__logo {
             width: 50px;
         }
@@ -124,32 +121,33 @@
 }
 
 @media (max-width: 1280px) {
-   .header {
-       &__menu,  &__contacts-phone,  &__button-call {
+    .header {
+        &__menu,
+        &__contacts-phone,
+        &__button-call {
             display: none;
-       }
+        }
 
-       &__burger {
-        display: block;
-       }
+        &__burger {
+            display: block;
+        }
 
-       &__contacts-phone-icon path {
+        &__contacts-phone-icon path {
             fill: #263238;
-       }
-   }
+        }
+    }
 }
 
 @media (max-width: 834px) {
- .header {
-    border: 1px solid #E3E3E3;
- }
+    .header {
+        border: 1px solid #e3e3e3;
+    }
 }
-
 
 @media (max-width: 380px) {
     .header {
-       &__logo {
+        &__logo {
             width: 40px;
-       }
+        }
     }
- }
+}

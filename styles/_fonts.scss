@@ -1,69 +1,64 @@
-
 @font-face {
-	font-family: 'Geometria';
-	src: url('./../fonts/Geometria-MediumItalic.eot');
-	src: local('./../fonts/Geometria MediumItalic'), local('Geometria-MediumItalic'),
-		url('./../fonts/Geometria-MediumItalic.eot?#iefix') format('embedded-opentype'),
-		url('./../fonts/Geometria-MediumItalic.woff') format('woff'),
-		url('./../fonts/Geometria-MediumItalic.ttf') format('truetype');
-	font-weight: 500;
-	font-style: italic;
+    font-family: 'Geometria';
+    src: url('./../fonts/Geometria-MediumItalic.eot');
+    src: local('./../fonts/Geometria MediumItalic'), local('Geometria-MediumItalic'),
+        url('./../fonts/Geometria-MediumItalic.eot?#iefix') format('embedded-opentype'),
+        url('./../fonts/Geometria-MediumItalic.woff') format('woff'),
+        url('./../fonts/Geometria-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
 }
 
 @font-face {
-	font-family: 'Geometria';
-	src: url('./../fonts/Geometria-Italic.eot');
-	src: local('./../fonts/Geometria Italic'), local('Geometria-Italic'),
-		url('./../fonts/Geometria-Italic.eot?#iefix') format('embedded-opentype'),
-		url('./../fonts/Geometria-Italic.woff') format('woff'),
-		url('./../fonts/Geometria-Italic.ttf') format('truetype');
-	font-weight: normal;
-	font-style: italic;
+    font-family: 'Geometria';
+    src: url('./../fonts/Geometria-Italic.eot');
+    src: local('./../fonts/Geometria Italic'), local('Geometria-Italic'),
+        url('./../fonts/Geometria-Italic.eot?#iefix') format('embedded-opentype'),
+        url('./../fonts/Geometria-Italic.woff') format('woff'),
+        url('./../fonts/Geometria-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
 }
 
 @font-face {
-	font-family: 'Geometria';
-	src: url('./../fonts/Geometria-Medium.eot');
-	src: local('./../fonts/Geometria Medium'), local('Geometria-Medium'),
-		url('./../fonts/Geometria-Medium.eot?#iefix') format('embedded-opentype'),
-		url('./../fonts/Geometria-Medium.woff') format('woff'),
-		url('./../fonts/Geometria-Medium.ttf') format('truetype');
-	font-weight: 500;
-	font-style: normal;
-}
-
-
-@font-face {
-	font-family: 'Geometria';
-	src: url('./../fonts/Geometria.eot');
-	src: local('./../fonts/Geometria'),
-		url('./../fonts/Geometria.eot?#iefix') format('embedded-opentype'),
-		url('./../fonts/Geometria.woff') format('woff'),
-		url('./../fonts/Geometria.ttf') format('truetype');
-	font-weight: normal;
-	font-style: normal;
+    font-family: 'Geometria';
+    src: url('./../fonts/Geometria-Medium.eot');
+    src: local('./../fonts/Geometria Medium'), local('Geometria-Medium'),
+        url('./../fonts/Geometria-Medium.eot?#iefix') format('embedded-opentype'),
+        url('./../fonts/Geometria-Medium.woff') format('woff'),
+        url('./../fonts/Geometria-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
 }
 
 @font-face {
-	font-family: 'Geometria';
-	src: url('./../fonts/Geometria-Bold.eot');
-	src: local('./../fonts/Geometria Bold'), local('Geometria-Bold'),
-		url('./../fonts/Geometria-Bold.eot?#iefix') format('embedded-opentype'),
-		url('./../fonts/Geometria-Bold.woff') format('woff'),
-		url('./../fonts/Geometria-Bold.ttf') format('truetype');
-	font-weight: bold;
-	font-style: normal;
+    font-family: 'Geometria';
+    src: url('./../fonts/Geometria.eot');
+    src: local('./../fonts/Geometria'), url('./../fonts/Geometria.eot?#iefix') format('embedded-opentype'),
+        url('./../fonts/Geometria.woff') format('woff'), url('./../fonts/Geometria.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
-	font-family: 'Geometria';
-	src: url('./../fonts/Geometria-ExtraBold.eot');
-	src: local('./../fonts/Geometria ExtraBold'), local('Geometria-ExtraBold'),
-		url('./../fonts/Geometria-ExtraBold.eot?#iefix') format('embedded-opentype'),
-		url('./../fonts/Geometria-ExtraBold.woff') format('woff'),
-		url('./../fonts/Geometria-ExtraBold.ttf') format('truetype');
-	font-weight: 800;
-	font-style: normal;
+    font-family: 'Geometria';
+    src: url('./../fonts/Geometria-Bold.eot');
+    src: local('./../fonts/Geometria Bold'), local('Geometria-Bold'),
+        url('./../fonts/Geometria-Bold.eot?#iefix') format('embedded-opentype'),
+        url('./../fonts/Geometria-Bold.woff') format('woff'), url('./../fonts/Geometria-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Geometria';
+    src: url('./../fonts/Geometria-ExtraBold.eot');
+    src: local('./../fonts/Geometria ExtraBold'), local('Geometria-ExtraBold'),
+        url('./../fonts/Geometria-ExtraBold.eot?#iefix') format('embedded-opentype'),
+        url('./../fonts/Geometria-ExtraBold.woff') format('woff'),
+        url('./../fonts/Geometria-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
 }
 
 @font-face {
@@ -71,8 +66,7 @@
     src: url('./../fonts/Roboto-Bold.eot');
     src: local('./../fonts/Roboto Bold'), local('Roboto-Bold'),
         url('./../fonts/Roboto-Bold.eot?#iefix') format('embedded-opentype'),
-        url('./../fonts/Roboto-Bold.woff') format('woff'),
-        url('./../fonts/Roboto-Bold.ttf') format('truetype');
+        url('./../fonts/Roboto-Bold.woff') format('woff'), url('./../fonts/Roboto-Bold.ttf') format('truetype');
     font-weight: bold;
     font-style: normal;
 }
@@ -82,8 +76,7 @@
     src: url('./../fonts/Roboto-Regular.eot');
     src: local('./../fonts/Roboto'), local('Roboto-Regular'),
         url('./../fonts/Roboto-Regular.eot?#iefix') format('embedded-opentype'),
-        url('./../fonts/Roboto-Regular.woff') format('woff'),
-        url('./../fonts/Roboto-Regular.ttf') format('truetype');
+        url('./../fonts/Roboto-Regular.woff') format('woff'), url('./../fonts/Roboto-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -93,8 +86,7 @@
     src: url('./../fonts/Roboto-Medium.eot');
     src: local('./../fonts/Roboto Medium'), local('Roboto-Medium'),
         url('./../fonts/Roboto-Medium.eot?#iefix') format('embedded-opentype'),
-        url('./../fonts/Roboto-Medium.woff') format('woff'),
-        url('./../fonts/Roboto-Medium.ttf') format('truetype');
+        url('./../fonts/Roboto-Medium.woff') format('woff'), url('./../fonts/Roboto-Medium.ttf') format('truetype');
     font-weight: 500;
     font-style: normal;
 }
@@ -126,8 +118,7 @@
     src: url('./../fonts/Roboto-Italic.eot');
     src: local('./../fonts/Roboto Italic'), local('Roboto-Italic'),
         url('./../fonts/Roboto-Italic.eot?#iefix') format('embedded-opentype'),
-        url('./../fonts/Roboto-Italic.woff') format('woff'),
-        url('./../fonts/Roboto-Italic.ttf') format('truetype');
+        url('./../fonts/Roboto-Italic.woff') format('woff'), url('./../fonts/Roboto-Italic.ttf') format('truetype');
     font-weight: normal;
     font-style: italic;
 }

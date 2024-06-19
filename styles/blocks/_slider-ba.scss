@@ -1,13 +1,12 @@
 .slider-ba {
     margin-bottom: 150px;
-    
+
     &__wrapper {
         position: relative;
     }
 
     &__slider-wrapper {
         padding: 60px 128px;
-        
     }
 
     &__slider {
@@ -31,9 +30,7 @@
         display: block;
         object-fit: cover;
         max-width: unset;
-
     }
-
 
     &__change {
         position: absolute;
@@ -59,7 +56,6 @@
     }
 
     &__text {
-
         font-weight: 400;
         font-size: 30px;
 
@@ -105,7 +101,6 @@
     }
 }
 
-
 @media (max-width: 1680px) {
     .slider-ba {
         margin-bottom: 130px;
@@ -143,7 +138,6 @@
 
 @media (max-width: 834px) {
     .slider-ba {
-
         &__title {
             margin-bottom: 30px;
         }
@@ -155,7 +149,7 @@
         &__slider-wrapper {
             padding: 0;
         }
-        
+
         &__slider {
             margin-bottom: 30px;
         }
@@ -175,7 +169,7 @@
     }
 }
 
-@media(max-width: 390px) {
+@media (max-width: 390px) {
     .slider-ba {
         &__title {
             padding: 0 40px;

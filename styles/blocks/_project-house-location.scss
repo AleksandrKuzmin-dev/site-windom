@@ -13,9 +13,6 @@
         margin-bottom: 40px;
     }
 
-    &__title-wrapper {
-    }
-
     &__title {
         font-family: 'Geometry', sans-serif;
         font-weight: 500;
@@ -46,12 +43,6 @@
             display: none;
         }
     }
-
-    &__map {
-    }
-
-    &__map-iframe {
-    }
 }
 
 @media (max-width: 1680px) {
@@ -64,9 +55,6 @@
 
         &__top-wrapper {
             margin-bottom: 30px;
-        }
-
-        &__title-wrapper {
         }
 
         &__title {
@@ -84,11 +72,6 @@
             padding: 13px 40px;
             font-weight: 500;
             font-size: 16px;
-            &_mobile {
-            }
-        }
-
-        &__map {
         }
 
         &__map-iframe {
@@ -101,14 +84,8 @@
     .project-house-location {
         margin-bottom: 80px;
 
-        &__wrapper {
-        }
-
         &__top-wrapper {
             margin-bottom: 20px;
-        }
-
-        &__title-wrapper {
         }
 
         &__title {
@@ -126,11 +103,6 @@
             font-size: 16px;
             padding: 13px 40px;
             flex-shrink: 0;
-            &_mobile {
-            }
-        }
-
-        &__map {
         }
 
         &__map-iframe {
@@ -154,9 +126,6 @@
             margin-bottom: 20px;
         }
 
-        &__title-wrapper {
-        }
-
         &__title {
             font-weight: 400;
             font-size: 20px;
@@ -177,7 +146,6 @@
                 text-align: center;
                 padding: 17px;
                 width: 100%;
-            
             }
         }
 

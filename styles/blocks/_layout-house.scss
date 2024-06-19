@@ -6,10 +6,10 @@
     }
 
     &__wrapper {
-       display: flex;
-       justify-content: space-between;
-       align-items: center;
-       gap: 176px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 176px;
     }
 
     &__text {
@@ -83,16 +83,15 @@
         }
 
         &_active {
-          
-           background: none;
-           &:hover {
-               
+            background: none;
+            &:hover {
                 background: #f5dcc2;
-           }
+            }
         }
     }
 
-    &__btn_active &__btn-title,  &__btn_active &__btn-size {
+    &__btn_active &__btn-title,
+    &__btn_active &__btn-size {
         color: #000;
     }
 
@@ -129,15 +128,13 @@
     }
 }
 
-
-
 @media (max-width: 1680px) {
     .layout-house {
         margin-bottom: 130px;
         &__wrapper {
-          gap: 20px;
+            gap: 20px;
         }
-    
+
         &__text {
             font-weight: 400;
             font-size: 27px;
@@ -145,11 +142,11 @@
             letter-spacing: 0.01em;
             color: #000;
         }
-    
+
         &__list {
-          margin-bottom: 110px;
+            margin-bottom: 110px;
         }
-    
+
         &__list-title {
             font-weight: 700;
             font-size: 23px;
@@ -157,166 +154,156 @@
             color: #000;
             margin-bottom: 20px;
         }
-    
+
         &__list-items {
-           gap: 15px;
+            gap: 15px;
         }
-    
+
         &__list-item {
-           gap: 15px;
+            gap: 15px;
         }
-    
+
         &__list-item-img {
-           width: 23px;
-           height: 23px;
+            width: 23px;
+            height: 23px;
         }
-    
+
         &__list-item-text {
             font-weight: 400;
             font-size: 24px;
             color: #000;
         }
-    
+
         &__buttons {
             gap: 13px;
         }
-    
+
         &__btn {
-         width: 220px;
-           
+            width: 220px;
         }
-    
-      
-    
+
         &__btn-title {
             font-weight: 700;
             font-size: 18px;
         }
-    
+
         &__btn-size {
             font-weight: 400;
             font-size: 18px;
         }
-    
+
         &__right-wrapper {
-           gap: 0;
+            gap: 0;
         }
     }
-    
 }
 
 @media (max-width: 1280px) {
     .layout-house {
         margin-bottom: 80px;
-    
+
         &__title-wrapper {
-           margin-bottom: 40px;
+            margin-bottom: 40px;
         }
-    
+
         &__wrapper {
-          display: block;
+            display: block;
         }
-    
+
         &__text {
-           margin-bottom: 20px;
+            margin-bottom: 20px;
         }
-    
+
         &__list {
-           margin-bottom: 50px;
+            margin-bottom: 50px;
         }
-    
+
         &__list-title {
             font-weight: 700;
             font-size: 23px;
             margin-top: 40px;
         }
-    
+
         &__list-items {
             gap: 15px;
         }
-    
+
         &__list-item {
-           gap: 15px;
+            gap: 15px;
         }
-    
+
         &__list-item-img {
-           width: 23px;
-           height: 23px;
+            width: 23px;
+            height: 23px;
         }
-    
+
         &__list-item-text {
             font-weight: 400;
             font-size: 24px;
         }
-    
-        &__buttons {
-           display: none;
 
-           &_mobile {
-            display: flex;
-            justify-content: center;
-           }
+        &__buttons {
+            display: none;
+
+            &_mobile {
+                display: flex;
+                justify-content: center;
+            }
         }
-    
+
         &__btn-title {
             font-weight: 700;
             font-size: 18px;
         }
-    
+
         &__btn-size {
             font-weight: 400;
             font-size: 18px;
         }
-    
+
         &__right-wrapper {
-           display: grid;
-           grid-template-columns: 1fr 1fr;
-           width: unset;
-           margin-bottom: 20px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            width: unset;
+            margin-bottom: 20px;
         }
-    
+
         &__img {
-           max-width: unset;
-           width: 100%;
+            max-width: unset;
+            width: 100%;
         }
     }
-    
 }
-
 
 @media (max-width: 834px) {
     .layout-house {
-
-    
         &__title-wrapper {
-           margin-bottom: 20px;
+            margin-bottom: 20px;
         }
-    
+
         &__title {
             &_2 {
                 display: block;
                 padding-left: 90px;
             }
-            
         }
 
-    
         &__text {
             font-weight: 400;
             font-size: 16px;
             line-height: 156%;
             color: #000;
         }
-    
-        &__list {
-           margin-bottom: none;
-           display: none;
 
-           &_mobile {
-            display: block;
-           }
+        &__list {
+            margin-bottom: none;
+            display: none;
+
+            &_mobile {
+                display: block;
+            }
         }
-    
+
         &__list-title {
             font-weight: 500;
             font-size: 16px;
@@ -324,33 +311,31 @@
             color: #000;
             margin-bottom: 20px;
         }
-    
+
         &__list-items {
-           gap: 10px;
+            gap: 10px;
         }
-    
+
         &__list-item {
-           gap: 10px;
+            gap: 10px;
         }
-    
+
         &__list-item-img {
-           width: 17px;
-           height: 17px;
+            width: 17px;
+            height: 17px;
         }
-    
+
         &__list-item-text {
             font-weight: 400;
             font-size: 16px;
             color: #000;
         }
-    
+
         &__btn {
-           width: 145px;
-           padding: 7px 24px;
+            width: 145px;
+            padding: 7px 24px;
         }
-    
-      
-    
+
         &__btn-title {
             font-weight: 700;
             font-size: 14px;
@@ -358,24 +343,23 @@
 
             margin-bottom: 3px;
         }
-    
+
         &__btn-size {
             font-weight: 400;
             font-size: 14px;
             text-align: center;
         }
-    
+
         &__right-wrapper {
-           grid-template-columns: 1fr;
+            grid-template-columns: 1fr;
         }
-    
+
         &__img {
-           display: none;
+            display: none;
             &_active {
                 display: block;
                 opacity: 1;
             }
         }
     }
-    
 }

@@ -1,7 +1,5 @@
 .main-news {
     margin-bottom: 150px;
-    &__wrapper {
-    }
 
     &__title-wrapper {
         display: flex;
@@ -10,11 +8,8 @@
         margin-bottom: 50px;
     }
 
-    &__title {
-    }
-
     &__btn {
-        border: 1px solid #EFA35A;
+        border: 1px solid #efa35a;
         background: transparent;
         padding: 15px 30px;
         display: flex;
@@ -27,9 +22,8 @@
         }
 
         &:hover {
-            background: #F5DCC2;
+            background: #f5dcc2;
         }
-
     }
 
     &__cards {
@@ -72,7 +66,6 @@
     }
 }
 
-
 @media (max-width: 1680px) {
     .main-news {
         margin-bottom: 130px;
@@ -81,7 +74,7 @@
             font-weight: 500;
             margin-bottom: 15px;
         }
-    
+
         &__card-date {
             font-size: 20px;
             font-weight: 500;
@@ -95,8 +88,7 @@
         &__card-content {
             bottom: 20px;
             left: 20px;
-        } 
-        
+        }
     }
 }
 
@@ -107,13 +99,13 @@
             font-size: 22px;
             margin-bottom: 15px;
         }
-    
+
         &__card-date {
             font-size: 20px;
         }
 
         &__btn {
-           padding: 10px 15px;
+            padding: 10px 15px;
         }
 
         &__cards {
@@ -129,7 +121,7 @@
             font-size: 16px;
             margin-bottom: 10px;
         }
-    
+
         &__card-date {
             font-weight: 500;
             font-size: 16px;
@@ -148,7 +140,7 @@
         }
 
         &__cards {
-           grid-template-columns: 1fr;
+            grid-template-columns: 1fr;
         }
 
         &__card {
@@ -161,6 +153,6 @@
         &__card-content {
             bottom: 10px;
             left: 15px;
-        } 
+        }
     }
 }

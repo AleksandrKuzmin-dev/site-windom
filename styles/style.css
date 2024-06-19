@@ -10,36 +10,27 @@
 }
 
 /**
-  Убираем внутренние отступы слева тегам списков,
-  у которых есть атрибут class
- */
+   Убираем внутренние отступы слева тегам списков,
+   у которых есть атрибут class
+  */
 :where(ul, ol):where([class]) {
   padding-left: 0;
 }
 
 /**
-  Убираем внешние отступы body и двум другим тегам,
-  у которых есть атрибут class
- */
+   Убираем внешние отступы body и двум другим тегам,
+   у которых есть атрибут class
+  */
 body,
 :where(blockquote, figure):where([class]) {
   margin: 0;
 }
 
 /**
-  Убираем внешние отступы вертикали нужным тегам,
-  у которых есть атрибут class
- */
-:where(h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-ul,
-ol,
-dl):where([class]) {
+   Убираем внешние отступы вертикали нужным тегам,
+   у которых есть атрибут class
+  */
+:where(h1, h2, h3, h4, h5, h6, p, ul, ol, dl):where([class]) {
   margin-block: 0;
 }
 
@@ -54,42 +45,42 @@ dl):where([class]) {
 }
 
 /**
-  Убираем стандартный маркер маркированному списку,
-  у которого есть атрибут class
- */
+   Убираем стандартный маркер маркированному списку,
+   у которого есть атрибут class
+  */
 :where(ul[class]) {
   list-style: none;
 }
 
 /**
-  Обнуляем вертикальные внешние отступы параграфа,
-  объявляем локальную переменную для внешнего отступа вниз,
-  чтобы избежать взаимодействие с более сложным селектором
- */
+   Обнуляем вертикальные внешние отступы параграфа,
+   объявляем локальную переменную для внешнего отступа вниз,
+   чтобы избежать взаимодействие с более сложным селектором
+  */
 p {
   --paragraphMarginBottom: 24px;
   margin-block: 0;
 }
 
 /**
-  Внешний отступ вниз для параграфа без атрибута class,
-  который расположен не последним среди своих соседних элементов
- */
+   Внешний отступ вниз для параграфа без атрибута class,
+   который расположен не последним среди своих соседних элементов
+  */
 p:where(:not([class]):not(:last-child)) {
   margin-bottom: var(--paragraphMarginBottom);
 }
 
 /**
-  Упрощаем работу с изображениями
- */
+   Упрощаем работу с изображениями
+  */
 img {
   display: block;
   max-width: 100%;
 }
 
 /**
-  Наследуем свойства шрифт для полей ввода
- */
+   Наследуем свойства шрифт для полей ввода
+  */
 input,
 textarea,
 select,
@@ -106,8 +97,8 @@ html {
 }
 
 /**
-  Плавный скролл
- */
+   Плавный скролл
+  */
 html,
 :has(:target) {
   scroll-behavior: smooth;
@@ -128,18 +119,18 @@ body {
 /**
 
 
-/**
-  Чиним баг задержки смены цвета при взаимодействии с svg-элементами
- */
+ /**
+   Чиним баг задержки смены цвета при взаимодействии с svg-элементами
+  */
 svg * {
   -webkit-transition-property: fill, stroke;
   transition-property: fill, stroke;
 }
 
 /**
-  Удаляем все анимации и переходы для людей,
-  которые предпочитают их не использовать
- */
+   Удаляем все анимации и переходы для людей,
+   которые предпочитают их не использовать
+  */
 @media (prefers-reduced-motion: reduce) {
   * {
     -webkit-animation-duration: 0.01ms !important;
@@ -249,6 +240,21 @@ body {
   position: relative;
 }
 
+body::-webkit-scrollbar {
+  width: 6px; /* Ширина всего элемента навигации */
+  height: 4px;
+}
+
+body::-webkit-scrollbar-track {
+  background: #fff; /* Цвет дорожки */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #efa359; /* Цвет бегунка */
+  border-radius: 20px; /* Округление бегунка */
+  border: 3px solid #efa359; /* Оформление границ бегунка */
+}
+
 .none {
   display: none !important;
 }
@@ -316,13 +322,13 @@ body {
   cursor: pointer;
 }
 .btn:hover {
-  background: #EC8520;
+  background: #ec8520;
 }
 .btn_transparent {
   background: transparent;
 }
 .btn_transparent:hover {
-  background: #F5DCC2;
+  background: #f5dcc2;
 }
 .btn_text-black {
   color: #000;
@@ -331,7 +337,7 @@ body {
   font-weight: 400;
 }
 .btn_not-active {
-  background-color: #C5B9AE;
+  background-color: #c5b9ae;
   color: #fff;
 }
 
@@ -488,7 +494,7 @@ body {
   cursor: pointer;
 }
 .header__contacts-phone-icon path {
-  fill: #EFA35A;
+  fill: #efa35a;
 }
 .header__burger {
   background: unset;
@@ -527,7 +533,7 @@ body {
 }
 @media (max-width: 834px) {
   .header {
-    border: 1px solid #E3E3E3;
+    border: 1px solid #e3e3e3;
   }
 }
 @media (max-width: 380px) {
@@ -929,7 +935,7 @@ body {
   margin-bottom: 20px;
 }
 .o-kompanii__text_orange {
-  color: #EFA359;
+  color: #efa359;
   font-weight: 500;
 }
 .o-kompanii__social {
@@ -964,7 +970,7 @@ body {
 .o-kompanii__img-line {
   height: 100%;
   width: 90%;
-  border: 1px solid #EFA359;
+  border: 1px solid #efa359;
   position: absolute;
   top: 0;
   left: 5%;
@@ -1258,7 +1264,7 @@ body {
 .slider-photo__pagination-btn {
   width: 50px;
   height: 10px;
-  background-color: #D9D9D9;
+  background-color: #d9d9d9;
   border-radius: 0;
   opacity: 1;
   -webkit-transition: 0.3s;
@@ -1268,7 +1274,7 @@ body {
   -webkit-transform: unset;
           transform: unset;
   opacity: 1;
-  background: #EFA359;
+  background: #efa359;
 }
 
 @media (max-width: 1680px) {
@@ -2221,7 +2227,7 @@ body {
   margin-bottom: 50px;
 }
 .main-news__btn {
-  border: 1px solid #EFA35A;
+  border: 1px solid #efa35a;
   background: transparent;
   padding: 15px 30px;
   display: -webkit-box;
@@ -2239,7 +2245,7 @@ body {
   display: none;
 }
 .main-news__btn:hover {
-  background: #F5DCC2;
+  background: #f5dcc2;
 }
 .main-news__cards {
   display: grid;
@@ -2412,7 +2418,7 @@ body {
   padding: 15px 30px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
-  background: #EFA359;
+  background: #efa359;
   display: block;
   width: -webkit-max-content;
   width: -moz-max-content;
@@ -2420,7 +2426,7 @@ body {
   margin: 0 auto;
 }
 .sales-office__btn:hover {
-  background: #EC8520;
+  background: #ec8520;
 }
 .sales-office__line-top {
   height: 1px;
@@ -2514,7 +2520,7 @@ body {
   text-transform: uppercase;
   color: #fff;
   width: 230px;
-  border-bottom: 1px solid #EFA35A;
+  border-bottom: 1px solid #efa35a;
   margin-bottom: 30px;
 }
 .footer__links {
@@ -2572,7 +2578,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   padding: 8px 20px 7px 3px;
-  border: 1px solid #FFFFFF;
+  border: 1px solid #ffffff;
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
@@ -2766,23 +2772,23 @@ body {
   color: #000;
 }
 .ask-question-popup__input {
-  border: 1px solid #B0B0B0;
+  border: 1px solid #b0b0b0;
   height: 40px;
 }
 .ask-question-popup__input_error {
-  border: 1px solid #FC3131;
+  border: 1px solid #fc3131;
 }
 .ask-question-popup__input:focus {
   outline: none;
-  border: 1px solid #EFA359;
+  border: 1px solid #efa359;
 }
 .ask-question-popup__textarea {
   resize: none;
-  border: 1px solid #B0B0B0;
+  border: 1px solid #b0b0b0;
 }
 .ask-question-popup__textarea:focus {
   outline: none;
-  border: 1px solid #EFA359;
+  border: 1px solid #efa359;
 }
 .ask-question-popup__error-message {
   font-weight: 700;
@@ -2790,7 +2796,7 @@ body {
   text-align: center;
   color: #fff;
   padding: 11px 22px;
-  background: #FC3131;
+  background: #fc3131;
   margin-bottom: 17px;
 }
 .ask-question-popup__btn {
@@ -2798,7 +2804,7 @@ body {
   font-size: 18px;
   color: #fff;
   padding: 16px 32px;
-  background: #EFA35A;
+  background: #efa35a;
   border: unset;
   display: block;
   width: 100%;
@@ -2809,7 +2815,7 @@ body {
   cursor: pointer;
 }
 .ask-question-popup__btn:hover {
-  background: #EC8520;
+  background: #ec8520;
 }
 .ask-question-popup__label-checkbox {
   position: relative;
@@ -2926,15 +2932,15 @@ body {
   color: #000;
 }
 .order-call-popup__input {
-  border: 1px solid #B0B0B0;
+  border: 1px solid #b0b0b0;
   height: 40px;
 }
 .order-call-popup__input_error {
-  border: 1px solid #FC3131;
+  border: 1px solid #fc3131;
 }
 .order-call-popup__input:focus {
   outline: none;
-  border: 1px solid #EFA359;
+  border: 1px solid #efa359;
 }
 .order-call-popup__error-message {
   font-weight: 400;
@@ -2952,7 +2958,7 @@ body {
   padding: 15px 30px;
   width: 100%;
   background: unset;
-  border: 1px solid #EFA35A;
+  border: 1px solid #efa35a;
   -webkit-transition: 0.3s;
   transition: 0.3s;
   margin-bottom: 20px;
@@ -2960,7 +2966,7 @@ body {
   cursor: pointer;
 }
 .order-call-popup__btn:hover {
-  background: #F5DCC2;
+  background: #f5dcc2;
 }
 .order-call-popup__label-checkbox {
   position: relative;
@@ -3793,7 +3799,7 @@ body {
 }
 .article__content {
   padding: 38px;
-  border: 1px solid #EFA359;
+  border: 1px solid #efa359;
 }
 .article__date-wrapper {
   display: -webkit-box;
@@ -3895,7 +3901,7 @@ body {
   gap: 70px;
 }
 .article__card {
-  border: 1px solid #EFA359;
+  border: 1px solid #efa359;
 }
 .article__card-read-more {
   font-weight: 400;
@@ -4220,7 +4226,7 @@ body {
   font-size: 18px;
   line-height: 130%;
   color: #000;
-  border: 1px solid #EFA359;
+  border: 1px solid #efa359;
   cursor: pointer;
 }
 .smi-articles__link {
@@ -4365,7 +4371,7 @@ body {
 }
 .smi-article__content {
   padding: 38px;
-  border: 1px solid #EFA359;
+  border: 1px solid #efa359;
 }
 .smi-article__date-wrapper-date {
   display: -webkit-box;
@@ -4478,7 +4484,7 @@ body {
   gap: 70px;
 }
 .smi-article__card {
-  border: 1px solid #EFA359;
+  border: 1px solid #efa359;
 }
 .smi-article__card-read-more {
   font-weight: 400;
@@ -4777,7 +4783,7 @@ body {
   margin-bottom: 35px;
 }
 .komanda__slogan-wrapper {
-  background-color: #EFA359;
+  background-color: #efa359;
   margin-bottom: 60px;
   padding: 29px 0;
 }
@@ -4847,7 +4853,7 @@ body {
   letter-spacing: 0.01em;
   color: #fff;
   padding: 13px 20px;
-  background-color: #EFA359;
+  background-color: #efa359;
   width: 100%;
 }
 .komanda__img {
@@ -4858,7 +4864,7 @@ body {
 }
 .komanda__line {
   position: absolute;
-  background: #EFA359;
+  background: #efa359;
 }
 .komanda__line_top-1 {
   top: 0;
@@ -4892,7 +4898,7 @@ body {
 }
 .komanda__line-reverse {
   position: absolute;
-  background: #EFA359;
+  background: #efa359;
 }
 .komanda__line-reverse_top-1 {
   top: 0;
@@ -5095,7 +5101,7 @@ body {
   }
   .komanda__slogan-mobile-wrapper {
     padding: 20px 0 20px 15px;
-    border-left: 1px solid #EFA35A;
+    border-left: 1px solid #efa35a;
   }
   .komanda__slogan {
     font-weight: 400;
@@ -5152,7 +5158,7 @@ body {
     line-height: 130%;
     color: #000;
     padding-left: 15px;
-    border-left: 1px solid #EFA35A;
+    border-left: 1px solid #efa35a;
   }
   .komanda__mobile-list-item {
     display: -webkit-box;
@@ -5181,7 +5187,7 @@ body {
   position: absolute;
   width: 100%;
   height: 90%;
-  background: #EFA359;
+  background: #efa359;
   z-index: -1;
   -webkit-transform: translate(0, -50%);
           transform: translate(0, -50%);
@@ -5259,7 +5265,7 @@ body {
   transition: 0.3s;
 }
 .employes__btn:hover {
-  background-color: #EC8520;
+  background-color: #ec8520;
 }
 .employes__btn_transparent {
   background: transparent;
@@ -5267,7 +5273,7 @@ body {
   border: 1px solid #efa359;
 }
 .employes__btn_transparent:hover {
-  background-color: #F5DCC2;
+  background-color: #f5dcc2;
 }
 
 @media (max-width: 1680px) {
@@ -5311,7 +5317,7 @@ body {
     -webkit-transition: opacity 0.6s ease-in;
     transition: opacity 0.6s ease-in;
     padding-bottom: 25px;
-    border: 1px solid #EFA35A;
+    border: 1px solid #efa35a;
   }
   .employes__slide.is-active {
     opacity: 1;
@@ -5336,7 +5342,7 @@ body {
     -webkit-transform: unset;
             transform: unset;
     opacity: 1;
-    background: #EFA359;
+    background: #efa359;
   }
   .employes__mobile-card-name {
     font-weight: 700;
@@ -5631,7 +5637,7 @@ body {
 .ipoteka-calc__output-range {
   width: 100%;
   display: block;
-  background-color: #F7F8F8;
+  background-color: #f7f8f8;
   padding: 26px;
   border: 1px solid #ccc;
   bottom: 8px;
@@ -6304,7 +6310,7 @@ body {
   position: absolute;
   width: 80%;
   height: 95%;
-  border: 1px solid #EFA35A;
+  border: 1px solid #efa35a;
   z-index: -1;
   left: 10%;
 }
@@ -6369,6 +6375,7 @@ body {
   padding-top: 0;
   margin-top: -34px;
 }
+
 .project-info-zim-gor .project-info__img_1 {
   padding-top: 47px;
 }
@@ -6596,7 +6603,7 @@ body {
   right: 0;
   height: 1px;
   width: 50%;
-  background: #EFA35A;
+  background: #efa35a;
 }
 .plan-village__right-line {
   position: absolute;
@@ -6604,7 +6611,7 @@ body {
   right: 0;
   height: 60px;
   width: 1px;
-  background: #EFA35A;
+  background: #efa35a;
 }
 .plan-village__title {
   margin-bottom: 35px;
@@ -8065,7 +8072,7 @@ body {
   right: 0px;
   width: 60%;
   height: 1px;
-  background-color: #EFA35A;
+  background-color: #efa35a;
 }
 .project-video__bg-line-right {
   position: absolute;
@@ -8073,7 +8080,7 @@ body {
   right: 0px;
   width: 1px;
   height: 50px;
-  background-color: #EFA35A;
+  background-color: #efa35a;
 }
 .project-video__title {
   margin-bottom: 42px;
@@ -9181,7 +9188,7 @@ body {
         -ms-flex-pack: center;
             justify-content: center;
     border: unset;
-    background-color: #D9D9D9;
+    background-color: #d9d9d9;
     min-width: -webkit-max-content;
     min-width: -moz-max-content;
     min-width: max-content;
@@ -9321,7 +9328,7 @@ body {
   margin-bottom: 100px;
 }
 .project-house__bg-color {
-  background-color: #F7F8F8;
+  background-color: #f7f8f8;
 }
 .project-house__wrapper {
   padding-top: 60px;
@@ -9351,7 +9358,7 @@ body {
 .project-house__info {
   display: grid;
   grid-template-columns: 830px 1fr;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 .project-house__info-slider-main {
   margin-bottom: 17px;
@@ -9861,7 +9868,7 @@ body {
 .project-house-calc__calc-output-range {
   width: 100%;
   display: block;
-  background-color: #F7F8F8;
+  background-color: #f7f8f8;
   padding: 15px;
   border: 1px solid #ccc;
   bottom: 8px;
@@ -10020,7 +10027,7 @@ body {
     padding: 0;
   }
   .project-house-calc__details {
-    background: #F7F8F8;
+    background: #f7f8f8;
     padding: 40px;
   }
   .project-house-calc__details-block-title-wrapper {
@@ -10128,6 +10135,7 @@ body {
 .project-house-location__btn_mobile {
   display: none;
 }
+
 @media (max-width: 1680px) {
   .project-house-location {
     margin-bottom: 86px;

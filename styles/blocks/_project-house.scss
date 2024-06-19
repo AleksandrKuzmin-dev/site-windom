@@ -1,7 +1,7 @@
 .project-house {
     margin-bottom: 100px;
     &__bg-color {
-        background-color: #F7F8F8;
+        background-color: #f7f8f8;
     }
 
     &__wrapper {
@@ -33,7 +33,7 @@
     &__info {
         display: grid;
         grid-template-columns: 830px 1fr;
-        background-color: #FFFFFF;
+        background-color: #ffffff;
     }
 
     &__info-slider-main {
@@ -142,7 +142,6 @@
         transition: 0.3s;
         cursor: pointer;
 
-
         &:hover {
             background: #ec8520;
         }
@@ -152,82 +151,82 @@
 @media (max-width: 1680px) {
     .project-house {
         margin-bottom: 78px;
-    
+
         &__menu {
             margin-bottom: 42px;
             gap: 10px;
         }
-    
+
         &__menu-link {
             font-weight: 400;
             font-size: 24px;
-                
+
             &_current {
                 font-weight: 700;
-                font-size: 23px;                
+                font-size: 23px;
             }
         }
-    
+
         &__info {
             grid-template-columns: 652px 1fr;
         }
-    
+
         &__info-slider-main {
-           margin-bottom: 20px;
+            margin-bottom: 20px;
         }
-    
+
         &__info-slider-slide {
             height: 530px !important;
         }
-    
+
         &__info-content {
-          padding: 35px 28px 17px 40px;
+            padding: 35px 28px 17px 40px;
         }
-    
+
         &__info-content-title {
             max-width: 439px;
             font-weight: 700;
             font-size: 25px;
             margin-bottom: 30px;
         }
-    
+
         &__info-content-details {
             gap: 16px;
             margin-bottom: 40px;
         }
-    
+
         &__info-content-details-item {
-           gap: 20px;
+            gap: 20px;
         }
-    
+
         &__info-content-details-item-icon {
             height: 40px;
             width: 40px;
         }
-    
+
         &__info-content-details-item-text {
             font-weight: 400;
             font-size: 20px;
-        }   
-    
+        }
+
         &__info-content-bottom-wrapper {
             gap: 70px;
         }
-    
+
         &__info-content-price-wrapper {
             gap: 21px;
         }
-    
+
         &__info-content-price-text {
             font-weight: 400;
             font-size: 24px;
         }
-    
+
         &__info-content-price-value {
             font-weight: 700;
             font-size: 23px;
         }
-    
+
         &__info-content-button {
             font-weight: 700;
             font-size: 23px;
@@ -240,9 +239,9 @@
     .project-house {
         margin-bottom: 40px;
         &__wrapper {
-           padding-top: 40px;
+            padding-top: 40px;
         }
-    
+
         &__menu-link {
             font-weight: 400;
             font-size: 24px;
@@ -251,27 +250,27 @@
                 font-size: 23px;
             }
         }
-    
+
         &__info {
             display: flex;
             flex-direction: column;
         }
-    
+
         &__info-slider-slide {
-           height: 750px !important;
+            height: 750px !important;
         }
-    
+
         &__info-content {
             padding: 35px 27px 34px 20px;
         }
-    
+
         &__info-content-title {
             max-width: unset;
             font-weight: 700;
             font-size: 25px;
             margin-bottom: 20px;
         }
-    
+
         &__info-content-details {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -279,36 +278,35 @@
             column-gap: 25px;
             margin-bottom: 33px;
         }
-    
+
         &__info-content-details-item {
-           gap: 20px;
+            gap: 20px;
         }
-    
+
         &__info-content-details-item-text {
             font-weight: 400;
             font-size: 20px;
         }
-    
+
         &__info-content-bottom-wrapper {
             display: grid;
             grid-template-columns: 40% 1fr;
-
         }
-    
+
         &__info-content-price-wrapper {
             gap: 20px;
         }
-    
+
         &__info-content-price-text {
             font-weight: 400;
             font-size: 24px;
         }
-    
+
         &__info-content-price-value {
             font-weight: 700;
             font-size: 23px;
         }
-    
+
         &__info-content-button {
             font-weight: 700;
             font-size: 18px;
@@ -321,20 +319,19 @@
     .project-house {
         margin-bottom: 35px;
         &__wrapper {
-           padding-top: 53px;
+            padding-top: 53px;
         }
 
         &__container {
             padding: 0;
         }
-    
+
         &__menu {
             gap: 5px;
             padding-left: 40px;
         }
-    
+
         &__menu-link {
-            
             font-weight: 400;
             font-size: 20px;
             &_current {
@@ -342,7 +339,7 @@
                 font-size: 20px;
             }
         }
-    
+
         &__menu-circle {
             width: 6px;
             height: 6px;
@@ -351,69 +348,67 @@
         &__info {
             padding: 20px 40px 0 40px;
         }
-    
+
         &__info-slider-main {
-           margin-bottom: 5px;
-          
+            margin-bottom: 5px;
         }
-    
+
         &__info-slider-slide {
             height: 550px !important;
-            
         }
-    
+
         &__info-content {
-          padding: 30px 0px 40px 0;
+            padding: 30px 0px 40px 0;
         }
-    
+
         &__info-content-title {
             font-weight: 700;
             font-size: 18px;
             margin-bottom: 30px;
         }
-    
+
         &__info-content-details {
             grid-template-columns: 1fr;
             gap: 20px;
         }
-    
+
         &__info-content-details-item {
-           gap: 10px;
+            gap: 10px;
         }
-    
+
         &__info-content-details-item-icon {
             width: 30px;
             height: 30px;
         }
-    
+
         &__info-content-details-item-text {
             font-weight: 500;
             font-size: 16px;
         }
-    
+
         &__info-content-bottom-wrapper {
             grid-template-columns: 1fr;
             gap: 28px;
         }
-    
+
         &__info-content-price-wrapper {
             gap: 37px;
         }
-    
+
         &__info-content-price-text {
             font-weight: 500;
             font-size: 16px;
         }
-    
+
         &__info-content-price-value {
             font-weight: 700;
             font-size: 23px;
         }
-    
+
         &__info-content-button {
             font-weight: 700;
             font-size: 18px;
-            text-transform:none;
+            text-transform: none;
         }
     }
 }
@@ -433,4 +428,3 @@
         }
     }
 }
-

@@ -17,9 +17,6 @@ $range-progress-color: #efa35a;
         margin-bottom: 58px;
     }
 
-    &__form {
-    }
-
     &__form-top-wrapper {
         display: grid;
         grid-template-columns: 60% 1fr;
@@ -62,7 +59,7 @@ $range-progress-color: #efa35a;
         border: unset;
         background: #f7f8f8;
 
-        &:focus{
+        &:focus {
             outline: unset;
         }
     }
@@ -84,12 +81,24 @@ $range-progress-color: #efa35a;
         height: 2px; /* Specified height of slider */
         outline: none; /* Remove outline */
         opacity: 1; /* Set transparency (for mouse-over effects on hover) */
-        -webkit-transition: .2s; /* 0.2 seconds transition on hover */
-        transition: opacity .2s;
-        background: linear-gradient(to right, $range-progress-color 0%, $range-progress-color var(--range-progress-width), #f7f8f8 var(--range-progress-width), #f7f8f8 100%);
+        -webkit-transition: 0.2s; /* 0.2 seconds transition on hover */
+        transition: opacity 0.2s;
+        background: linear-gradient(
+            to right,
+            $range-progress-color 0%,
+            $range-progress-color var(--range-progress-width),
+            #f7f8f8 var(--range-progress-width),
+            #f7f8f8 100%
+        );
 
         &::-moz-range-track {
-            background: linear-gradient(to right, $range-progress-color 0%, $range-progress-color var(--range-progress-width), #f7f8f8 var(--range-progress-width), #f7f8f8 100%);
+            background: linear-gradient(
+                to right,
+                $range-progress-color 0%,
+                $range-progress-color var(--range-progress-width),
+                #f7f8f8 var(--range-progress-width),
+                #f7f8f8 100%
+            );
         }
 
         &::-webkit-slider-thumb {
@@ -118,12 +127,10 @@ $range-progress-color: #efa35a;
         }
     }
 
-
-
     &__output-range {
         width: 100%;
         display: block;
-        background-color: #F7F8F8;
+        background-color: #f7f8f8;
         padding: 26px;
         border: 1px solid #ccc;
         bottom: 8px;
@@ -163,7 +170,6 @@ $range-progress-color: #efa35a;
         height: 100%;
         padding: 40px 30px;
 
-
         &_active {
             background: #f2f2f2;
         }
@@ -201,42 +207,34 @@ $range-progress-color: #efa35a;
     }
 }
 
-
-
-
 @media (max-width: 1680px) {
     .ipoteka-calc {
-       margin-bottom: 130px;
+        margin-bottom: 130px;
 
-        &__wrapper {
-           
-        }
-    
         &__title {
             font-weight: 500;
             font-size: 46px;
             margin-bottom: 60px;
         }
-    
+
         &__bank-card {
             padding: 40px 20px;
         }
-    
+
         &__bank-card-content {
-           padding-left: 20px;
+            padding-left: 20px;
         }
     }
 }
 
-
 @media (max-width: 1280px) {
     .ipoteka-calc {
         margin-bottom: 80px;
-        
+
         &__wrapper {
-           grid-template-columns: 1fr;
+            grid-template-columns: 1fr;
         }
-    
+
         &__bank-cards {
             display: none;
         }
@@ -245,100 +243,36 @@ $range-progress-color: #efa35a;
 
 @media (max-width: 834px) {
     .ipoteka-calc {
-       
-        &__wrapper {
-           
-        }
-    
         &__title {
             font-weight: 500;
             font-size: 30px;
             margin-bottom: 40px;
         }
-    
-        &__form {
-        }
-    
-        &__form-top-wrapper {
-           
-        }
-    
+
         &__input-wrapper {
             margin-bottom: 20px;
         }
-    
-        &__select-wrapper {
-            
-    
-            
-        }
-    
+
         &__input-name {
             font-weight: 400;
             font-size: 18px;
             margin-bottom: 10px;
-          
         }
-    
+
         &__select {
             font-weight: 400;
             font-size: 14px;
-    
         }
-    
-        &__input-range-wrapper {
-           
-        }
-    
-        &__input-range {
-          
-        }
-    
-    
-    
+
         &__output-range {
             font-weight: 400;
             font-size: 14px;
         }
-    
+
         &__form-btn {
             font-weight: 700;
             font-size: 18px;
             padding: 14px 28px;
-    
-        }
-    
-        &__bank-cards {
-            
-        }
-    
-        &__bank-card {
-            
-    
-    
-            &_active {
-               
-            }
-        }
-    
-        &__bank-card-logo {
-          
-        }
-    
-        &__bank-card-content {
-           
-        }
-    
-        &__filed-name {
-           
-        }
-    
-        &__rate {
-           
-        }
-    
-        &__field {
-          
         }
     }
 }

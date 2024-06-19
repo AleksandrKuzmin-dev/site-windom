@@ -1,7 +1,5 @@
 .ipoteka-type {
     margin-bottom: 150px;
-    &__wrapper {
-    }
 
     &__cards {
         display: grid;
@@ -72,22 +70,6 @@
         object-fit: cover;
     }
 
-
-    &__splide {
-    }
-
-    &__splide-track {
-    }
-
-    &__splide-list {
-    }
-
-    &__splide-slide {
-    }
-
-    &__mob-card {
-    }
-
     &__mob-card-title {
         font-weight: 500;
         font-size: 30px;
@@ -149,36 +131,29 @@
         opacity: 1;
         background: #bbb;
     }
-
-
 }
-
 
 @media (max-width: 1680px) {
     .ipoteka-type {
         margin-bottom: 130px;
-    
-        &__card-content {
-            
-        }
-    
+
         &__card-title {
             font-weight: 500;
             font-size: 40px;
             position: relative;
             z-index: 1;
-    
+
             &_big {
                 font-weight: 700;
                 font-size: 46px;
             }
         }
-    
+
         &__card-description {
             font-weight: 400;
             font-size: 20px;
         }
-    
+
         &__card-btn {
             font-weight: 700;
             font-size: 18px;
@@ -189,27 +164,21 @@
 @media (max-width: 1280px) {
     .ipoteka-type {
         margin-bottom: 80px;
-        &__wrapper {
-        }
-    
+
         &__cards {
             gap: 30px;
         }
-    
+
         &__card {
             grid-column: 1 / -1;
         }
-    
-        &__card-content {
-            
-        }
-    
+
         &__card-title {
             font-weight: 500;
             font-size: 30px;
             margin-bottom: 20px;
         }
-    
+
         &__card-description {
             font-weight: 400;
             font-size: 18px;
@@ -220,10 +189,6 @@
 
 @media (max-width: 834px) {
     .ipoteka-type {
-      
-        &__wrapper {
-        }
-    
         &__cards {
             display: none;
         }
@@ -231,6 +196,5 @@
         &__mob-cards {
             display: block;
         }
-
     }
 }

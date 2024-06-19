@@ -57,19 +57,19 @@
         color: white;
         padding: 15px 30px;
         transition: 0.3s;
-        background: #EFA359;
+        background: #efa359;
         display: block;
         width: max-content;
         margin: 0 auto;
 
         &:hover {
-            background: #EC8520;
+            background: #ec8520;
         }
     }
 
     &__line-top {
         height: 1px;
-        background-color: #efa35a;;
+        background-color: #efa35a;
         position: absolute;
         top: 0;
         right: 0;
@@ -78,7 +78,7 @@
 
     &__line-right {
         width: 1px;
-        background-color: #efa35a;;
+        background-color: #efa35a;
         position: absolute;
         top: 0;
         right: 0;
@@ -86,7 +86,7 @@
     }
 }
 
-@media (max-width:1680px) {
+@media (max-width: 1680px) {
     .sales-office {
         margin-bottom: 130px;
     }
@@ -99,50 +99,46 @@
         &__map {
             height: 600px;
         }
-    
+
         &__panel {
-           padding: 30px;
-           width: 363px;
+            padding: 30px;
+            width: 363px;
         }
-    
+
         &__panel-title {
             font-size: 28px;
             margin-bottom: 24px;
             text-align: center;
         }
-    
+
         &__panel-text {
             font-weight: 400;
             font-size: 18px;
             margin-bottom: 40px;
         }
-    
+
         &__contacts {
-           gap: 20px;
+            gap: 20px;
         }
-    
+
         &__contact {
             font-size: 20px;
         }
-        
+
         &__line-top {
             width: 60%;
         }
-
-      
-    
     }
 }
 
 @media (max-width: 834px) {
     .sales-office {
-    
         &__map {
             height: 400px;
         }
-    
+
         &__panel {
-           display: none;
+            display: none;
         }
 
         &__line-top {
@@ -158,5 +154,3 @@
         }
     }
 }
-
-

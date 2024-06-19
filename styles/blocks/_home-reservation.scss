@@ -53,7 +53,6 @@
         font-size: 24px;
         text-align: center;
         color: #efa35a;
-        
     }
 
     &__buttons {
@@ -88,49 +87,46 @@
     }
 }
 
-
-
 @media (max-width: 1680px) {
     .home-reservation {
         margin-bottom: 130px;
         &__wrapper {
             padding: 80px 0 50px 0;
         }
-    
+
         &__title-wrapper {
             margin-bottom: 15px;
         }
-    
+
         &__title {
             font-weight: 700;
             font-size: 40px;
         }
-    
+
         &__devider {
             margin-bottom: 20px;
         }
-    
+
         &__vacant-plots {
             font-weight: 400;
             font-size: 30px;
         }
-    
+
         &__vacant-plots-value {
             font-weight: 700;
             font-size: 30px;
         }
-    
+
         &__buttons {
             gap: 58px;
         }
-    
+
         &__btn {
             padding: 27px;
             font-weight: 700;
             font-size: 23px;
             width: 375px;
         }
-
     }
 }
 
@@ -139,36 +135,35 @@
         margin-bottom: 130px;
         &__wrapper {
             padding: 80px 0 60px 0;
-            
         }
-    
+
         &__title-wrapper {
             margin-bottom: 20px;
         }
-    
+
         &__title {
             font-weight: 500;
             font-size: 30px;
         }
-    
+
         &__devider {
             width: 80%;
         }
-    
+
         &__vacant-plots {
             font-weight: 400;
             font-size: 24px;
         }
-    
+
         &__vacant-plots-value {
             font-weight: 400;
             font-size: 24px;
         }
-    
+
         &__buttons {
             gap: 15px;
         }
-    
+
         &__btn {
             font-weight: 700;
             font-size: 18px;
@@ -184,32 +179,32 @@
         &__wrapper {
             padding: 60px 0 80px 0;
         }
-    
+
         &__title-wrapper {
             margin-bottom: 20px;
         }
-    
+
         &__title {
             font-weight: 700;
             font-size: 23px;
         }
-    
+
         &__vacant-plots {
             font-weight: 400;
             font-size: 15px;
             margin-bottom: 40px;
         }
-    
+
         &__vacant-plots-value {
             font-weight: 700;
             font-size: 14px;
         }
-    
+
         &__buttons {
             flex-direction: column;
             gap: 10px;
         }
-    
+
         &__btn {
             width: 310px;
             padding: 17px 34px;

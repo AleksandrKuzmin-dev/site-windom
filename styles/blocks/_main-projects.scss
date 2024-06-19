@@ -44,7 +44,7 @@
         }
     }
 
-    &__button:hover &__button-map-icon path{
+    &__button:hover &__button-map-icon path {
         stroke: white;
     }
 
@@ -64,9 +64,9 @@
     }
 
     &__hr {
-        border: none; 
+        border: none;
         color: #efa35a;
-        background-color: #efa35a; 
+        background-color: #efa35a;
         height: 1px;
         margin-bottom: 80px;
     }
@@ -114,15 +114,14 @@
 
     &__card-img-wrapper {
         overflow: hidden;
-
     }
 
     &__card-img {
-        transition: .4s;
+        transition: 0.4s;
     }
 
     &__card:hover &__card-img {
-        transform: scale(110%)
+        transform: scale(110%);
     }
 
     &__btn-more {
@@ -131,9 +130,7 @@
     }
 }
 
-
 @media (max-width: 1680px) {
-
     .main-projects {
         margin-bottom: 130px;
 
@@ -160,13 +157,12 @@
     }
 }
 
-
 @media (max-width: 1280px) {
     .main-projects {
         margin-bottom: 80px;
-        
+
         &__buttons {
-           display: none;
+            display: none;
         }
 
         &__cards {
@@ -176,7 +172,6 @@
         &__card-address {
             font-size: 18px;
             line-height: 130%;
-          
         }
 
         &__card-date {
@@ -194,10 +189,8 @@
     }
 }
 
-
 @media (max-width: 640px) {
     .main-projects {
-
         &__title {
             margin-bottom: 20px;
         }
@@ -218,7 +211,6 @@
 
         &__card-address {
             font-size: 15px;
-          
         }
 
         &__card-date {

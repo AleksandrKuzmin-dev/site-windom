@@ -18,7 +18,6 @@
         font-size: 120px;
         text-align: center;
         color: #efa359;
-        
     }
 
     &__numbers-line {
@@ -50,7 +49,7 @@
         font-size: 30px;
         margin-bottom: 20px;
         &_orange {
-            color: #EFA359;
+            color: #efa359;
             font-weight: 500;
         }
     }
@@ -63,20 +62,13 @@
         margin-top: 60px;
     }
 
-    &__social-item {
-       
-    }
-
     &__social-item-icon {
         width: 45px;
     }
 
- 
-
     &__img-wrapper {
         padding: 29px 0;
         height: 100%;
-        
     }
 
     &__img {
@@ -93,14 +85,13 @@
     &__img-line {
         height: 100%;
         width: 90%;
-        border: 1px solid #EFA359;
+        border: 1px solid #efa359;
         position: absolute;
         top: 0;
         left: 5%;
         z-index: -1;
     }
 }
-
 
 @media (max-width: 1680px) {
     .o-kompanii {
@@ -113,15 +104,10 @@
             font-weight: 500;
             font-size: 100px;
         }
-    
-        &__numbers-line {
-    
-        }
-    
+
         &__numbers-text {
             font-weight: 400;
             font-size: 24px;
-    
         }
 
         &__text {
@@ -129,13 +115,8 @@
             font-size: 22px;
             line-height: 145%;
         }
-
-        &__content {
-            
-        }
     }
 }
-
 
 @media (max-width: 1280px) {
     .o-kompanii {
@@ -148,7 +129,7 @@
             font-weight: 500;
             font-size: 60px;
         }
-    
+
         &__numbers-text {
             font-weight: 400;
             font-size: 15px;
@@ -172,17 +153,11 @@
         &__social-item {
             width: 30px;
         }
-
-        &__img-line {
-          
-        }
     }
 }
 
-
 @media (max-width: 834px) {
-   .o-kompanii {
-
+    .o-kompanii {
         &__numbers {
             grid-template-columns: 1fr;
             justify-items: center;
@@ -222,12 +197,13 @@
         &__title {
             margin-bottom: 40px;
         }
-   }
+    }
 }
 
 @media (max-width: 380px) {
     .o-kompanii {
-        &__title, &__text-wrapper {
+        &__title,
+        &__text-wrapper {
             padding: 0 40px;
         }
         &__img-line {
@@ -239,5 +215,4 @@
             margin-bottom: 20px;
         }
     }
-
 }

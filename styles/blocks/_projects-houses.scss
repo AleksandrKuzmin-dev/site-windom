@@ -1,7 +1,5 @@
 .projects-houses {
     margin-bottom: 100px;
-    &__wrapper {
-    }
 
     &__title {
         font-weight: 400;
@@ -62,12 +60,11 @@
         }
     }
 
-    &__filter-btn:hover &__filter-icon-map path{
-        
+    &__filter-btn:hover &__filter-icon-map path {
         stroke: white;
     }
 
-    &__filter-icon-map path{
+    &__filter-icon-map path {
         transition: 0.3s;
     }
 
@@ -104,13 +101,6 @@
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         gap: 20px;
-    }
-
-    &__card {
-    }
-
-    &__card-img {
-        
     }
 
     &__card-content-wrapper {
@@ -182,7 +172,7 @@
         margin: 90px 0;
         position: relative;
     }
-    
+
     &__popular-cards-line {
         position: absolute;
         top: 25px;
@@ -211,9 +201,6 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 17px;
-    }
-
-    &__popular-card {
     }
 
     &__popular-card-img {
@@ -308,13 +295,8 @@
     }
 }
 
-
 @media (max-width: 1680px) {
     .projects-houses {
-
-        &__wrapper {
-        }
-    
         &__title {
             font-weight: 500;
             font-size: 46px;
@@ -325,86 +307,34 @@
                 font-size: 46px;
             }
         }
-    
+
         &__filters {
             gap: 30px;
             margin-bottom: 60px;
             padding: 0 128px;
         }
-    
-        &__filter-btn {
-    
-            &_border {
-            }
-    
-            &_fill-orange {
-            }
-        }
-    
-        &__filter-icon-map {
-        }
-    
+
         &__menu {
             gap: 11px;
             margin-bottom: 20px;
         }
-    
+
         &__menu-item {
             font-weight: 400;
             font-size: 30px;
-            &_bold {
-            }
         }
-    
-        &__menu-circle {
-        }
-    
+
         &__devider {
             margin-bottom: 60px;
         }
-    
+
         &__cards {
             gap: 20px;
-        }
-    
-        &__card {
-        }
-    
-        &__card-img {
         }
 
         &__card-content-wrapper {
             padding: 20px 8px 30px 30px;
-        
         }
-    
-        &__title-wrapper {
-        }
-    
-        &__card-title {
-        }
-    
-        &__card-price {
-        }
-    
-        &__details {
-        }
-    
-        &__details-item {
-        }
-    
-        &__details-item-icon {
-        }
-    
-        &__details-text {
-        }
-    
-        &__card-button {
-        }
-    
-        &__popular-cards-wrapper {
-        }
-
 
         &__popular-cards-line {
             width: 40%;
@@ -419,64 +349,20 @@
                 font-weight: 400;
                 font-size: 46px;
             }
-        
         }
-    
+
         &__popular-cards {
             gap: 20px;
-        }
-    
-        &__popular-card {
-        }
-    
-        &__popular-card-img {
         }
 
         &__popular-card-content-wrapper {
             padding: 30px;
-        }
-    
-        &__popular-card-title-wrapper {
-        }
-    
-        &__popular-card-title {
-        }
-    
-        &__populcar-card-price {
-        }
-    
-        &__populcar-card-button {
-        }
-    
-        &__pagination {
-        }
-    
-        &__pagination-nav-btn {
-    
-            &_active {
-            }
-        }
-    
-        &__pagination-page-buttons {
-        }
-    
-        &__pagination-page-btn {
-    
-            &_active {
-            }
-    
-            &_visible {
-            }
         }
     }
 }
 
 @media (max-width: 1280px) {
     .projects-houses {
-
-        &__wrapper {
-        }
-    
         &__title {
             font-weight: 500;
             font-size: 30px;
@@ -488,13 +374,13 @@
                 font-size: 30px;
             }
         }
-    
+
         &__filters {
             gap: 15px;
             margin-bottom: 30px;
             padding: 0 27px;
         }
-    
+
         &__filter-btn {
             font-weight: 400;
             font-size: 14px;
@@ -505,86 +391,63 @@
                 font-weight: 400;
                 font-size: 14px;
             }
-    
+
             &_fill-orange {
                 font-weight: 400;
                 font-size: 14px;
                 color: #fff;
             }
         }
-    
+
         &__filter-icon-map {
             height: 20px;
             width: 20px;
         }
-    
+
         &__menu {
             gap: 8px;
             margin-bottom: 20px;
         }
-    
+
         &__menu-item {
             font-weight: 400;
             font-size: 24px;
-            &_bold {
-            }
         }
-    
-        &__menu-circle {
-        }
-    
+
         &__devider {
             margin-bottom: 30px;
         }
-    
+
         &__cards {
             row-gap: 30px;
             column-gap: 10px;
             grid-template-columns: 1fr 1fr;
         }
-    
-        &__card {
-        }
-    
-        &__card-img {
-        }
 
         &__card-content-wrapper {
             padding: 20px 27px 20px 20px;
         }
-    
-        &__title-wrapper {
-        }
-    
-        &__card-title {
-        }
-    
-        &__card-price {
-        }
-    
-        &__details {
-        }
-    
+
         &__details-item {
             gap: 20px;
         }
-    
+
         &__details-item-icon {
             height: 30px;
             width: 30px;
         }
-    
+
         &__details-text {
             font-weight: 400;
             font-size: 18px;
             line-height: 130%;
         }
-    
+
         &__card-button {
             font-weight: 700;
             font-size: 18px;
         }
-    
+
         &__popular-cards-wrapper {
             margin: 80px 0;
         }
@@ -600,41 +463,31 @@
                 font-size: 30px;
             }
         }
-    
+
         &__popular-cards {
             gap: 30px;
             grid-template-columns: 1fr;
         }
-    
-        &__popular-card {
-        }
-    
-        &__popular-card-img {
-        }
 
         &__popular-card-content-wrapper {
             padding: 30px;
-        
         }
-    
-        &__popular-card-title-wrapper {
-        }
-    
+
         &__popular-card-title {
             font-weight: 500;
             font-size: 30px;
         }
-    
+
         &__populcar-card-price {
             font-weight: 500;
             font-size: 28px;
         }
-    
+
         &__populcar-card-button {
             font-weight: 700;
             font-size: 18px;
         }
-    
+
         &__pagination {
             gap: 5px;
         }
@@ -655,17 +508,10 @@
     }
 }
 
-
 @media (max-width: 834px) {
     .projects-houses {
-
-        &__wrapper {
-        }
-    
         &__title {
             display: none;
-            &_orange-italic {
-            }
         }
 
         &__title-mobile {
@@ -685,7 +531,7 @@
                 color: #efa35a;
             }
         }
-    
+
         &__filters {
             padding: 0;
             overflow-x: scroll;
@@ -696,7 +542,7 @@
                 width: 0;
             }
         }
-    
+
         &__filter-btn {
             font-weight: 400;
             font-size: 14px;
@@ -705,14 +551,6 @@
             flex-shrink: 0;
             padding: 10px 20px;
             text-align: center;
-            &_border {
-            }
-    
-            &_fill-orange {
-            }
-        }
-    
-        &__filter-icon-map {
         }
 
         &__filters-next {
@@ -722,10 +560,9 @@
             align-items: center;
             justify-content: center;
             border: unset;
-            background-color: #D9D9D9;
+            background-color: #d9d9d9;
             min-width: max-content;
             flex-shrink: 0;
-            
         }
 
         &__filters-wrapper {
@@ -733,82 +570,73 @@
             align-items: flex-start;
             gap: 8px;
             margin-bottom: 20px;
-
-
         }
-    
+
         &__menu {
             gap: 7px;
             margin-bottom: 10px;
-
         }
-    
+
         &__menu-item {
             font-weight: 400;
             font-size: 16px;
-            &_bold {
-            }
         }
-    
+
         &__menu-circle {
             width: 7px;
-            height: 7px;  
+            height: 7px;
         }
-    
+
         &__devider {
             margin-bottom: 20px;
         }
-    
+
         &__cards {
             gap: 20px;
             grid-template-columns: 1fr;
         }
-    
-        &__card {
-        }
-    
+
         &__card-img {
             width: 100%;
         }
 
         &__card-content-wrapper {
             padding: 8px 30px 25px 20px;
-        
         }
-    
+
         &__title-wrapper {
             flex-wrap: wrap;
             gap: 15px;
         }
-    
+
         &__card-title {
             font-weight: 700;
             font-size: 24px;
         }
-    
+
         &__card-price {
             font-weight: 700;
             font-size: 23px;
         }
-    
+
         &__details {
             gap: 14px;
         }
-    
+
         &__details-item {
             gap: 15px;
         }
-    
+
         &__details-item-icon {
             width: 30px;
             height: 30px;
         }
-    
+
         &__details-text {
             font-weight: 400;
             font-size: 16px;
         }
-    
+
         &__card-button {
             font-weight: 700;
             font-size: 14px;
@@ -816,9 +644,8 @@
             padding: 12px 24px;
             width: 100%;
             transition: 0.3s;
-
         }
-    
+
         &__popular-cards-wrapper {
             margin: 60px 0;
         }
@@ -836,49 +663,41 @@
                 font-weight: 500;
                 font-size: 30px;
 
-
                 display: block;
                 padding-left: 140px;
             }
         }
-    
+
         &__popular-cards {
             gap: 20px;
-        }
-    
-        &__popular-card {
-        }
-    
-        &__popular-card-img {
         }
 
         &__popular-card-content-wrapper {
             padding: 20px 29px 20px 20px;
-        
         }
-    
+
         &__popular-card-title-wrapper {
             flex-wrap: wrap;
             gap: 15px;
         }
-    
+
         &__popular-card-title {
             font-weight: 500;
             font-size: 30px;
         }
-    
+
         &__populcar-card-price {
             font-weight: 500;
             font-size: 28px;
         }
-    
+
         &__populcar-card-button {
             font-weight: 700;
             font-size: 14px;
             padding: 12px 24px;
             width: 100%;
         }
-    
+
         &__pagination-nav-btn {
             padding: 10px 15px;
             font-weight: 400;

@@ -23,7 +23,7 @@
         text-transform: uppercase;
         color: #fff;
         width: 230px;
-        border-bottom: 1px solid #EFA35A;
+        border-bottom: 1px solid #efa35a;
         margin-bottom: 30px;
     }
 
@@ -70,12 +70,11 @@
         gap: 10px;
         align-items: center;
         padding: 8px 20px 7px 3px;
-        border: 1px solid #FFFFFF;
+        border: 1px solid #ffffff;
         width: max-content;
         color: white;
     }
 }
-
 
 @media (max-width: 1680px) {
     .footer {
@@ -83,13 +82,12 @@
             width: 200px;
             font-size: 25px;
             margin-bottom: 30px;
-         
         }
-    
+
         &__links {
-           gap: 14px;
+            gap: 14px;
         }
-    
+
         &__link {
             font-weight: 400;
             font-size: 23px;
@@ -103,59 +101,55 @@
             display: flex;
             justify-content: space-between;
         }
-    
+
         &__nav {
             display: flex;
             flex-direction: column;
         }
-    
+
         &__nav-title {
             width: 200px;
         }
-    
+
         &__links {
-           display: none;
+            display: none;
         }
     }
 }
 
-
 @media (max-width: 834px) {
     .footer {
         &__wrapper {
-          padding: 20px 0 30px 0;
+            padding: 20px 0 30px 0;
         }
-    
+
         &__nav {
             display: none;
         }
-    
-    
+
         &__logo-wrapper {
-           display: flex;
-           justify-content: space-between;
-           width: 100%;
-           align-items: center;
-           flex-wrap: wrap;
-           gap: 20px;
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px;
         }
-    
+
         &__logo {
             width: 60px;
             margin-bottom: 0;
         }
-    
-    
+
         &__social-item {
             width: 30px;
             height: 30px;
         }
-    
-        &__bottom-wrapper {
-          flex-direction: column-reverse;
-          gap: 20px;
-          align-items: flex-start;
-        }
 
+        &__bottom-wrapper {
+            flex-direction: column-reverse;
+            gap: 20px;
+            align-items: flex-start;
+        }
     }
 }

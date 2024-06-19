@@ -1,7 +1,5 @@
 .reviews {
     margin-bottom: 150px;
-    &__wrapper {
-    }
 
     &__title {
         margin-bottom: 60px;
@@ -21,12 +19,6 @@
         align-items: center;
         gap: 10px;
         margin-bottom: 29px;
-    }
-
-    &__img {
-    }
-
-    &__name-wrapper {
     }
 
     &__name {
@@ -54,7 +46,7 @@
     }
 
     &__arrow-prev {
-        left: 0
+        left: 0;
     }
 
     &__arrow-next {
@@ -88,18 +80,17 @@
     }
 }
 
-
 @media (max-width: 1680px) {
     .reviews {
         margin-bottom: 130px;
         &__name {
             font-size: 20px;
         }
-    
+
         &__description {
             font-size: 18px;
         }
-    
+
         &__text {
             font-size: 15px;
             line-height: 130%;
@@ -111,7 +102,6 @@
     }
 }
 
-
 @media (max-width: 834px) {
     .reviews {
         margin-bottom: 80px;
@@ -120,13 +110,12 @@
         }
         &__name {
             font-size: 16px;
-           
         }
-    
+
         &__description {
             font-size: 14px;
-        }   
-    
+        }
+
         &__text {
             font-size: 14px;
         }

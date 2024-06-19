@@ -1,6 +1,6 @@
 .modal-video {
     position: fixed;
-    background: rgba(0,0,0,0.8);
+    background: rgba(0, 0, 0, 0.8);
     z-index: 100;
     top: 0;
     width: 100%;
@@ -17,15 +17,11 @@
         border: unset;
         cursor: pointer;
     }
-    &__wrapper {
-
-    }
 
     &__video {
         width: 70vw;
     }
 }
-
 
 @media (max-width: 1050px) {
     .modal-video {

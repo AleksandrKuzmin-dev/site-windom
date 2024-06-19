@@ -6,7 +6,6 @@
         align-items: center;
         justify-content: space-between;
         margin-bottom: 45px;
-        
     }
 
     &__title {
@@ -71,39 +70,36 @@
     }
 }
 
-
-
 @media (max-width: 1680px) {
     .ipoteka-faq {
         margin-bottom: 130px;
-    
+
         &__title {
             font-weight: 700;
             font-size: 46px;
         }
-    
+
         &__btn {
             font-weight: 400;
             font-size: 18px;
         }
-    
+
         &__card {
             padding: 40px 15px 40px 60px;
             height: max-content;
             transition: 0.3s;
         }
-    
+
         &__card-title {
             font-weight: 700;
             font-size: 30px;
-            
         }
-    
+
         &__arrow {
             width: 60px;
             height: 60px;
         }
-    
+
         &__answer {
             font-weight: 400;
             font-size: 20px;
@@ -115,39 +111,39 @@
 @media (max-width: 1280px) {
     .ipoteka-faq {
         margin-bottom: 80px;
-    
+
         &__title {
             font-weight: 600;
             font-size: 30px;
         }
-    
+
         &__btn {
             font-weight: 400;
             font-size: 18px;
             padding: 10px 20px;
         }
-    
+
         &__card {
             padding: 30px 8px 30px 30px;
         }
-    
+
         &__card-title-wrapper {
             gap: 60px;
         }
-    
+
         &__card-title {
             font-weight: 600;
             font-size: 25px;
             max-width: 539px;
         }
-    
+
         &__arrow {
             width: 40px;
             height: 40px;
             min-width: 40px;
             min-height: 40px;
         }
-    
+
         &__answer {
             padding-top: 30px;
             font-weight: 400;
@@ -162,7 +158,7 @@
             margin-bottom: 20px;
             align-items: flex-start;
         }
-    
+
         &__title {
             font-weight: 700;
             font-size: 30px;
@@ -174,7 +170,7 @@
                 padding-left: 80px;
             }
         }
-    
+
         &__btn {
             display: none;
             &_mobile {
@@ -185,16 +181,16 @@
                 padding: 20px 50px;
             }
         }
-    
+
         &__card-title-wrapper {
             gap: 0px;
         }
-    
+
         &__card-title {
             font-weight: 700;
             font-size: 18px;
         }
-    
+
         &__answer {
             font-weight: 400;
             font-size: 14px;

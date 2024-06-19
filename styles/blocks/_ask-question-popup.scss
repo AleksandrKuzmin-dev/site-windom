@@ -2,7 +2,7 @@
     position: fixed;
     width: 100%;
     height: 100%;
-    background-color: rgba(0,0,0,0.7);
+    background-color: rgba(0, 0, 0, 0.7);
     top: 0;
     display: flex;
     align-items: center;
@@ -25,7 +25,6 @@
         border: unset;
         cursor: pointer;
     }
-
 
     &__img {
         height: 100%;
@@ -66,26 +65,26 @@
     }
 
     &__input {
-        border: 1px solid #B0B0B0;
+        border: 1px solid #b0b0b0;
         height: 40px;
         &_error {
-            border: 1px solid #FC3131;
+            border: 1px solid #fc3131;
         }
     }
 
     &__input:focus {
         outline: none;
-        border: 1px solid #EFA359
+        border: 1px solid #efa359;
     }
 
     &__textarea {
         resize: none;
-        border: 1px solid #B0B0B0;
+        border: 1px solid #b0b0b0;
     }
 
     &__textarea:focus {
         outline: none;
-        border: 1px solid #EFA359
+        border: 1px solid #efa359;
     }
 
     &__error-message {
@@ -94,7 +93,7 @@
         text-align: center;
         color: #fff;
         padding: 11px 22px;
-        background: #FC3131;
+        background: #fc3131;
         margin-bottom: 17px;
     }
 
@@ -103,7 +102,7 @@
         font-size: 18px;
         color: #fff;
         padding: 16px 32px;
-        background: #EFA35A;
+        background: #efa35a;
         border: unset;
         display: block;
         width: 100%;
@@ -113,7 +112,7 @@
         cursor: pointer;
 
         &:hover {
-            background: #EC8520;
+            background: #ec8520;
         }
     }
 
@@ -149,9 +148,8 @@
         background-image: url('data:image/svg+xml;utf8,<svg width="9" height="8" viewBox="0 0 9 8" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.82035 0.742649C8.93007 0.852512 8.9917 1.00144 8.9917 1.15671C8.9917 1.31199 8.93007 1.46091 8.82035 1.57077L3.3516 7.03952C3.24173 7.14925 3.09281 7.21088 2.93753 7.21088C2.78226 7.21088 2.63333 7.14925 2.52347 7.03952L0.179721 4.69577C0.0762206 4.5847 0.0198739 4.43779 0.0225522 4.28599C0.0252305 4.13419 0.0867247 3.98936 0.194079 3.88201C0.301433 3.77465 0.446265 3.71316 0.598063 3.71048C0.74986 3.7078 0.896771 3.76415 1.00785 3.86765L2.93753 5.79636L7.99222 0.742649C8.10208 0.632922 8.25101 0.571289 8.40628 0.571289C8.56156 0.571289 8.71048 0.632922 8.82035 0.742649Z" fill="black"/></svg>');
         background-repeat: no-repeat;
         background-position: center;
-      }
+    }
 }
-
 
 @media (max-width: 834px) {
     .ask-question-popup {
@@ -171,7 +169,6 @@
     }
 }
 
-
 @media (max-width: 400px) {
     .ask-question-popup {
         align-items: unset;
@@ -181,10 +178,4 @@
             width: 100%;
         }
     }
-
 }
-
-
-
-
-  

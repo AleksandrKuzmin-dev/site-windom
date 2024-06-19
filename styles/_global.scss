@@ -7,6 +7,21 @@ body {
     position: relative;
 }
 
+body::-webkit-scrollbar {
+    width: 6px; /* Ширина всего элемента навигации */
+    height: 4px;
+}
+
+body::-webkit-scrollbar-track {
+    background: #fff; /* Цвет дорожки */
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #efa359; /* Цвет бегунка */
+    border-radius: 20px; /* Округление бегунка */
+    border: 3px solid #efa359; /* Оформление границ бегунка */
+}
+
 .none {
     display: none !important;
 }
@@ -24,7 +39,7 @@ body {
     color: #efa359;
     font-weight: 800;
     line-height: 90%;
-    
+
     &_white {
         color: #fff;
     }
@@ -77,14 +92,14 @@ body {
     cursor: pointer;
 
     &:hover {
-        background: #EC8520;
+        background: #ec8520;
     }
 
     &_transparent {
         background: transparent;
 
         &:hover {
-            background: #F5DCC2
+            background: #f5dcc2;
         }
     }
 
@@ -97,10 +112,9 @@ body {
     }
 
     &_not-active {
-        background-color: #C5B9AE;
+        background-color: #c5b9ae;
         color: #fff;
     }
-
 }
 
 @media (max-width: 1680px) {
@@ -121,10 +135,8 @@ body {
         padding: 0 60px;
         max-width: 100%;
     }
-    
 }
 @media (max-width: 1280px) {
-
     .h1-main {
         font-size: 120px;
     }
@@ -137,9 +149,7 @@ body {
     .h2 {
         font-size: 30px;
     }
-
 }
-
 
 @media (max-width: 680px) {
     .h1-main {
@@ -158,7 +168,6 @@ body {
 
 @media (max-width: 380px) {
     .container {
-
         &_mobile {
             padding: 0 0px;
         }

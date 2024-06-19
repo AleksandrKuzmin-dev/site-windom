@@ -12,7 +12,7 @@
     background-repeat: no-repeat;
     margin-bottom: 150px;
     border: 1px solid black;
-    
+
     &__wrapper {
         padding: 100px 0;
     }
@@ -106,20 +106,20 @@
 
         &_page {
             background-image: linear-gradient(
-                360deg,
-                #323232 0.01%,
-                #323232 40%,
-                rgba(53, 53, 53, 0.74) 80.5%,
-                rgba(50, 50, 50, 0) 100%
-            ),
-            url('./../images/smi-o-nas-page-bg-mobile.png');
+                    360deg,
+                    #323232 0.01%,
+                    #323232 40%,
+                    rgba(53, 53, 53, 0.74) 80.5%,
+                    rgba(50, 50, 50, 0) 100%
+                ),
+                url('./../images/smi-o-nas-page-bg-mobile.png');
         }
 
         &__wrapper {
             padding: 70px 0 340px 0;
-            
+
             &_page {
-                padding: 340px 0 70px 0; 
+                padding: 340px 0 70px 0;
             }
         }
 

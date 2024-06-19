@@ -35,7 +35,6 @@
     &__details-items {
         display: grid;
         grid-template-columns: 1fr;
-
     }
 
     &__details-item {
@@ -65,8 +64,6 @@
         color: #000;
         margin-bottom: 60px;
     }
-
-
 
     &__calc-form-top-wrapper {
         display: grid;
@@ -110,7 +107,7 @@
         border: unset;
         background: #f7f8f8;
 
-        &:focus{
+        &:focus {
             outline: unset;
         }
     }
@@ -132,12 +129,24 @@
         height: 2px; /* Specified height of slider */
         outline: none; /* Remove outline */
         opacity: 1; /* Set transparency (for mouse-over effects on hover) */
-        -webkit-transition: .2s; /* 0.2 seconds transition on hover */
-        transition: opacity .2s;
-        background: linear-gradient(to right, $range-progress-color 0%, $range-progress-color var(--range-progress-width), #f7f8f8 var(--range-progress-width), #f7f8f8 100%);
+        -webkit-transition: 0.2s; /* 0.2 seconds transition on hover */
+        transition: opacity 0.2s;
+        background: linear-gradient(
+            to right,
+            $range-progress-color 0%,
+            $range-progress-color var(--range-progress-width),
+            #f7f8f8 var(--range-progress-width),
+            #f7f8f8 100%
+        );
 
         &::-moz-range-track {
-            background: linear-gradient(to right, $range-progress-color 0%, $range-progress-color var(--range-progress-width), #f7f8f8 var(--range-progress-width), #f7f8f8 100%);
+            background: linear-gradient(
+                to right,
+                $range-progress-color 0%,
+                $range-progress-color var(--range-progress-width),
+                #f7f8f8 var(--range-progress-width),
+                #f7f8f8 100%
+            );
         }
 
         &::-webkit-slider-thumb {
@@ -169,7 +178,7 @@
     &__calc-output-range {
         width: 100%;
         display: block;
-        background-color: #F7F8F8;
+        background-color: #f7f8f8;
         padding: 15px;
         border: 1px solid #ccc;
         bottom: 8px;
@@ -197,373 +206,236 @@
     }
 }
 
-
 @media (max-width: 1680px) {
     .project-house-calc {
-       margin-bottom: 80px;
+        margin-bottom: 80px;
         &__wrapper {
-           gap: 30px;
-           grid-template-columns: 1fr 45%;
+            gap: 30px;
+            grid-template-columns: 1fr 45%;
         }
-    
+
         &__details {
-           padding: 40px 40px 50px 40px;
-           gap: 40px;
+            padding: 40px 40px 50px 40px;
+            gap: 40px;
         }
-    
+
         &__details-block-title-wrapper {
             gap: 20px;
         }
-    
+
         &__details-title {
             font-weight: 400;
             font-size: 27px;
         }
-    
+
         &__details-block-title-icon {
-          width: 45px;
-          height: 45px;
+            width: 45px;
+            height: 45px;
         }
-    
+
         &__details-items {
-           gap: 14px;
+            gap: 14px;
         }
-    
+
         &__details-item {
-           line-height: normal;
-           font-weight: 400;
+            line-height: normal;
+            font-weight: 400;
             font-size: 20px;
         }
-    
+
         &__details-item-icon {
-           width: 25px;
-           height: 25px;
+            width: 25px;
+            height: 25px;
         }
-    
+
         &__calc {
-           padding: 50px 10px 80px 15px;
+            padding: 50px 10px 80px 15px;
         }
-    
+
         &__calc-title {
             font-weight: 700;
             font-size: 30px;
             margin-bottom: 40px;
         }
-    
-    
+
         &__calc-input-name {
             font-weight: 400;
             font-size: 24px;
         }
-    
+
         &__calc-select {
-          
             font-weight: 400;
             font-size: 20px;
-            &:focus{
-              
-            }
         }
-    
-        &__calc-input-range-wrapper {
-           
-        }
-    
-        &__calc-input-range {
-           
-    
-            &::-moz-range-track {
-               
-            }
-    
-            &::-webkit-slider-thumb {
-               
-            }
-    
-            &::-moz-range-thumb {
-                
-            }
-    
-            &::-moz-range-progress {
-                
-            }
-        }
-    
-    
-    
+
         &__calc-output-range {
             font-weight: 400;
             font-size: 20px;
         }
-    
-        &__calc-form-btn {
-            &:hover {
-                
-            }
-        }
     }
 }
 
-
 @media (max-width: 1280px) {
     .project-house-calc {
-       margin-bottom: 80px;
+        margin-bottom: 80px;
         &__wrapper {
             display: flex;
             flex-direction: column;
             gap: 80px;
         }
-    
+
         &__details {
-           padding: 40px 40px 50px 40px;
-           gap: 40px;
+            padding: 40px 40px 50px 40px;
+            gap: 40px;
         }
-    
+
         &__details-block-title-wrapper {
             gap: 20px;
         }
-    
+
         &__details-title {
             font-weight: 400;
             font-size: 27px;
         }
-    
+
         &__details-block-title-icon {
-          width: 45px;
-          height: 45px;
+            width: 45px;
+            height: 45px;
         }
-    
-        &__details-items {
-          
-        }
-    
+
         &__details-item {
             font-weight: 400;
             font-size: 20px;
         }
-    
+
         &__details-item-icon {
-           width: 25px;
-           height: 25px;
+            width: 25px;
+            height: 25px;
         }
-    
+
         &__calc {
-           padding: 55px 20px 60px 20px;
+            padding: 55px 20px 60px 20px;
         }
-    
+
         &__calc-title {
             font-weight: 500;
             font-size: 46px;
             margin-bottom: 60px;
         }
-    
-    
-    
-        &__calc-form-top-wrapper {
-           
-        }
-    
-        &__calc-input-wrapper {
-          
-        }
-    
-        &__calc-select-wrapper {
-           
-    
-            &::after {
-               
-            }
-        }
-    
+
         &__calc-input-name {
             font-weight: 400;
             font-size: 30px;
             margin-bottom: 20px;
         }
-    
+
         &__calc-select {
             padding: 28px 20px;
             font-weight: 400;
             font-size: 27px;
-    
-            &:focus{
-              
-            }
         }
-    
-        &__calc-input-range-wrapper {
-           
-        }
-    
-        &__calc-input-range {
-           
-    
-            &::-moz-range-track {
-               
-            }
-    
-            &::-webkit-slider-thumb {
-               
-            }
-    
-            &::-moz-range-thumb {
-                
-            }
-    
-            &::-moz-range-progress {
-                
-            }
-        }
-    
-    
-    
+
         &__calc-output-range {
             padding: 28px 20px;
             font-weight: 400;
             font-size: 27px;
         }
-    
+
         &__calc-form-btn {
             font-weight: 500;
             font-size: 25px;
             padding: 27px 40px;
-            &:hover {
-                
-            }
         }
     }
 }
 
 @media (max-width: 834px) {
     .project-house-calc {
-       margin-bottom: 40px;
+        margin-bottom: 40px;
         &__wrapper {
-           gap: 0;
+            gap: 0;
         }
 
         &__container {
             padding: 0;
         }
-    
+
         &__details {
-           background: #F7F8F8;
-           padding: 40px;
+            background: #f7f8f8;
+            padding: 40px;
         }
-    
+
         &__details-block-title-wrapper {
             gap: 20px;
         }
-    
+
         &__details-title {
             font-weight: 700;
             font-size: 18px;
         }
-    
+
         &__details-block-title-icon {
-          width: 30px;
-          height: 30px;
+            width: 30px;
+            height: 30px;
         }
-    
+
         &__details-items {
-           gap: 10px;
+            gap: 10px;
         }
-    
+
         &__details-item {
-           gap: 11px;
-           align-items: flex-start;
+            gap: 11px;
+            align-items: flex-start;
         }
-    
+
         &__details-item-icon {
-           width: 20px;
-           height: 20px;
+            width: 20px;
+            height: 20px;
         }
-    
+
         &__calc {
-           padding: 40px 40px 50px 40px;
+            padding: 40px 40px 50px 40px;
         }
-    
+
         &__calc-title {
             font-weight: 500;
             font-size: 30px;
             margin-bottom: 40px;
         }
-    
-    
-    
+
         &__calc-form-top-wrapper {
-          gap: 7px;
+            gap: 7px;
         }
-    
-        &__calc-input-wrapper {
-           
-        }
-    
+
         &__calc-select-wrapper {
-           
-    
             &::after {
                 content: url('../images/calc-arrow-small.svg');
             }
         }
-    
+
         &__calc-input-name {
             font-weight: 400;
             font-size: 18px;
             margin-bottom: 10px;
         }
-    
+
         &__calc-select {
             font-weight: 400;
             font-size: 14px;
             padding: 13px 26px;
-    
-            &:focus{
-              
-            }
         }
-    
-        &__calc-input-range-wrapper {
-           
-        }
-    
-        &__calc-input-range {
-           
-    
-            &::-moz-range-track {
-               
-            }
-    
-            &::-webkit-slider-thumb {
-               
-            }
-    
-            &::-moz-range-thumb {
-                
-            }
-    
-            &::-moz-range-progress {
-                
-            }
-        }
-    
-    
-    
+
         &__calc-output-range {
             font-weight: 400;
             font-size: 14px;
             padding: 13px 26px;
         }
-    
+
         &__calc-form-btn {
             padding: 15px 30px;
             font-weight: 700;
             font-size: 18px;
             margin-top: 0px;
-            &:hover {
-                
-            }
         }
-
-        
     }
 }
