@@ -10246,6 +10246,7 @@ body {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  max-width: unset;
 }
 .project-house-similar__card-content {
   padding: 40px 30px;

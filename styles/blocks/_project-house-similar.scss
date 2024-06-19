@@ -24,6 +24,7 @@
     &__card-img {
         width: 100%;
         object-fit: cover;
+        max-width: unset;
     }
 
     &__card-content {
