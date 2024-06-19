@@ -1,0 +1,569 @@
+.project-house-calc {
+    margin-bottom: 100px;
+    &__wrapper {
+        display: grid;
+        grid-template-columns: 1fr 623px;
+        gap: 67px;
+    }
+
+    &__details {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        padding: 40px 40px 50px 40px;
+        background: #fff;
+    }
+
+    &__details-block-title-wrapper {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        margin-bottom: 20px;
+    }
+
+    &__details-title {
+        font-weight: 400;
+        font-size: 32px;
+        color: #000;
+    }
+
+    &__details-block-title-icon {
+        width: 60px;
+        height: 60px;
+    }
+
+    &__details-items {
+        display: grid;
+        grid-template-columns: 1fr;
+
+    }
+
+    &__details-item {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 165%;
+    }
+
+    &__details-item-icon {
+        height: 30px;
+        width: 30px;
+    }
+
+    &__calc {
+        background: #fff;
+        padding: 60px 55px 80px 55px;
+    }
+
+    &__calc-title {
+        font-family: 'Geometry', sans-serif;
+        font-weight: 500;
+        font-size: 46px;
+        text-transform: uppercase;
+        color: #000;
+        margin-bottom: 60px;
+    }
+
+
+
+    &__calc-form-top-wrapper {
+        display: grid;
+        grid-template-columns: 60% 1fr;
+        gap: 20px;
+    }
+
+    &__calc-input-wrapper {
+        margin-bottom: 40px;
+    }
+
+    &__calc-select-wrapper {
+        position: relative;
+
+        &::after {
+            content: url('../images/ipoteka-calc-arrow.svg');
+            display: block;
+            pointer-events: none;
+            position: absolute;
+            top: 50%;
+            right: 20px;
+            transform: translateY(-50%);
+            z-index: 1;
+        }
+    }
+
+    &__calc-input-name {
+        font-weight: 400;
+        font-size: 24px;
+        color: #000;
+        margin-bottom: 10px;
+        display: inline-block;
+    }
+
+    &__calc-select {
+        padding: 15px;
+        width: 100%;
+        font-weight: 400;
+        font-size: 27px;
+        appearance: none;
+        border: unset;
+        background: #f7f8f8;
+
+        &:focus{
+            outline: unset;
+        }
+    }
+
+    &__calc-input-range-wrapper {
+        --range-progress-width: 0%;
+        position: relative;
+        z-index: 0;
+    }
+
+    &__calc-input-range {
+        position: absolute;
+        left: 26px;
+        bottom: -1px;
+
+        -webkit-appearance: none; /* Override default CSS styles */
+        appearance: none;
+        width: 92%; /* Full-width */
+        height: 2px; /* Specified height of slider */
+        outline: none; /* Remove outline */
+        opacity: 1; /* Set transparency (for mouse-over effects on hover) */
+        -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+        transition: opacity .2s;
+        background: linear-gradient(to right, $range-progress-color 0%, $range-progress-color var(--range-progress-width), #f7f8f8 var(--range-progress-width), #f7f8f8 100%);
+
+        &::-moz-range-track {
+            background: linear-gradient(to right, $range-progress-color 0%, $range-progress-color var(--range-progress-width), #f7f8f8 var(--range-progress-width), #f7f8f8 100%);
+        }
+
+        &::-webkit-slider-thumb {
+            -webkit-appearance: none; /* Override default look */
+            appearance: none;
+            width: 25px; /* Set a specific slider handle width */
+            height: 25px; /* Slider handle height */
+            background: #fff; /* Color/background of slider handle */
+            border-radius: 50%; /* Make it circular */
+            cursor: pointer; /* Cursor on hover */
+            box-shadow: 0 4px 10px 0 rgba(85, 85, 85, 0.25); /* Box-shadow of handle */
+        }
+
+        &::-moz-range-thumb {
+            width: 25px; /* Set a specific slider handle width */
+            height: 25px; /* Slider handle height */
+            background: #fff; /* Color/background of slider handle */
+            border-radius: 50%; /* Make it circular */
+            cursor: pointer; /* Cursor on hover */
+            box-shadow: 0 4px 10px 0 rgba(85, 85, 85, 0.25); /* Box-shadow of handle */
+        }
+
+        &::-moz-range-progress {
+            background-color: #efa35a; /* Color of the range progress */
+            height: 2px; /* Same as slider height */
+        }
+    }
+
+    &__calc-output-range {
+        width: 100%;
+        display: block;
+        background-color: #F7F8F8;
+        padding: 15px;
+        border: 1px solid #ccc;
+        bottom: 8px;
+        font-weight: 400;
+        font-size: 27px;
+        z-index: -1;
+        border: unset;
+    }
+
+    &__calc-form-btn {
+        width: 100%;
+        padding: 22px 44px;
+        font-weight: 500;
+        font-size: 25px;
+        color: #fff;
+        background: #efa359;
+        cursor: pointer;
+        border: unset;
+        transition: 0.3s;
+        margin-top: 40px;
+
+        &:hover {
+            background: #ec8520;
+        }
+    }
+}
+
+
+@media (max-width: 1680px) {
+    .project-house-calc {
+       margin-bottom: 80px;
+        &__wrapper {
+           gap: 30px;
+           grid-template-columns: 1fr 45%;
+        }
+    
+        &__details {
+           padding: 40px 40px 50px 40px;
+           gap: 40px;
+        }
+    
+        &__details-block-title-wrapper {
+            gap: 20px;
+        }
+    
+        &__details-title {
+            font-weight: 400;
+            font-size: 27px;
+        }
+    
+        &__details-block-title-icon {
+          width: 45px;
+          height: 45px;
+        }
+    
+        &__details-items {
+           gap: 14px;
+        }
+    
+        &__details-item {
+           line-height: normal;
+           font-weight: 400;
+            font-size: 20px;
+        }
+    
+        &__details-item-icon {
+           width: 25px;
+           height: 25px;
+        }
+    
+        &__calc {
+           padding: 50px 10px 80px 15px;
+        }
+    
+        &__calc-title {
+            font-weight: 700;
+            font-size: 30px;
+            margin-bottom: 40px;
+        }
+    
+    
+        &__calc-input-name {
+            font-weight: 400;
+            font-size: 24px;
+        }
+    
+        &__calc-select {
+          
+            font-weight: 400;
+            font-size: 20px;
+            &:focus{
+              
+            }
+        }
+    
+        &__calc-input-range-wrapper {
+           
+        }
+    
+        &__calc-input-range {
+           
+    
+            &::-moz-range-track {
+               
+            }
+    
+            &::-webkit-slider-thumb {
+               
+            }
+    
+            &::-moz-range-thumb {
+                
+            }
+    
+            &::-moz-range-progress {
+                
+            }
+        }
+    
+    
+    
+        &__calc-output-range {
+            font-weight: 400;
+            font-size: 20px;
+        }
+    
+        &__calc-form-btn {
+            &:hover {
+                
+            }
+        }
+    }
+}
+
+
+@media (max-width: 1280px) {
+    .project-house-calc {
+       margin-bottom: 80px;
+        &__wrapper {
+            display: flex;
+            flex-direction: column;
+            gap: 80px;
+        }
+    
+        &__details {
+           padding: 40px 40px 50px 40px;
+           gap: 40px;
+        }
+    
+        &__details-block-title-wrapper {
+            gap: 20px;
+        }
+    
+        &__details-title {
+            font-weight: 400;
+            font-size: 27px;
+        }
+    
+        &__details-block-title-icon {
+          width: 45px;
+          height: 45px;
+        }
+    
+        &__details-items {
+          
+        }
+    
+        &__details-item {
+            font-weight: 400;
+            font-size: 20px;
+        }
+    
+        &__details-item-icon {
+           width: 25px;
+           height: 25px;
+        }
+    
+        &__calc {
+           padding: 55px 20px 60px 20px;
+        }
+    
+        &__calc-title {
+            font-weight: 500;
+            font-size: 46px;
+            margin-bottom: 60px;
+        }
+    
+    
+    
+        &__calc-form-top-wrapper {
+           
+        }
+    
+        &__calc-input-wrapper {
+          
+        }
+    
+        &__calc-select-wrapper {
+           
+    
+            &::after {
+               
+            }
+        }
+    
+        &__calc-input-name {
+            font-weight: 400;
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+    
+        &__calc-select {
+            padding: 28px 20px;
+            font-weight: 400;
+            font-size: 27px;
+    
+            &:focus{
+              
+            }
+        }
+    
+        &__calc-input-range-wrapper {
+           
+        }
+    
+        &__calc-input-range {
+           
+    
+            &::-moz-range-track {
+               
+            }
+    
+            &::-webkit-slider-thumb {
+               
+            }
+    
+            &::-moz-range-thumb {
+                
+            }
+    
+            &::-moz-range-progress {
+                
+            }
+        }
+    
+    
+    
+        &__calc-output-range {
+            padding: 28px 20px;
+            font-weight: 400;
+            font-size: 27px;
+        }
+    
+        &__calc-form-btn {
+            font-weight: 500;
+            font-size: 25px;
+            padding: 27px 40px;
+            &:hover {
+                
+            }
+        }
+    }
+}
+
+@media (max-width: 834px) {
+    .project-house-calc {
+       margin-bottom: 40px;
+        &__wrapper {
+           gap: 0;
+        }
+
+        &__container {
+            padding: 0;
+        }
+    
+        &__details {
+           background: #F7F8F8;
+           padding: 40px;
+        }
+    
+        &__details-block-title-wrapper {
+            gap: 20px;
+        }
+    
+        &__details-title {
+            font-weight: 700;
+            font-size: 18px;
+        }
+    
+        &__details-block-title-icon {
+          width: 30px;
+          height: 30px;
+        }
+    
+        &__details-items {
+           gap: 10px;
+        }
+    
+        &__details-item {
+           gap: 11px;
+           align-items: flex-start;
+        }
+    
+        &__details-item-icon {
+           width: 20px;
+           height: 20px;
+        }
+    
+        &__calc {
+           padding: 40px 40px 50px 40px;
+        }
+    
+        &__calc-title {
+            font-weight: 500;
+            font-size: 30px;
+            margin-bottom: 40px;
+        }
+    
+    
+    
+        &__calc-form-top-wrapper {
+          gap: 7px;
+        }
+    
+        &__calc-input-wrapper {
+           
+        }
+    
+        &__calc-select-wrapper {
+           
+    
+            &::after {
+                content: url('../images/calc-arrow-small.svg');
+            }
+        }
+    
+        &__calc-input-name {
+            font-weight: 400;
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+    
+        &__calc-select {
+            font-weight: 400;
+            font-size: 14px;
+            padding: 13px 26px;
+    
+            &:focus{
+              
+            }
+        }
+    
+        &__calc-input-range-wrapper {
+           
+        }
+    
+        &__calc-input-range {
+           
+    
+            &::-moz-range-track {
+               
+            }
+    
+            &::-webkit-slider-thumb {
+               
+            }
+    
+            &::-moz-range-thumb {
+                
+            }
+    
+            &::-moz-range-progress {
+                
+            }
+        }
+    
+    
+    
+        &__calc-output-range {
+            font-weight: 400;
+            font-size: 14px;
+            padding: 13px 26px;
+        }
+    
+        &__calc-form-btn {
+            padding: 15px 30px;
+            font-weight: 700;
+            font-size: 18px;
+            margin-top: 0px;
+            &:hover {
+                
+            }
+        }
+
+        
+    }
+}

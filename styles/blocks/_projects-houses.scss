@@ -171,6 +171,11 @@
         text-align: center;
         color: #000;
         border: 1px solid #efa35a;
+
+        transition: 0.3s;
+        &:hover {
+            background: #f5dcc2;
+        }
     }
 
     &__popular-cards-wrapper {
@@ -249,6 +254,11 @@
         font-size: 18px;
         text-align: center;
         color: #000;
+
+        transition: 0.3s;
+        &:hover {
+            background: #f5dcc2;
+        }
     }
 
     &__pagination {
@@ -805,6 +815,8 @@
 
             padding: 12px 24px;
             width: 100%;
+            transition: 0.3s;
+
         }
     
         &__popular-cards-wrapper {

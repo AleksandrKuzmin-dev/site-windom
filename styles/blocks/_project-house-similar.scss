@@ -1,0 +1,152 @@
+.project-house-similar {
+    padding-bottom: 130px;
+
+    &__title {
+        font-family: 'Geometry', sans-serif;
+        font-weight: 500;
+        font-size: 40px;
+        text-transform: uppercase;
+        color: #000;
+        margin-bottom: 40px;
+    }
+
+    &__cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 20px;
+    }
+
+    &__card {
+        border: 1px solid #efa359;
+        background: #fff;
+    }
+
+    &__card-img {
+        width: 100%;
+        object-fit: cover;
+    }
+
+    &__card-content {
+        padding: 40px 30px;
+    }
+
+    &__card-title {
+        font-weight: 500;
+        font-size: 30px;
+        color: #000;
+        margin-bottom: 10px;
+    }
+
+    &__card-details {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-bottom: 30px;
+    }
+
+    &__card-details-item {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+
+    &__card-details-item-icon {
+        width: 40px;
+        height: 40px;
+    }
+
+    &__card-details-item-text {
+        font-weight: 400;
+        font-size: 20px;
+        color: #000;
+    }
+
+    &__card-btn {
+        font-weight: 700;
+        font-size: 18px;
+        text-align: center;
+        color: #000;
+        padding: 15px 68px;
+        border: 1px solid #efa35a;
+        transition: 0.3s;
+
+        &:hover {
+            background: #f5dcc2;
+        }
+    }
+}
+
+@media (max-width: 1680px) {
+    .project-house-similar {
+        padding-bottom: 80px;
+
+        &__title {
+            font-weight: 700;
+            font-size: 30px;
+            margin-bottom: 35px;
+        }
+
+        &__cards {
+            gap: 16px;
+        }
+
+        &__card-content {
+            padding: 30px 20px 24px 20px;
+        }
+
+        &__card-title {
+            font-weight: 500;
+            font-size: 30px;
+            margin-bottom: 10px;
+        }
+
+        &__card-details {
+            gap: 10px;
+        }
+
+        &__card-details-item {
+            gap: 15px;
+        }
+
+        &__card-details-item-icon {
+            width: 33px;
+            height: 33px;
+        }
+
+        &__card-details-item-text {
+            font-weight: 400;
+            font-size: 20px;
+        }
+
+        &__card-btn {
+            font-weight: 700;
+            font-size: 18px;
+            padding: 13px 43px;
+        }
+    }
+}
+
+@media (max-width: 1280px) {
+    .project-house-similar {
+        &__cards {
+            overflow-x: scroll;
+            display: flex;
+        }
+
+        &__card {
+            min-width: 380px;
+        }
+    }
+}
+
+@media (max-width: 460px) {
+    .project-house-similar {
+        &__container {
+            padding: 0;
+        }
+
+        &__title {
+            padding-left: 40px;
+        }
+    }
+}
